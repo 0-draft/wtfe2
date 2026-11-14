@@ -1,0 +1,65 @@
+{
+  "slug": "phd-comics-1597-how-to-write-your-thesis-in-ten-minutes-a-day",
+  "series": "phd-comics",
+  "number": 1597,
+  "title": "How to Write Your Thesis in Ten Minutes a Day",
+  "titleJa": "一日十分で博士論文を書く方法",
+  "published": "2013-06-19",
+  "url": "https://phdcomics.com/comics/archive.php?comicid=1597",
+  "imageSource": "http://www.phdcomics.com/comics/archive/phd061913s.gif",
+  "author": "Jorge Cham",
+  "license": "PERMISSION-PHD",
+  "image": {
+    "file": "phd-comics-1597-how-to-write-your-thesis-in-ten-minutes-a-day.png",
+    "width": 600,
+    "height": 294,
+    "displayWidth": 760
+  },
+  "takeaway": {
+    "en": "Work you avoid does not shrink; it moves to the end, where it is most expensive. Put a small, real piece of it on the calendar every week, and treat worry as a sign to start, not a substitute.",
+    "ja": "避けている仕事は小さくならず、いちばん高くつく最後に移動するだけだ。毎週、小さくても実際の作業を予定に入れること。不安は着手の合図であって、作業の代わりにはならない。"
+  },
+  "note": {
+    "en": "Every long project with a fuzzy deadline, a migration or a rewrite, has the same shape: years of low-grade worry, then a final sprint that does all the work. The joke is that the ten minutes a day were real, just spent on the wrong thing.",
+    "ja": "移行プロジェクトや作り直しのように、締め切りがぼんやりした長いプロジェクトは、どれも同じ形をしている。何年も続く漠然とした不安と、最後に全部を片付ける追い込み。一日十分は本当に使っていて、ただ使い道を間違えていただけ、というのがオチだ。"
+  },
+  "regions": [
+    {
+      "box": [27, 33, 150, 198],
+      "en": "How to\nWrite Your\nThesis in\nTen\nMinutes\na Day",
+      "ja": "一日\n十分で\n博士論文を\n書く方法",
+      "size": 24,
+      "font": "sans",
+      "weight": 400,
+      "lineHeight": 1.3
+    },
+    {
+      "box": [30, 229, 96, 23],
+      "en": "It's that simple!",
+      "ja": "簡単でしょう!",
+      "size": 12,
+      "font": "sans",
+      "weight": 400
+    },
+    {
+      "box": [157, 183, 226, 79],
+      "en": "Step 1. Spend ten minutes each day for the\nfirst X number of years filled with anxiety,\nstress and doubt about whether you'll ever\nfinish your thesis, what you're doing with\nyour life, and whether you made the right\ndecision to come to grad school.",
+      "ja": "ステップ1. 最初の X 年間、毎日十分ずつ、\n本当に論文を書き終えられるのか、\n自分の人生はこれでいいのか、\n大学院に来たのは正しかったのかと、\n不安とストレスと疑いに\n費やす。",
+      "size": 10.5,
+      "font": "sans",
+      "weight": 400,
+      "align": "center",
+      "lineHeight": 1.2
+    },
+    {
+      "box": [399, 185, 162, 66],
+      "en": "Step 2. On your last year,\nsleep for ten minutes a day\nand spend the rest of the\ntime writing your thesis.",
+      "ja": "ステップ2. 最後の一年は、\n一日十分だけ眠り、\n残りの時間をすべて\n論文の執筆に使う。",
+      "size": 11,
+      "font": "sans",
+      "weight": 400,
+      "align": "center",
+      "lineHeight": 1.2
+    }
+  ]
+}

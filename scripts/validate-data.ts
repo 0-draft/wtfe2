@@ -17,7 +17,10 @@ for (const s of sites) {
   if (siteIds.has(s.id)) fail(`sites/${s.id}`, "duplicate id");
   siteIds.add(s.id);
   if (s.latest && s.latest.date > s.checked) fail(`sites/${s.id}`, "latest entry is dated after the check date");
-  const adaptable = s.terms.kind === "cc" || s.terms.kind === "translation-permitted";
+  const granted = s.terms.kind === "permission-granted";
+  if (granted !== Boolean(s.permission))
+    fail(`sites/${s.id}`, "permission-granted terms need a permission record, and only they");
+  const adaptable = s.terms.kind === "cc" || s.terms.kind === "translation-permitted" || granted;
   if (s.tier === "linked" && adaptable)
     fail(`sites/${s.id}`, "a site that allows translation should be translated, not linked");
   if (s.tier === "translated" && !adaptable)
@@ -44,6 +47,9 @@ for (const f of files) {
   if (!site) fail(where, `no site entry for series ${c.series}`);
   else {
     if (site.tier !== "translated") fail(where, `${site.id} is not a translated site`);
+    if (site.permission && !site.permission.scope.includes(c.url)) {
+      fail(where, `${c.url} is outside the permission granted by ${site.permission.from}`);
+    }
     if (inLang(site.terms.label, "en") !== LICENSES[c.license].label) {
       fail(where, `license ${LICENSES[c.license].label} differs from the site's ${inLang(site.terms.label, "en")}`);
     }

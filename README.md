@@ -4,8 +4,8 @@
 
 [![site](https://img.shields.io/badge/read-the%20comics-c9352a?style=for-the-badge&labelColor=17150f)](https://0-draft.github.io/wtfe2/)
 [![日本語](https://img.shields.io/badge/日本語版-読む-c9352a?style=for-the-badge&labelColor=17150f)](https://0-draft.github.io/wtfe2/ja/)
-[![comics](https://img.shields.io/badge/lettered-35%20strips-ffd94a?style=for-the-badge&labelColor=17150f)](https://0-draft.github.io/wtfe2/#translated)
-[![explained](https://img.shields.io/badge/explained-12%20strips-ffd94a?style=for-the-badge&labelColor=17150f)](https://0-draft.github.io/wtfe2/#explained)
+[![comics](https://img.shields.io/badge/lettered-38%20strips-ffd94a?style=for-the-badge&labelColor=17150f)](https://0-draft.github.io/wtfe2/#translated)
+[![explained](https://img.shields.io/badge/explained-9%20strips-ffd94a?style=for-the-badge&labelColor=17150f)](https://0-draft.github.io/wtfe2/#explained)
 [![CI](https://img.shields.io/github/actions/workflow/status/0-draft/wtfe2/ci.yml?branch=main&style=for-the-badge&label=CI&labelColor=17150f)](https://github.com/0-draft/wtfe2/actions/workflows/ci.yml)
 [![license](https://img.shields.io/badge/code-MIT-5c5f64?style=for-the-badge&labelColor=17150f)](./LICENSE)
 
@@ -38,13 +38,13 @@ Every comic page has:
 | [Browserling Comics](https://comic.browserling.com/) | Browserling | CC BY-NC 4.0 | Lettered in Japanese |
 | [Bonkers World](https://bonkersworld.net/) | Manu Cornet | CC BY-NC-ND 3.0, translations allowed by the author | Lettered in Japanese |
 | [Abstruse Goose](https://github.com/s-macke/Abstruse-Goose-Archive) | anonymous | CC BY-NC 3.0 US | Lettered in Japanese |
-| [SMBC](https://www.smbc-comics.com/) | Zach Weinersmith | none published | Explained |
+| [SMBC](https://www.smbc-comics.com/) | Zach Weinersmith | used with permission | Lettered in Japanese |
 | [Existential Comics](https://existentialcomics.com/) | Corey Mohler | none published | Explained |
 | [MonkeyUser](https://www.monkeyuser.com/) | uncredited | all rights reserved | Explained |
 | [The Daily WTF](https://thedailywtf.com/) | Alex Papadimoulis, Remy Porter | copyright Inedo | Explained |
 | [CommitStrip](https://www.commitstrip.com/en/) | Etienne Issartial, Thomas Gx | non-commercial use with credit | Explained |
 | [The Oatmeal](https://theoatmeal.com/) | Matthew Inman | copyright | Explained |
-| [PHD Comics](https://phdcomics.com/) | Jorge Cham | reprints by permission | Explained |
+| [PHD Comics](https://phdcomics.com/) | Jorge Cham | used with permission | Lettered in Japanese |
 
 The site carries no ads, sponsorships or affiliate links: every comic it adapts is licensed for non-commercial use only.
 

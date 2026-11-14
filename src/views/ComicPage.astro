@@ -86,6 +86,7 @@ description = description.trim();
         </a>{" "}
         © {inLang(comic.author, lang)} · <a href={site.url}>{site.name}</a> · <a href={license.url}>{license.label}</a>
         {ja && <> · {t.adaptedBy}</>}
+        {site.creditLine && <span class="comic__credit-line">{site.creditLine}</span>}
       </p>
       {
         comic.titleText && (
@@ -307,6 +308,11 @@ description = description.trim();
     .swap__track::after {
       transition: none;
     }
+  }
+  .comic__credit-line {
+    display: block;
+    color: var(--ink);
+    font-weight: 700;
   }
   .comic__credit {
     margin: 0.75rem 0 0;

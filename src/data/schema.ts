@@ -69,7 +69,15 @@ export const Region = z
   .strict();
 export type Region = z.infer<typeof Region>;
 
-export const SERIES = ["xkcd", "turnoff", "browserling", "bonkers-world", "abstruse-goose"] as const;
+export const SERIES = [
+  "xkcd",
+  "turnoff",
+  "browserling",
+  "bonkers-world",
+  "smbc",
+  "phd-comics",
+  "abstruse-goose",
+] as const;
 export type SeriesId = (typeof SERIES)[number];
 
 export const LICENSES = {
@@ -78,6 +86,9 @@ export const LICENSES = {
   "CC-BY-NC-3.0-US": { label: "CC BY-NC 3.0 US", url: "https://creativecommons.org/licenses/by-nc/3.0/us/" },
   "CC-BY-NC-4.0": { label: "CC BY-NC 4.0", url: "https://creativecommons.org/licenses/by-nc/4.0/" },
   /** Bonkers World is CC BY-NC-ND, and its author separately allows translations with credit next to the drawing. */
+  /** Strips used with the creator's direct permission; the grant is recorded on the site entry. */
+  "PERMISSION-PHD": { label: "Used with permission of Jorge Cham", url: "https://phdcomics.com/about.php" },
+  "PERMISSION-SMBC": { label: "Used with permission of Zach Weinersmith", url: "https://www.smbc-comics.com/" },
   "CC-BY-NC-ND-3.0-TRANSLATION": {
     label: "CC BY-NC-ND 3.0; translations allowed with credit",
     url: "https://bonkersworld.net/about",
@@ -145,13 +156,35 @@ export const Site = z
     tier: z.enum(["translated", "linked"]),
     terms: z
       .object({
-        kind: z.enum(["cc", "translation-permitted", "permission", "noncommercial-use", "reserved", "none-stated"]),
+        kind: z.enum([
+          "cc",
+          "translation-permitted",
+          "permission-granted",
+          "permission",
+          "noncommercial-use",
+          "reserved",
+          "none-stated",
+        ]),
         label: Text,
         url: z.url(),
         quote: z.string().optional(),
       })
       .strict(),
     feed: z.url().optional(),
+    /** A credit line the creator asks for, shown verbatim directly under every strip. */
+    creditLine: z.string().optional(),
+    /** A direct grant from the creator: who, how, when, for which strips, on what conditions. */
+    permission: z
+      .object({
+        from: z.string().min(1),
+        via: z.string().min(1),
+        date: z.string().regex(/^\d{4}-\d{2}-\d{2}$/),
+        scope: z.array(z.url()).min(1),
+        conditions: z.string().min(1),
+        recordedBy: z.string().min(1),
+      })
+      .strict()
+      .optional(),
     about: Bilingual,
     picks: z.array(z.object({ title: z.string().min(1), url: z.url(), why: Bilingual }).strict()).max(3),
   })

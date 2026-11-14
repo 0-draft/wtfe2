@@ -1,0 +1,273 @@
+{
+  "slug": "phd-comics-1174-the-science-news-cycle",
+  "series": "phd-comics",
+  "number": 1174,
+  "title": "The Science News Cycle",
+  "titleJa": "科学ニュースのサイクル",
+  "published": "2009-05-18",
+  "url": "https://phdcomics.com/comics/archive.php?comicid=1174",
+  "imageSource": "http://www.phdcomics.com/comics/archive/phd051809s.gif",
+  "author": "Jorge Cham",
+  "license": "PERMISSION-PHD",
+  "image": {
+    "file": "phd-comics-1174-the-science-news-cycle.png",
+    "width": 600,
+    "height": 667,
+    "displayWidth": 760
+  },
+  "takeaway": {
+    "en": "Every summary drops a condition. When you report a result, a benchmark or an incident, put the caveats in the headline sentence, because they will not survive the next retelling otherwise.",
+    "ja": "要約のたびに、条件が一つずつ落ちていく。結果やベンチマーク、障害を報告するときは、前提条件を最初の一文に入れること。そうしないと、次に誰かが言い直したときには残っていない。"
+  },
+  "note": {
+    "en": "Drawn for science journalism, but every engineering organization runs the same cycle: a careful benchmark becomes \"X is 3x faster\" in a slide, then a rule nobody remembers the reason for. Follow the arrows and watch each step drop one more condition, until the result reaches your grandma as a reason to wear a tin-foil hat.",
+    "ja": "科学報道を描いたものだが、どのエンジニア組織でも同じサイクルが回っている。慎重に取ったベンチマークがスライドでは「X は 3 倍速い」になり、やがて誰も理由を覚えていないルールになる。矢印をたどると、段階ごとに条件が一つずつ落ちていき、最後はおばあちゃんがアルミホイルの帽子をかぶる理由になっている。"
+  },
+  "regions": [
+    {
+      "box": [124, 17, 354, 32],
+      "en": "THE SCIENCE NEWS CYCLE",
+      "ja": "科学ニュースのサイクル",
+      "size": 24,
+      "color": "#ffffff",
+      "align": "center",
+      "font": "sans",
+      "weight": 700,
+      "fill": "#000000"
+    },
+    {
+      "box": [299, 78, 74, 16],
+      "en": "Start Here",
+      "ja": "ここから",
+      "size": 12,
+      "font": "sans",
+      "weight": 400,
+      "align": "center",
+      "fill": "#e5e1d5"
+    },
+    {
+      "box": [228, 122, 114, 18],
+      "en": "Your Research",
+      "ja": "あなたの研究",
+      "size": 13.5,
+      "font": "sans",
+      "weight": 400
+    },
+    {
+      "box": [227, 143, 172, 37],
+      "en": "Conclusion: A is correlated with\nB (ρ=0.56), given C, assuming\nD and under E conditions.",
+      "ja": "結論: A は B と相関がある\n(ρ=0.56)。ただし C のもと、\nD を仮定し、E の条件下で。",
+      "size": 10,
+      "font": "sans",
+      "weight": 400,
+      "lineHeight": 1.2
+    },
+    {
+      "box": [462, 193, 96, 16],
+      "en": "...is translated by...",
+      "ja": "…が翻訳し…",
+      "size": 12,
+      "fill": "#e5e1d5"
+    },
+    {
+      "box": [432, 225, 148, 49],
+      "en": "UNIVERSITY PR\nOFFICE\n(YES, YOU HAVE ONE)",
+      "ja": "大学の広報室\n(あなたの大学にもある)",
+      "size": 13,
+      "align": "center",
+      "color": "#7a1f1f",
+      "lineHeight": 1.3
+    },
+    {
+      "box": [429, 280, 153, 64],
+      "en": "FOR IMMEDIATE RELEASE:\nSCIENTISTS FIND\nPOTENTIAL LINK\nBETWEEN A AND B\n(UNDER CERTAIN CONDITIONS).",
+      "ja": "即時発表:\n科学者が A と B の\n関連の可能性を発見\n(一定の条件のもとで)",
+      "size": 11,
+      "color": "#ffffff",
+      "align": "center",
+      "font": "sans",
+      "lineHeight": 1.2,
+      "fill": "#6e6e6e"
+    },
+    {
+      "box": [430, 362, 80, 27],
+      "en": "...which is then\npicked up by...",
+      "ja": "…それを\n拾うのは…",
+      "size": 10.5,
+      "lineHeight": 1.25
+    },
+    {
+      "box": [424, 402, 165, 35],
+      "en": "NEWS WIRE\nORGANIZATIONS",
+      "ja": "通信社",
+      "size": 24,
+      "align": "center",
+      "color": "#2e6b2e"
+    },
+    {
+      "box": [424, 444, 170, 42],
+      "en": "A CAUSES B, SAY\nSCIENTISTS.",
+      "ja": "A が B を引き起こすと\n科学者",
+      "size": 11.5,
+      "align": "center",
+      "color": "#2e6b2e",
+      "lineHeight": 1.25,
+      "fill": "#e2e2e2",
+      "fillHull": true,
+      "text": [436, 450, 146, 30]
+    },
+    {
+      "box": [474, 517, 56, 24],
+      "en": "...who are\nread by ...",
+      "ja": "…それを\n読むのは…",
+      "size": 9,
+      "lineHeight": 1.25,
+      "fill": "#e5e1d5"
+    },
+    {
+      "box": [278, 524, 150, 36],
+      "en": "THE INTERNETS",
+      "ja": "インターネッツ",
+      "size": 17,
+      "rotate": -9,
+      "align": "center",
+      "color": "#2f6f7a",
+      "weight": 700
+    },
+    {
+      "box": [132, 587, 96, 17],
+      "en": "...then noticed by...",
+      "ja": "…それに気づくのは…",
+      "size": 10,
+      "fill": "#e5e1d5"
+    },
+    {
+      "box": [349, 578, 163, 14],
+      "en": "Scientists out to kill us again.",
+      "ja": "また科学者が我々を殺しにくる",
+      "size": 10.5,
+      "font": "sans",
+      "weight": 400,
+      "color": "#1a4fa0"
+    },
+    {
+      "box": [350, 591, 92, 9],
+      "en": "POSTED BY RANDOM DUDE",
+      "ja": "投稿: 通りすがりの男",
+      "size": 6.5,
+      "font": "sans",
+      "weight": 400
+    },
+    {
+      "box": [352, 606, 84, 15],
+      "en": "Comments (377)",
+      "ja": "コメント (377)",
+      "size": 10.5,
+      "font": "sans",
+      "weight": 400
+    },
+    {
+      "box": [364, 624, 94, 33],
+      "en": "OMG! i kneeew itt!!\nWTH???????",
+      "ja": "うわ! やっぱりなー!!\nなんだよ???????",
+      "size": 9,
+      "font": "sans",
+      "weight": 400,
+      "lineHeight": 1.3
+    },
+    {
+      "box": [46, 502, 122, 18],
+      "en": "We saw it on a Blog!",
+      "ja": "ブログで見た!",
+      "size": 12,
+      "font": "sans",
+      "weight": 400
+    },
+    {
+      "box": [46, 524, 164, 16],
+      "en": "A causes B all the time",
+      "ja": "A はいつでも B を起こす",
+      "size": 12,
+      "color": "#ffffff",
+      "font": "sans",
+      "weight": 700,
+      "fill": "#000000"
+    },
+    {
+      "box": [46, 542, 164, 12],
+      "en": "What will this mean for Obama?",
+      "ja": "オバマ政権への影響は?",
+      "size": 9,
+      "color": "#ffe066",
+      "font": "sans",
+      "weight": 400,
+      "fill": "#000000"
+    },
+    {
+      "box": [58, 467, 104, 24],
+      "en": "Cable NEWS",
+      "ja": "ケーブルニュース",
+      "size": 13.5,
+      "font": "sans",
+      "weight": 700
+    },
+    {
+      "box": [16, 433, 68, 30],
+      "en": "...and caught\non...",
+      "ja": "…さらに\n取り上げるのは…",
+      "size": 9,
+      "lineHeight": 1.25,
+      "fill": "#e5e1d5"
+    },
+    {
+      "box": [30, 300, 99, 49],
+      "en": "WHAT YOU DON'T\nKNOW ABOUT \"A\"...\nCAN KILL YOU!\nMORE AT 11...",
+      "ja": "あなたの知らない\n「A」が命取りに!\n詳しくは 11 時に…",
+      "size": 11,
+      "align": "center",
+      "color": "#1a4fa0",
+      "lineHeight": 1.2
+    },
+    {
+      "box": [22, 262, 70, 24],
+      "en": "...eventually\nmaking it to...",
+      "ja": "…最後に\nたどり着くのは…",
+      "size": 9.5,
+      "lineHeight": 1.25,
+      "fill": "#e5e1d5"
+    },
+    {
+      "box": [66, 243, 108, 17],
+      "en": "YOUR GRANDMA",
+      "ja": "あなたのおばあちゃん",
+      "size": 10.5,
+      "align": "center"
+    },
+    {
+      "box": [26, 97, 96, 25],
+      "en": "I'M WEARING THIS\nTO WARD OFF \"A\"",
+      "ja": "「A」よけに\nかぶってるの",
+      "size": 10,
+      "align": "center",
+      "lineHeight": 1.2
+    },
+    {
+      "box": [66, 366, 96, 52],
+      "en": "LOCAL\nEYEWITLESS\nNEWS",
+      "ja": "ローカル\nミタヨウナ\nニュース",
+      "size": 13,
+      "color": "#1a4fa0",
+      "lineHeight": 1.15,
+      "weight": 700
+    },
+    {
+      "box": [47, 560, 162, 9],
+      "fill": "#949494",
+      "en": "BREAKING NEWS BREAKING NEWS BREA",
+      "ja": "速報 速報 速報 速報 速報 速",
+      "size": 6.5,
+      "font": "sans",
+      "weight": 700
+    }
+  ]
+}

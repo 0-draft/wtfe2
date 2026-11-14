@@ -23,7 +23,9 @@ describe("comics", () => {
   it.each(comics.map((c) => [c.slug, c] as const))("%s is adapted only under a license that allows it", (_, c) => {
     expect(Object.keys(LICENSES)).toContain(c.license);
     expect(siteFor(c.series).tier).toBe("translated");
-    expect(["cc", "translation-permitted"]).toContain(siteFor(c.series).terms.kind);
+    const site = siteFor(c.series);
+    expect(["cc", "translation-permitted", "permission-granted"]).toContain(site.terms.kind);
+    if (site.permission) expect(site.permission.scope).toContain(c.url);
   });
 
   it("labels numbered strips with their number", () => {
@@ -42,7 +44,7 @@ describe("sites", () => {
 
   it("adapts a site exactly when its terms allow adaptation or translation", () => {
     for (const s of sites) {
-      const adaptable = ["cc", "translation-permitted"].includes(s.terms.kind);
+      const adaptable = ["cc", "translation-permitted", "permission-granted"].includes(s.terms.kind);
       expect(adaptable).toBe(s.tier === "translated");
     }
   });
@@ -55,7 +57,7 @@ describe("sites", () => {
 describe("explainers", () => {
   it("only shows images for sites whose terms allow reuse", async () => {
     const { explainers } = await import("../../src/lib/data.ts");
-    expect(explainers.length).toBeGreaterThanOrEqual(12);
+    expect(explainers.length).toBeGreaterThanOrEqual(9);
     for (const e of explainers) {
       const site = siteFor(e.site);
       expect(site.tier).toBe("linked");

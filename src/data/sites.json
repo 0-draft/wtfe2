@@ -158,19 +158,16 @@
       "url": "https://www.smbc-comics.com/comic/field"
     },
     "checked": "2026-11-15",
-    "tier": "linked",
+    "tier": "translated",
     "terms": {
-      "kind": "none-stated",
-      "label": {
-        "en": "No reuse terms published",
-        "ja": "利用条件の記載なし"
-      },
+      "kind": "permission-granted",
+      "label": "Used with permission of Zach Weinersmith",
       "url": "https://www.smbc-comics.com/"
     },
     "feed": "https://www.smbc-comics.com/comic/rss",
     "about": {
-      "en": "A daily gag strip that keeps returning to physics, math, economics and philosophy, usually with a final panel that undercuts the setup. Each comic also has a hidden bonus panel behind a button.",
-      "ja": "物理、数学、経済学、哲学に何度も戻ってくる日刊のギャグ漫画で、最後のコマが前振りをひっくり返すのが定番。どの回にも、ボタンの裏にボーナスのコマが隠れている。"
+      "en": "A daily gag strip that keeps returning to physics, math, economics and philosophy, usually with a final panel that undercuts the setup. Each comic also has a hidden bonus panel behind a button. One strip is shown here in Japanese with the author's permission.",
+      "ja": "物理、数学、経済学、哲学に何度も戻ってくる日刊のギャグ漫画で、最後のコマが前振りをひっくり返すのが定番。どの回にも、ボタンの裏にボーナスのコマが隠れている。 作者の許可を得て、1 本を日本語版にしている。"
     },
     "picks": [
       {
@@ -181,7 +178,15 @@
           "ja": "博物館で物理学者を見つける方法は、看板を一枚立てるだけ。「本日: 体験型ダークマター展示!」"
         }
       }
-    ]
+    ],
+    "permission": {
+      "from": "Zach Weinersmith (SMBC)",
+      "via": "Direct message to kt, following an e-mail request to zach@smbc-comics.com",
+      "date": "2026-11-15",
+      "scope": ["https://www.smbc-comics.com/comic/how-to-spot-a-physicist"],
+      "conditions": "Japanese lettering of the strip listed, non-commercial, credited next to the image with a link to the original; art and signature unchanged.",
+      "recordedBy": "kt (reported granted by DM; message not archived in this repository)"
+    }
   },
   {
     "id": "existential-comics",
@@ -416,20 +421,17 @@
     "since": "1997",
     "status": "dormant",
     "checked": "2026-11-15",
-    "tier": "linked",
+    "tier": "translated",
     "terms": {
-      "kind": "permission",
-      "label": {
-        "en": "Reprints by permission only",
-        "ja": "転載は許可制"
-      },
+      "kind": "permission-granted",
+      "label": "Used with permission of Jorge Cham",
       "url": "https://phdcomics.com/about.php",
-      "quote": "They may not be copied or duplicated in any form, in whole or in part, without prior written consent"
+      "quote": "We'll be happy to grant you permission, but you MUST e-mail us at questions(at)phdcomics.com to let us know how and which strips you are using."
     },
     "feed": "http://phdcomics.com/gradfeed.php",
     "about": {
-      "en": "Life in graduate school: advisors, procrastination, funding and the thesis that never ends. Not about software, but anyone who has worked on a long project with an unclear finish line will recognise it.",
-      "ja": "大学院生活を描いた漫画で、指導教員、先延ばし、研究費、終わらない博士論文が題材。ソフトウェアの話ではないが、ゴールの見えない長いプロジェクトを経験した人なら身に覚えがあるはず。"
+      "en": "Life in graduate school: advisors, procrastination, funding and the thesis that never ends. Not about software, but anyone who has worked on a long project with an unclear finish line will recognise it. Two strips are shown here in Japanese with the author's permission.",
+      "ja": "大学院生活を描いた漫画で、指導教員、先延ばし、研究費、終わらない博士論文が題材。ソフトウェアの話ではないが、ゴールの見えない長いプロジェクトを経験した人なら身に覚えがあるはず。 作者の許可を得て、2 本を日本語版にしている。"
     },
     "picks": [
       {
@@ -448,6 +450,18 @@
           "ja": "二段階の計画。ただし仕事の全部を二段目がやる。"
         }
       }
-    ]
+    ],
+    "creditLine": "\"Piled Higher and Deeper\" by Jorge Cham www.phdcomics.com",
+    "permission": {
+      "from": "Jorge Cham (PHD Comics)",
+      "via": "Direct message to kt, following an e-mail request to questions@phdcomics.com",
+      "date": "2026-11-15",
+      "scope": [
+        "https://phdcomics.com/comics/archive.php?comicid=1174",
+        "https://phdcomics.com/comics/archive.php?comicid=1597"
+      ],
+      "conditions": "Japanese translation of the two strips listed, non-commercial, with the credit line \"Piled Higher and Deeper\" by Jorge Cham www.phdcomics.com next to the image and a link to the original; art and signature unchanged.",
+      "recordedBy": "kt (reported granted by DM; message not archived in this repository)"
+    }
   }
 ]

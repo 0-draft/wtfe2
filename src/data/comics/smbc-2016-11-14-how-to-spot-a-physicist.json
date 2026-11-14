@@ -1,0 +1,64 @@
+{
+  "slug": "smbc-2016-11-14-how-to-spot-a-physicist",
+  "series": "smbc",
+  "title": "How to Spot a Physicist",
+  "titleJa": "物理学者の見つけ方",
+  "published": "2016-11-14",
+  "url": "https://www.smbc-comics.com/comic/how-to-spot-a-physicist",
+  "imageSource": "https://www.smbc-comics.com/comics/1479135051-20161114.png",
+  "author": "Zach Weinersmith",
+  "license": "PERMISSION-SMBC",
+  "image": {
+    "file": "smbc-2016-11-14-how-to-spot-a-physicist.png",
+    "width": 684,
+    "height": 674,
+    "displayWidth": 720
+  },
+  "titleText": {
+    "en": "I searched on google, and apparently these exist.",
+    "ja": "Google で調べたら、どうやらこういうのは実在するらしい。"
+  },
+  "takeaway": {
+    "en": "A joke that needs a specialist to get it is a test of who the specialists are. The same goes for documentation: write it for the reader you have, not the one who already knows.",
+    "ja": "専門家にしか通じないジョークは、誰が専門家かを見分けるテストになる。ドキュメントも同じで、すでに知っている人ではなく、目の前の読者に向けて書くこと。"
+  },
+  "note": {
+    "en": "Dark matter is called dark because, as far as anyone has measured, it does not interact with light or ordinary matter except through gravity. An \"interactive\" dark-matter exhibit is a contradiction only a physicist would notice, which is exactly the point: the sign is a filter, and the giggle is the signal.",
+    "ja": "ダークマターが「ダーク」と呼ばれるのは、これまでの観測の範囲では、重力以外では光とも普通の物質とも相互作用しないからだ。「体験型 (インタラクティブ)」なダークマター展示は、物理学者だけが気づく矛盾で、それがまさにオチになっている。看板がふるいになり、くすくす笑いが目印になる。"
+  },
+  "regions": [
+    {
+      "box": [6, 12, 216, 70],
+      "en": "WE NEED A WAY TO\nDETECT WHEN\nPHYSICISTS ENTER",
+      "ja": "物理学者が\n博物館に入ってきたら\nわかる方法が",
+      "size": 17.5,
+      "lineHeight": 1.2,
+      "text": [24, 20, 200, 66]
+    },
+    {
+      "box": [6, 82, 158, 22],
+      "erase": "rect",
+      "text": [24, 84, 200, 24],
+      "en": "THE MUSEUM.",
+      "ja": "必要だ。",
+      "size": 16.5
+    },
+    {
+      "box": [309, 6, 286, 130],
+      "en": "PFFT. THAT'S EASY\nJUST PUT THIS SIGN UP\nTHEN FIND THE ONE\nPERSON IN A THOUSAND\nWHO STARTS GIGGLING.",
+      "ja": "ふん、簡単さ。\nこの看板を立てて、\nくすくす笑い出す\n千人に一人を\n探せばいい。",
+      "size": 18.5,
+      "lineHeight": 1.2,
+      "text": [328, 14, 262, 122]
+    },
+    {
+      "box": [83, 493, 149, 114],
+      "en": "Today:\nInteractive\nDark Matter\nExhibit!",
+      "ja": "本日:\n体験型\nダークマター\n展示!",
+      "size": 19,
+      "align": "center",
+      "lineHeight": 1.15,
+      "fill": "#ffcf84"
+    }
+  ]
+}

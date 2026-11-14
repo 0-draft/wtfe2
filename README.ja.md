@@ -4,8 +4,8 @@
 
 [![site](https://img.shields.io/badge/read-the%20comics-c9352a?style=for-the-badge&labelColor=17150f)](https://0-draft.github.io/wtfe2/)
 [![日本語](https://img.shields.io/badge/日本語版-読む-c9352a?style=for-the-badge&labelColor=17150f)](https://0-draft.github.io/wtfe2/ja/)
-[![comics](https://img.shields.io/badge/lettered-35%20strips-ffd94a?style=for-the-badge&labelColor=17150f)](https://0-draft.github.io/wtfe2/ja/#translated)
-[![explained](https://img.shields.io/badge/explained-12%20strips-ffd94a?style=for-the-badge&labelColor=17150f)](https://0-draft.github.io/wtfe2/ja/#explained)
+[![comics](https://img.shields.io/badge/lettered-38%20strips-ffd94a?style=for-the-badge&labelColor=17150f)](https://0-draft.github.io/wtfe2/ja/#translated)
+[![explained](https://img.shields.io/badge/explained-9%20strips-ffd94a?style=for-the-badge&labelColor=17150f)](https://0-draft.github.io/wtfe2/ja/#explained)
 [![CI](https://img.shields.io/github/actions/workflow/status/0-draft/wtfe2/ci.yml?branch=main&style=for-the-badge&label=CI&labelColor=17150f)](https://github.com/0-draft/wtfe2/actions/workflows/ci.yml)
 [![license](https://img.shields.io/badge/code-MIT-5c5f64?style=for-the-badge&labelColor=17150f)](./LICENSE)
 
@@ -38,13 +38,13 @@
 | [Browserling Comics](https://comic.browserling.com/) | Browserling | CC BY-NC 4.0 | 日本語版あり |
 | [Bonkers World](https://bonkersworld.net/) | Manu Cornet | CC BY-NC-ND 3.0 (作者が翻訳を許可) | 日本語版あり |
 | [Abstruse Goose](https://github.com/s-macke/Abstruse-Goose-Archive) | 匿名 | CC BY-NC 3.0 US | 日本語版あり |
-| [SMBC](https://www.smbc-comics.com/) | Zach Weinersmith | 記載なし | 解説あり |
+| [SMBC](https://www.smbc-comics.com/) | Zach Weinersmith | 作者の許可を得て使用 | 日本語版あり |
 | [Existential Comics](https://existentialcomics.com/) | Corey Mohler | 記載なし | 解説あり |
 | [MonkeyUser](https://www.monkeyuser.com/) | 記載なし | 全権利留保 | 解説あり |
 | [The Daily WTF](https://thedailywtf.com/) | Alex Papadimoulis、Remy Porter | 著作権は Inedo | 解説あり |
 | [CommitStrip](https://www.commitstrip.com/en/) | Etienne Issartial、Thomas Gx | 非商用ならクレジット付きで利用可 | 解説あり |
 | [The Oatmeal](https://theoatmeal.com/) | Matthew Inman | 著作権あり | 解説あり |
-| [PHD Comics](https://phdcomics.com/) | Jorge Cham | 転載は許可制 | 解説あり |
+| [PHD Comics](https://phdcomics.com/) | Jorge Cham | 作者の許可を得て使用 | 日本語版あり |
 
 翻案している作品はどれも非商用に限って利用が許されているので、広告もスポンサーもアフィリエイトリンクも置かない。
 
