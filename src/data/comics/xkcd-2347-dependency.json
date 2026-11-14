@@ -15,8 +15,8 @@
     "ja": "いつか ImageMagick が完全に壊れる日が来て、私たちは瓦礫の中から文明を組み立て直そうと、長いあいだ右往左往することになる。"
   },
   "note": {
-    "en": "The picture most talks on open-source sustainability now open with. Large parts of the stack rest on small projects kept alive by one or two unpaid people. The hover text names ImageMagick; the 2024 xz-utils backdoor, slipped in through a project with a single overworked maintainer, made the same point the hard way.",
-    "ja": "オープンソースの持続性を語る発表で、いまや冒頭の定番になった一枚。スタックの大部分は、一人か二人が無償で支えている小さなプロジェクトの上に載っている。ホバーテキストでは ImageMagick が名指しされている。2024 年の xz-utils のバックドアは、一人で抱え込んでいたメンテナーのプロジェクトから入り込み、同じことを痛い形で示した。"
+    "en": "A picture often shown in talks on open-source sustainability. Large parts of the stack rest on small projects kept alive by one or two unpaid people. The hover text names ImageMagick; the 2024 xz-utils backdoor, slipped in through a project with a single overworked maintainer, made the same point the hard way.",
+    "ja": "オープンソースの持続性を語る発表でよく引用される一枚。スタックの大部分は、一人か二人が無償で支えている小さなプロジェクトの上に載っている。ホバーテキストでは ImageMagick が名指しされている。2024 年の xz-utils のバックドアは、一人で抱え込んでいたメンテナーのプロジェクトから入り込み、同じことを痛い形で示した。"
   },
   "related": [
     {

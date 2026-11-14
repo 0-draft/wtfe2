@@ -35,13 +35,12 @@ export const ui = {
     navShelf: "Shelf",
     navAbout: "About",
     switchTo: "日本語",
-    switchLabel: "Read this page in Japanese",
     translated: "Lettered in Japanese",
     translatedLede:
       "Strips published under a Creative Commons license that allows adaptation. Each page shows the original; the Japanese edition swaps the lettering on a cleaned copy of the art.",
     shelf: "The shelf",
     shelfLede:
-      "Ten places worth following. Three allow adaptation and are lettered here; the others reserve their rights, so they are described and linked, and the comics stay on their own sites.",
+      "Places worth following. The ones whose license allows adaptation are lettered here; the others do not allow it, so they are described and linked, and the comics stay on their own sites.",
     seeShelf: "See the whole shelf",
     originalTitle: "Original title",
     by: "by",
@@ -73,7 +72,7 @@ export const ui = {
     comicsHere: "On this site",
     aboutTitle: "About wtfe2",
     footerContent:
-      "Site text and translations: CC BY-NC-SA 4.0. Comics: their creators, under the licenses shown on each page.",
+      "Site text: CC BY-NC-SA 4.0. Comics and their translations: their creators' licenses, shown on each comic's page.",
     footerCode: "Code: MIT.",
     footerSource: "Source on GitHub",
     footerIssue: "Report a problem",
@@ -86,18 +85,17 @@ export const ui = {
     siteName: "wtfe2",
     tagline: "WTF, Engineer?",
     description:
-      "ソフトウェアを作るという奇妙な仕事を描いた漫画を、Web から集めて紹介する。改変が許されているものは日本語に描き文字を差し替え、それ以外は紹介してリンクする。",
+      "ソフトウェアを作るという奇妙な仕事を描いた漫画を、Web から集めて紹介する。改変が許されているものは描き文字を日本語に差し替え、それ以外は紹介してリンクする。",
     navComics: "作品",
     navShelf: "本棚",
     navAbout: "このサイト",
     switchTo: "English",
-    switchLabel: "このページを英語で読む",
     translated: "日本語版",
     translatedLede:
       "改変を認める Creative Commons ライセンスで公開されている作品。描き文字を消した原画の上に日本語を載せている。各ページで原文にも切り替えられる。",
     shelf: "本棚",
     shelfLede:
-      "追いかける価値のある 10 サイト。うち 3 つは改変が許されているので、ここで日本語にしている。残りは権利が留保されているので、作品は元のサイトに置いたまま紹介とリンクだけにしている。",
+      "追いかける価値のあるサイト。ライセンスが改変を認めているものはここで日本語にしている。残りは改変を認めていないので、作品は元のサイトに置いたまま紹介とリンクだけにしている。",
     seeShelf: "本棚をすべて見る",
     originalTitle: "原題",
     by: "作",
@@ -128,7 +126,7 @@ export const ui = {
     readOn: "元のサイトで読む",
     comicsHere: "このサイトの日本語版",
     aboutTitle: "wtfe2 について",
-    footerContent: "サイトの文章と翻訳: CC BY-NC-SA 4.0。漫画の権利は各作者にあり、ライセンスは各ページに記載。",
+    footerContent: "サイトの文章: CC BY-NC-SA 4.0。漫画とその翻訳: 各作品のライセンスに従う (各作品のページに記載)。",
     footerCode: "コード: MIT。",
     footerSource: "GitHub のソース",
     footerIssue: "問題を報告する",

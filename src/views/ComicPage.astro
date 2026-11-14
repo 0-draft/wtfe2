@@ -23,7 +23,15 @@ const alt = ja
   : `Comic: ${comic.title} (${comicLabel(comic)}). Transcript below.`;
 const path = `comics/${comic.slug}/`;
 const frameStyle = `max-width: min(100%, calc(${comic.image.displayWidth}px + 2 * clamp(6px, 1.4vw, 14px) + 5px))`;
-const description = comic.note[lang].split(/(?<=[.。])\s*/)[0] ?? comic.note[lang];
+// Whole sentences from the note, enough for a useful meta description (a sentence
+// ends at "。", or at "." followed by a space or the end, so "10.17" or "xkcd.com" stay intact).
+const sentences = comic.note[lang].match(/.+?(?:\.(?=\s|$)|。|$)/gu) ?? [comic.note[lang]];
+let description = "";
+for (const s of sentences) {
+  if (description.length >= 80) break;
+  description += s;
+}
+description = description.trim();
 ---
 
 <Base lang={lang} path={path} title={title} description={description} image={asset(`thumbs/${comic.slug}.webp`)}>

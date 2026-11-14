@@ -52,7 +52,7 @@ Every push and pull request runs Biome, markdownlint, `astro check`, Vitest with
 ## License
 
 - Code: [MIT](LICENSE).
-- Site text and translations written for this site: [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+- Site text written for this site (notes, descriptions, interface): [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Translations of a comic follow that comic's license.
 - Comics: their creators. Each comic page names the original, its author and its license. Adapted images are shared under the same license as the original.
 
 If you made one of these comics and want it changed or removed, [open an issue](https://github.com/0-draft/wtfe2/issues).

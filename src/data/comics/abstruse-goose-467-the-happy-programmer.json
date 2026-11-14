@@ -42,12 +42,19 @@
     {
       "box": [407, 16, 118, 37],
       "en": "MAKE LOVE TO\nTHE CODE.",
-      "ja": "コードに\n愛をこめて。",
+      "ja": "コードと\n愛し合うのです。",
       "size": 13,
       "align": "center",
       "lineHeight": 1.25
     },
-    { "box": [418, 72, 93, 19], "en": "CARESS IT.", "ja": "なでるように。", "size": 13, "align": "center" },
+    {
+      "box": [418, 72, 93, 19],
+      "text": [395, 70, 140, 23],
+      "en": "CARESS IT.",
+      "ja": "愛撫するように。",
+      "size": 13,
+      "align": "center"
+    },
     {
       "box": [567, 7, 173, 53],
       "en": "NOW LET'S ADD SOME\nHAPPY LITTLE BINARY\nTREES HERE.",
@@ -56,7 +63,7 @@
       "align": "center",
       "lineHeight": 1.25
     },
-    { "box": [596, 84, 123, 19], "en": "JUST FOR FUN.", "ja": "なんとなくね。", "size": 13, "align": "center" },
+    { "box": [596, 84, 123, 19], "en": "JUST FOR FUN.", "ja": "お遊びでね。", "size": 13, "align": "center" },
     {
       "box": [562, 251, 179, 38],
       "en": "The Joy of Programming\nwith Bob Ross",

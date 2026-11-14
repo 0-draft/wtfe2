@@ -52,7 +52,7 @@ push と pull request のたびに、Biome、markdownlint、`astro check`、カ�
 ## ライセンス
 
 - コード: [MIT](LICENSE)。
-- このサイトのために書いた文章と翻訳: [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.ja)。
+- このサイトのために書いた文章 (解説、紹介文、画面の文言): [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.ja)。漫画の翻訳は、その作品のライセンスに従う。
 - 漫画: 権利は各作者にある。各作品のページに原作、作者、ライセンスを記載している。翻案した画像は原作と同じライセンスで公開する。
 
 ここに載っている漫画の作者で、変更や削除を希望する場合は [issue を立ててほしい](https://github.com/0-draft/wtfe2/issues)。

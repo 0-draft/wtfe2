@@ -58,7 +58,7 @@
     {
       "box": [3, 198, 235, 71],
       "en": "Days 698 - 3648\nInteract with other programmers.\nWork on programming projects\ntogether.  Learn from them.",
-      "ja": "698〜3648日目\nほかのプログラマーと交流する。\n一緒にプロジェクトをやり、学ぶ。",
+      "ja": "698〜3648日目\nほかのプログラマーと交流する。\n一緒にプロジェクトをやり、彼らに学ぶ。",
       "size": 13.5,
       "font": "sans",
       "weight": 700,
@@ -111,8 +111,10 @@
     },
     {
       "box": [545, 570, 150, 38],
+      "text": [505, 568, 238, 40],
+      "align": "center",
       "en": "As far as I know, this\nis the easiest way to",
-      "ja": "私の知るかぎり、これが\nいちばん簡単な",
+      "ja": "私の知るかぎり、これが\n「21日でわかるC++」を",
       "size": 13.5,
       "font": "sans",
       "weight": 700,
@@ -121,7 +123,7 @@
     {
       "box": [509, 610, 234, 22],
       "en": "\"Teach Yourself C++ in 21 Days\".",
-      "ja": "「C++を21日で独習する」方法だ。",
+      "ja": "実現するいちばん簡単な方法だ。",
       "size": 13.5,
       "font": "sans",
       "weight": 700,

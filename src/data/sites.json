@@ -44,7 +44,7 @@
     "name": "TurnOff.us",
     "url": "https://turnoff.us/",
     "creator": "Daniel Stori",
-    "status": "irregular",
+    "status": "dormant",
     "latest": { "date": "2025-01-30", "url": "https://turnoff.us/geek/git-submodules/" },
     "checked": "2026-11-15",
     "tier": "translated",
@@ -64,8 +64,8 @@
         "title": "the depressed developer",
         "url": "https://turnoff.us/geek/the-depressed-developer/",
         "why": {
-          "en": "The opening of a series in which a developer meets his own code, and it has grown claws.",
-          "ja": "開発者が自分のコードと対面するシリーズの第一話。コードには爪が生えている。"
+          "en": "The first part of a series: a developer slumped on the floor is woken by his own code, now a spiny monster.",
+          "ja": "シリーズの第一話。床にうずくまる開発者を起こしに来たのは、トゲだらけの怪物になった自分のコードだった。"
         }
       }
     ]
@@ -116,7 +116,7 @@
         "url": "https://www.smbc-comics.com/comic/how-to-spot-a-physicist",
         "why": {
           "en": "A museum detects physicists with one sign: \"Today: Interactive Dark Matter Exhibit!\"",
-          "ja": "物理学者を見つける方法は、看板を一枚立てるだけ。「本日: 体験型ダークマター展示!」"
+          "ja": "博物館で物理学者を見つける方法は、看板を一枚立てるだけ。「本日: 体験型ダークマター展示!」"
         }
       }
     ]
@@ -177,16 +177,16 @@
     },
     "feed": "https://www.monkeyuser.com/index.xml",
     "about": {
-      "en": "Office life of a software team, drawn mostly through a round-headed figure in a blue shirt up against bugs, deadlines, estimates and production. Tight four-panel jokes about the daily work itself.",
-      "ja": "ソフトウェアチームの職場の日常を、おもに青いシャツの丸い頭のキャラクターで描く。相手はバグ、締め切り、見積もり、本番環境。日々の仕事そのものを、引き締まった四コマにしている。"
+      "en": "Office life of a software team, drawn mostly through a round-headed figure in a blue shirt up against bugs, deadlines, estimates and production. Short, tightly paced jokes about the daily work itself.",
+      "ja": "ソフトウェアチームの職場の日常を、おもに青いシャツの丸い頭のキャラクターで描く。相手はバグ、締め切り、見積もり、本番環境。日々の仕事そのものを、短く小気味よいネタにしている。"
     },
     "picks": [
       {
         "title": "// TODO",
         "url": "https://www.monkeyuser.com/2017/todo/",
         "why": {
-          "en": "A TODO left in the code, drawn as a weed that nobody pulls until it has roots.",
-          "ja": "コードに残した TODO を、抜かないうちに根を張ってしまう雑草として描く。"
+          "en": "A TODO marked REMOVE, drawn as a sprout nobody pulls until its roots have broken the ground.",
+          "ja": "「REMOVE」と書かれた TODO を、誰も抜かないうちに根が地面を割ってしまう芽として描く。"
         }
       },
       {

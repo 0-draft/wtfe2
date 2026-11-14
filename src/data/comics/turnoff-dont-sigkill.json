@@ -25,14 +25,14 @@
     {
       "box": [725, 56, 433, 138],
       "en": "Like any process, Bob\nhas his threads, with\nwhom he shares context,\nmemories and love.",
-      "ja": "どのプロセスとも同じく、\nボブにもスレッドたちがいて、\nコンテキストと思い出と愛を\n分かち合っている。",
+      "ja": "どのプロセスもそうであるように、\nボブにもスレッドたちがいて、\nコンテキストと思い出と愛を\n分かち合っている。",
       "size": 26,
       "lineHeight": 1.25
     },
     {
       "box": [639, 598, 438, 249],
       "en": "And like all processes,\ninevitably sometime he\nwill be killed.\n\nWhen we gracefully kill\na process with a soft\nSIGTERM...",
-      "ja": "そして全プロセスと同じく、\nいつか必ず kill される。\n\nやさしい SIGTERM で\nおだやかに kill すると…",
+      "ja": "そして、どのプロセスも\nそうであるように、\nいつか必ず kill される。\n\nやさしい SIGTERM で\nおだやかに kill すると…",
       "size": 28
     },
     {
