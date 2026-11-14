@@ -15,10 +15,10 @@ const groups = [
 ] as const;
 ---
 
-<Base lang={lang} path="shelf/" title={t.shelf} description={t.shelfLede}>
+<Base lang={lang} path="sites/" title={t.sites} description={t.sitesLede}>
   <div class="wrap">
-    <h1 class="page-title">{t.shelf}</h1>
-    <p class="prose lede">{t.shelfLede}</p>
+    <h1 class="page-title">{t.sites}</h1>
+    <p class="prose lede">{t.sitesLede}</p>
     {
       groups.map((g) => (
         <section class="group" aria-labelledby={`g-${g.id}`}>

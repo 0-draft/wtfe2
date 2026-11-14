@@ -2,7 +2,7 @@ import AxeBuilder from "@axe-core/playwright";
 import { expect, type Page, test } from "@playwright/test";
 import { comics } from "./fixtures.ts";
 
-const pages = ["", "shelf/", "about/", ...comics.map((s) => `comics/${s}/`)];
+const pages = ["", "sites/", "about/", ...comics.map((s) => `comics/${s}/`)];
 
 async function noHorizontalScroll(page: Page) {
   const overflow = await page.evaluate(
@@ -106,8 +106,8 @@ for (const slug of comics) {
 for (const url of [
   "",
   "ja/",
-  "shelf/",
-  "ja/shelf/",
+  "sites/",
+  "ja/sites/",
   "about/",
   "comics/turnoff-dont-sigkill/",
   "ja/comics/turnoff-dont-sigkill/",

@@ -32,16 +32,16 @@ export const ui = {
     description:
       "Comics about the strange job of building software, collected from the web. The openly licensed ones are lettered in Japanese; the rest are introduced and linked.",
     navComics: "Comics",
-    navShelf: "Shelf",
+    navSites: "Sites",
     navAbout: "About",
     switchTo: "日本語",
     translated: "Lettered in Japanese",
     translatedLede:
       "Strips published under a Creative Commons license that allows adaptation. Each page shows the original; the Japanese edition swaps the lettering on a cleaned copy of the art.",
-    shelf: "The shelf",
-    shelfLede:
+    sites: "Sites",
+    sitesLede:
       "Places worth following. The ones whose license allows adaptation are lettered here; the others do not allow it, so they are described and linked, and the comics stay on their own sites.",
-    seeShelf: "See the whole shelf",
+    seeSites: "All sites",
     originalTitle: "Original title",
     by: "by",
     published: "Published",
@@ -89,16 +89,16 @@ export const ui = {
     description:
       "ソフトウェアを作るという奇妙な仕事を描いた漫画を、Web から集めて紹介する。改変が許されているものは描き文字を日本語に差し替え、それ以外は紹介してリンクする。",
     navComics: "作品",
-    navShelf: "本棚",
+    navSites: "サイト",
     navAbout: "このサイト",
     switchTo: "English",
     translated: "日本語版",
     translatedLede:
       "改変を認める Creative Commons ライセンスで公開されている作品。描き文字を消した原画の上に日本語を載せている。各ページで原文にも切り替えられる。",
-    shelf: "本棚",
-    shelfLede:
+    sites: "サイト",
+    sitesLede:
       "追いかける価値のあるサイト。ライセンスが改変を認めているものはここで日本語にしている。残りは改変を認めていないので、作品は元のサイトに置いたまま紹介とリンクだけにしている。",
-    seeShelf: "本棚をすべて見る",
+    seeSites: "サイトをすべて見る",
     originalTitle: "原題",
     by: "作",
     published: "公開",

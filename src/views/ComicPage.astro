@@ -37,7 +37,7 @@ description = description.trim();
 <Base lang={lang} path={path} title={title} description={description} image={asset(`thumbs/${comic.slug}.webp`)}>
   <article class="wrap comic">
     <header class="comic__head">
-      <p class="kicker"><a href={href(lang, `shelf/#${site.id}`)}>{comicLabel(comic)}</a></p>
+      <p class="kicker"><a href={href(lang, `sites/#${site.id}`)}>{comicLabel(comic)}</a></p>
       <h1 class="comic__title">{title}</h1>
       {
         ja && (

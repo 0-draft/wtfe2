@@ -33,17 +33,17 @@ const linked = sites.filter((s) => s.tier === "linked");
     </div>
   </section>
 
-  <section class="wrap block" aria-labelledby="shelf">
+  <section class="wrap block" aria-labelledby="sites">
     <div class="section-head">
-      <h2 id="shelf">{t.shelf}</h2>
-      <a href={href(lang, "shelf/")}>{t.seeShelf}</a>
+      <h2 id="sites">{t.sites}</h2>
+      <a href={href(lang, "sites/")}>{t.seeSites}</a>
     </div>
-    <p class="prose lede">{t.shelfLede}</p>
+    <p class="prose lede">{t.sitesLede}</p>
     <ul class="spines">
       {
         linked.map((s) => (
           <li class="spine">
-            <a href={href(lang, `shelf/#${s.id}`)}>
+            <a href={href(lang, `sites/#${s.id}`)}>
               <span class="spine__name">{s.name}</span>
               <span class="spine__by">{inLang(s.creator, lang)}</span>
             </a>

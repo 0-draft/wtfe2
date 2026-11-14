@@ -28,7 +28,7 @@ const ogImage = image ? new URL(image, site).toString() : undefined;
 const repo = "https://github.com/0-draft/wtfe2";
 const nav = [
   { path: "", label: t.navComics, match: (p: string) => p === "" || p.startsWith("comics/") },
-  { path: "shelf/", label: t.navShelf, match: (p: string) => p.startsWith("shelf/") },
+  { path: "sites/", label: t.navSites, match: (p: string) => p.startsWith("sites/") },
   { path: "about/", label: t.navAbout, match: (p: string) => p.startsWith("about/") },
 ];
 ---

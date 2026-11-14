@@ -1,6 +1,6 @@
 <img src="./docs/banner.png" alt="wtfe2 — WTF, Engineer? An xkcd strip shown in the original and with Japanese lettering side by side" width="100%" />
 
-**Comics about the strange job of building software, read in English and Japanese.** Strips whose license allows adaptation get Japanese lettering drawn into the art; the rest of the shelf is introduced with the creator's own reuse terms.
+**Comics about the strange job of building software, read in English and Japanese.** Strips whose license allows adaptation get Japanese lettering drawn into the art; the rest are introduced with the creator's own reuse terms.
 
 [![site](https://img.shields.io/badge/read-the%20comics-c9352a?style=for-the-badge&labelColor=17150f)](https://0-draft.github.io/wtfe2/)
 [![日本語](https://img.shields.io/badge/日本語版-読む-c9352a?style=for-the-badge&labelColor=17150f)](https://0-draft.github.io/wtfe2/ja/)
@@ -27,7 +27,7 @@ Every comic page has:
 - a full transcript in both languages, and xkcd's hover text translated;
 - the credit line the license asks for: original, author, image source and license.
 
-## The shelf
+## The sites
 
 | Site | Creator | License | Here |
 | --- | --- | --- | --- |

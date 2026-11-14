@@ -6,7 +6,7 @@ const comicModules = import.meta.glob<{ default: unknown }>("../data/comics/*.js
 
 const seriesOrder = new Map(SERIES.map((s, i) => [s, i]));
 
-/** All comics, grouped by series in shelf order, newest first within a series (undated last, by number). */
+/** All comics, grouped by series in site order, newest first within a series (undated last, by number). */
 export const comics: Comic[] = Object.values(comicModules)
   .map((m) => Comic.parse(m.default))
   .sort(

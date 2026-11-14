@@ -3,8 +3,8 @@ import { asset, formatDate, href, other, ui } from "../../src/lib/i18n.ts";
 
 describe("href", () => {
   it("prefixes Japanese pages with ja/ and keeps English at the root", () => {
-    expect(href("en", "shelf/")).toBe(`${import.meta.env.BASE_URL.replace(/\/?$/, "/")}shelf/`);
-    expect(href("ja", "shelf/")).toBe(`${import.meta.env.BASE_URL.replace(/\/?$/, "/")}ja/shelf/`);
+    expect(href("en", "sites/")).toBe(`${import.meta.env.BASE_URL.replace(/\/?$/, "/")}sites/`);
+    expect(href("ja", "sites/")).toBe(`${import.meta.env.BASE_URL.replace(/\/?$/, "/")}ja/sites/`);
     expect(href("ja")).toMatch(/\/ja\/$/);
   });
 
