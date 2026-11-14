@@ -19,6 +19,9 @@ interface Props {
 const { comic, lang, variant = "full", withOriginal = false, alt, eager = false } = Astro.props;
 const { width: W, height: H, file } = comic.image;
 const pct = (v: number, of: number) => `${((v / of) * 100).toFixed(4)}%`;
+// Sizes are fitted in one browser; other platforms rasterize the same font a few
+// percent wider. Setting slightly small keeps every box clear everywhere.
+const RASTER_MARGIN = 0.96;
 const lettered = lang === "ja";
 const loading = eager ? "eager" : "lazy";
 
@@ -45,7 +48,7 @@ const src =
             `top:${pct(y, H)}`,
             `width:${pct(w, W)}`,
             `height:${pct(h, H)}`,
-            `font-size:${((r.size / W) * 100).toFixed(4)}cqi`,
+            `font-size:${((r.size / W) * 100 * RASTER_MARGIN).toFixed(4)}cqi`,
             `line-height:${r.lineHeight}`,
           ].join(";");
           return (
