@@ -89,16 +89,16 @@ export const ui = {
     description:
       "ソフトウェアを作るという奇妙な仕事を描いた漫画を、Web から集めて紹介する。改変が許されているものは描き文字を日本語に差し替え、それ以外は紹介してリンクする。",
     navComics: "作品",
-    navSites: "サイト",
-    navAbout: "このサイト",
+    navSites: "漫画サイト",
+    navAbout: "wtfe2 について",
     switchTo: "English",
     translated: "日本語版",
     translatedLede:
       "改変を認める Creative Commons ライセンスで公開されている作品。描き文字を消した原画の上に日本語を載せている。各ページで原文にも切り替えられる。",
-    sites: "サイト",
+    sites: "漫画サイト",
     sitesLede:
       "追いかける価値のあるサイト。ライセンスが改変を認めているものはここで日本語にしている。残りは改変を認めていないので、作品は元のサイトに置いたまま紹介とリンクだけにしている。",
-    seeSites: "サイトをすべて見る",
+    seeSites: "漫画サイトをすべて見る",
     originalTitle: "原題",
     by: "作",
     published: "公開",
