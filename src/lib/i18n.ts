@@ -27,7 +27,7 @@ export function formatDate(iso: string, lang: Lang): string {
 
 export const ui = {
   en: {
-    siteName: "wtfe2",
+    siteName: "wtfe²",
     tagline: "WTF, Engineer?",
     description:
       "Comics about the strange job of building software, collected from the web. The openly licensed ones are lettered in Japanese; the rest are explained in our own words, each with what to take away from it.",
@@ -66,9 +66,10 @@ export const ui = {
     creditOriginal: "Original",
     creditImage: "Image file",
     creditFirst: "First published at",
+    adaptedBy: "Japanese lettering by wtfe²",
     offline: "offline",
     creditModified:
-      "The English page shows the original image unmodified. The Japanese page shows an adaptation by wtfe2: the lettering was erased from the art and replaced with a Japanese translation. The adaptation is shared under the same license as the original.",
+      "The English page shows the original image unmodified. The Japanese page shows an adaptation by wtfe²: the lettering was erased from the art and replaced with a Japanese translation. The adaptation is shared under the same license as the original.",
     prev: "Previous",
     next: "Next",
     status: { active: "Active", irregular: "Irregular", dormant: "Quiet", ended: "Ended" },
@@ -81,7 +82,7 @@ export const ui = {
     picks: "Start with",
     readOn: "Read on the original site",
     comicsHere: "On this site",
-    aboutTitle: "About wtfe2",
+    aboutTitle: "About wtfe²",
     footerContent:
       "Site text: CC BY-NC-SA 4.0. Comics and their translations: their creators' licenses, shown on each comic's page.",
     footerCode: "Code: MIT.",
@@ -93,13 +94,13 @@ export const ui = {
     skip: "Skip to content",
   },
   ja: {
-    siteName: "wtfe2",
+    siteName: "wtfe²",
     tagline: "WTF, Engineer?",
     description:
       "ソフトウェアを作るという奇妙な仕事を描いた漫画を、Web から集めて紹介する。改変が許されているものは描き文字を日本語に差し替え、それ以外は自分たちの言葉で解説し、そこから学べることを添える。",
     navComics: "作品",
     navSites: "漫画サイト",
-    navAbout: "wtfe2 について",
+    navAbout: "wtfe² について",
     switchTo: "English",
     translated: "日本語版",
     translatedLede:
@@ -132,9 +133,10 @@ export const ui = {
     creditOriginal: "原作",
     creditImage: "画像ファイル",
     creditFirst: "初出",
+    adaptedBy: "日本語版: wtfe²",
     offline: "現在は閲覧不可",
     creditModified:
-      "英語版のページは原画をそのまま表示している。日本語版のページは wtfe2 による翻案で、原画から描き文字を消し、日本語訳に差し替えている。翻案は原作と同じライセンスで公開する。",
+      "英語版のページは原画をそのまま表示している。日本語版のページは wtfe² による翻案で、原画から描き文字を消し、日本語訳に差し替えている。翻案は原作と同じライセンスで公開する。",
     prev: "前へ",
     next: "次へ",
     status: { active: "更新中", irregular: "不定期", dormant: "休止気味", ended: "終了" },
@@ -147,7 +149,7 @@ export const ui = {
     picks: "まずはこれ",
     readOn: "元のサイトで読む",
     comicsHere: "このサイトの日本語版",
-    aboutTitle: "wtfe2 について",
+    aboutTitle: "wtfe² について",
     footerContent: "サイトの文章: CC BY-NC-SA 4.0。漫画とその翻訳: 各作品のライセンスに従う (各作品のページに記載)。",
     footerCode: "コード: MIT。",
     footerSource: "GitHub のソース",

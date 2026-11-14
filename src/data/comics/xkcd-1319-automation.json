@@ -1,0 +1,158 @@
+{
+  "slug": "xkcd-1319-automation",
+  "series": "xkcd",
+  "number": 1319,
+  "title": "Automation",
+  "titleJa": "自動化",
+  "published": "2014-01-20",
+  "url": "https://xkcd.com/1319/",
+  "imageSource": "https://imgs.xkcd.com/comics/automation_2x.png",
+  "author": "Randall Munroe",
+  "license": "CC-BY-NC-2.5",
+  "image": {
+    "file": "xkcd-1319-automation.png",
+    "width": 807,
+    "height": 817,
+    "displayWidth": 640
+  },
+  "titleText": {
+    "en": "'Automating' comes from the roots 'auto-' meaning 'self-', and 'mating', meaning 'screwing'.",
+    "ja": "「automating (自動化)」は、「自分」を意味する接頭辞「auto-」と、「やらかす」を意味する「mating」からできている。"
+  },
+  "takeaway": {
+    "en": "Count the cost of building and maintaining the automation, not just writing it. Automate when the task is stable and well understood, and keep doing it by hand until then.",
+    "ja": "自動化のコストは、書く手間だけでなく、作り込みと保守まで含めて数える。作業が安定してよく分かってから自動化し、それまでは手でやり続けること。"
+  },
+  "note": {
+    "en": "The theory curve has automation paying for itself and leaving free time. The reality curve never comes down: writing code turns into debugging, rethinking and ongoing development, and the original task stops getting done. It pairs naturally with \"Is It Worth the Time?\", which does the arithmetic that this one skips.",
+    "ja": "理論のグラフでは、自動化が元を取って自由時間が生まれる。現実のグラフは下がらない。コードを書くことはデバッグに、考え直しに、終わらない開発に変わり、本来の作業は手付かずになる。この漫画が省いた計算をしてくれる「その時間、元は取れる?」と並べて読みたい。"
+  },
+  "related": [
+    {
+      "label": {
+        "en": "Hammurabi: Hofstadter's Law",
+        "ja": "Hammurabi: ホフスタッターの法則"
+      },
+      "url": "https://kanywst.github.io/hammurabi/laws/hofstadters-law/",
+      "urlJa": "https://kanywst.github.io/hammurabi/ja/laws/hofstadters-law/"
+    }
+  ],
+  "regions": [
+    {
+      "box": [88, 3, 651, 82],
+      "en": "\"I SPEND A LOT OF TIME ON THIS TASK.\nI SHOULD WRITE A PROGRAM AUTOMATING IT!\"",
+      "ja": "「この作業にずいぶん時間を取られている。\n自動化するプログラムを書くべきだ!」",
+      "size": 31,
+      "align": "center"
+    },
+    {
+      "box": [352, 105, 131, 41],
+      "en": "THEORY:",
+      "ja": "理論:",
+      "size": 31,
+      "align": "center"
+    },
+    {
+      "box": [139, 196, 108, 62],
+      "en": "WRITING\nCODE",
+      "ja": "コードを\n書く",
+      "size": 25,
+      "align": "center",
+      "lineHeight": 1.2
+    },
+    {
+      "box": [14, 267, 85, 34],
+      "en": "WORK",
+      "ja": "作業量",
+      "size": 25
+    },
+    {
+      "box": [121, 294, 199, 74],
+      "en": "WORK ON\nORIGINAL TASK",
+      "ja": "本来の作業に\nかかる手間",
+      "size": 27,
+      "lineHeight": 1.2
+    },
+    {
+      "box": [384, 279, 173, 70],
+      "en": "AUTOMATION\nTAKES OVER",
+      "ja": "自動化が\n引き継ぐ",
+      "size": 27,
+      "lineHeight": 1.2
+    },
+    {
+      "box": [633, 248, 77, 66],
+      "en": "FREE\nTIME",
+      "ja": "自由\n時間",
+      "size": 27,
+      "align": "center",
+      "lineHeight": 1.2
+    },
+    {
+      "box": [293, 384, 73, 39],
+      "en": "TIME",
+      "ja": "時間",
+      "size": 27,
+      "align": "center"
+    },
+    {
+      "box": [360, 468, 126, 38],
+      "en": "REALITY:",
+      "ja": "現実:",
+      "size": 28.5,
+      "align": "center"
+    },
+    {
+      "box": [292, 532, 157, 38],
+      "en": "DEBUGGING",
+      "ja": "デバッグ",
+      "size": 27,
+      "align": "center"
+    },
+    {
+      "box": [153, 574, 117, 70],
+      "en": "WRITING\nCODE",
+      "ja": "コードを\n書く",
+      "size": 25,
+      "align": "center",
+      "lineHeight": 1.2
+    },
+    {
+      "box": [327, 629, 166, 41],
+      "en": "RETHINKING",
+      "ja": "考え直し",
+      "size": 27,
+      "align": "center"
+    },
+    {
+      "box": [579, 636, 211, 105],
+      "en": "NO TIME FOR\nORIGINAL TASK\nANYMORE",
+      "ja": "本来の作業に\n割く時間は\nもうない",
+      "size": 27,
+      "align": "center",
+      "lineHeight": 1.2
+    },
+    {
+      "box": [13, 650, 85, 35],
+      "en": "WORK",
+      "ja": "作業量",
+      "size": 25
+    },
+    {
+      "box": [293, 764, 73, 39],
+      "en": "TIME",
+      "ja": "時間",
+      "size": 27,
+      "align": "center"
+    },
+    {
+      "box": [481, 499, 306, 104],
+      "text": [505, 512, 270, 42],
+      "en": "ONGOING DEVELOPMENT",
+      "ja": "開発は続く",
+      "size": 27,
+      "rotate": -15,
+      "align": "center"
+    }
+  ]
+}

@@ -1,10 +1,11 @@
-<img src="./docs/banner.png" alt="wtfe2 — WTF, Engineer? xkcd の作品を原文と日本語版で並べたもの" width="100%" />
+<img src="./docs/banner.png" alt="wtfe² — WTF, Engineer? xkcd の作品を原文と日本語版で並べたもの" width="100%" />
 
-**ソフトウェアを作るという奇妙な仕事を描いた漫画を、英語と日本語で読むサイト。** ライセンスが改変を認めている作品は、絵の中の描き文字を日本語に差し替える。それ以外の作品は、作者自身が定めた利用条件の範囲で紹介する。
+**ソフトウェアを作るという奇妙な仕事を描いた漫画を、英語と日本語で読むサイト。** ライセンスが改変か翻訳を認めている作品は、絵の中の描き文字を日本語に差し替える。それ以外の作品は、自分たちの言葉で筋書きを書いて解説する。どのページも、先頭に「ここから学べること」を置く。名前の ² は二か国語の意味。
 
 [![site](https://img.shields.io/badge/read-the%20comics-c9352a?style=for-the-badge&labelColor=17150f)](https://0-draft.github.io/wtfe2/)
 [![日本語](https://img.shields.io/badge/日本語版-読む-c9352a?style=for-the-badge&labelColor=17150f)](https://0-draft.github.io/wtfe2/ja/)
-[![comics](https://img.shields.io/badge/lettered-11%20strips-ffd94a?style=for-the-badge&labelColor=17150f)](https://0-draft.github.io/wtfe2/ja/#translated)
+[![comics](https://img.shields.io/badge/lettered-35%20strips-ffd94a?style=for-the-badge&labelColor=17150f)](https://0-draft.github.io/wtfe2/ja/#translated)
+[![explained](https://img.shields.io/badge/explained-12%20strips-ffd94a?style=for-the-badge&labelColor=17150f)](https://0-draft.github.io/wtfe2/ja/#explained)
 [![CI](https://img.shields.io/github/actions/workflow/status/0-draft/wtfe2/ci.yml?branch=main&style=for-the-badge&label=CI&labelColor=17150f)](https://github.com/0-draft/wtfe2/actions/workflows/ci.yml)
 [![license](https://img.shields.io/badge/code-MIT-5c5f64?style=for-the-badge&labelColor=17150f)](./LICENSE)
 
@@ -14,7 +15,7 @@
 
 ## なにをするサイトか
 
-「プログラマー向けの面白い漫画」のまとめはたいていリンクを並べただけで、英語を読まない人には良い作品が届かない。wtfe2 は、改変が許されている作品を翻訳漫画と同じやり方で日本語にする。絵から英語の描き文字を消し、そこに日本語を入れる。
+「プログラマー向けの面白い漫画」のまとめはたいていリンクを並べただけで、英語を読まない人には良い作品が届かない。wtfe² は、改変が許されている作品を翻訳漫画と同じやり方で日本語にする。絵から英語の描き文字を消し、そこに日本語を入れる。
 
 <img src="./docs/compare-turnoff-git-submodules.png" alt="TurnOff.us「git submodules adoption flow」。左が原画、右が日本語版" width="100%" />
 
@@ -23,6 +24,7 @@
 各作品のページに載せているもの:
 
 - 作品そのもの。英語版のページでは原画、日本語版のページでは日本語の描き文字で、スイッチで見比べられる
+- 先頭に「ここから学べること」。明日から何を変えるか
 - どこが刺さるかの短い解説。作品が実はエンジニアリングの法則を描いている場合は [Hammurabi](https://kanywst.github.io/hammurabi/ja/) へのリンク
 - 英日両方の書き起こしと、xkcd のホバーテキストの翻訳
 - ライセンスが求めるクレジット (原作、作者、画像の出典、ライセンス)
@@ -33,14 +35,16 @@
 | --- | --- | --- | --- |
 | [xkcd](https://xkcd.com/) | Randall Munroe | CC BY-NC 2.5 | 日本語版あり |
 | [TurnOff.us](https://turnoff.us/) | Daniel Stori | CC BY-NC-SA 4.0 | 日本語版あり |
+| [Browserling Comics](https://comic.browserling.com/) | Browserling | CC BY-NC 4.0 | 日本語版あり |
+| [Bonkers World](https://bonkersworld.net/) | Manu Cornet | CC BY-NC-ND 3.0 (作者が翻訳を許可) | 日本語版あり |
 | [Abstruse Goose](https://github.com/s-macke/Abstruse-Goose-Archive) | 匿名 | CC BY-NC 3.0 US | 日本語版あり |
-| [SMBC](https://www.smbc-comics.com/) | Zach Weinersmith | 記載なし | 紹介 |
-| [Existential Comics](https://existentialcomics.com/) | Corey Mohler | 記載なし | 紹介 |
-| [MonkeyUser](https://www.monkeyuser.com/) | 記載なし | 全権利留保 | 紹介 |
-| [The Daily WTF](https://thedailywtf.com/) | Alex Papadimoulis、Remy Porter | 著作権は Inedo | 紹介 |
-| [CommitStrip](https://www.commitstrip.com/en/) | Etienne Issartial、Thomas Gx | 非商用ならクレジット付きで利用可 | 紹介 |
-| [The Oatmeal](https://theoatmeal.com/) | Matthew Inman | 著作権あり | 紹介 |
-| [PHD Comics](https://phdcomics.com/) | Jorge Cham | 転載は許可制 | 紹介 |
+| [SMBC](https://www.smbc-comics.com/) | Zach Weinersmith | 記載なし | 解説あり |
+| [Existential Comics](https://existentialcomics.com/) | Corey Mohler | 記載なし | 解説あり |
+| [MonkeyUser](https://www.monkeyuser.com/) | 記載なし | 全権利留保 | 解説あり |
+| [The Daily WTF](https://thedailywtf.com/) | Alex Papadimoulis、Remy Porter | 著作権は Inedo | 解説あり |
+| [CommitStrip](https://www.commitstrip.com/en/) | Etienne Issartial、Thomas Gx | 非商用ならクレジット付きで利用可 | 解説あり |
+| [The Oatmeal](https://theoatmeal.com/) | Matthew Inman | 著作権あり | 解説あり |
+| [PHD Comics](https://phdcomics.com/) | Jorge Cham | 転載は許可制 | 解説あり |
 
 翻案している作品はどれも非商用に限って利用が許されているので、広告もスポンサーもアフィリエイトリンクも置かない。
 

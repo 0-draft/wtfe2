@@ -1,0 +1,112 @@
+{
+  "slug": "xkcd-353-python",
+  "series": "xkcd",
+  "number": 353,
+  "title": "Python",
+  "titleJa": "Python",
+  "published": "2007-12-05",
+  "url": "https://xkcd.com/353/",
+  "imageSource": "https://imgs.xkcd.com/comics/python.png",
+  "author": "Randall Munroe",
+  "license": "CC-BY-NC-2.5",
+  "image": {
+    "file": "xkcd-353-python.png",
+    "width": 518,
+    "height": 588,
+    "displayWidth": 700
+  },
+  "titleText": {
+    "en": "I wrote 20 short programs in Python yesterday.  It was wonderful.  Perl, I'm leaving you.",
+    "ja": "昨日、Python で短いプログラムを 20 本書いた。最高だった。Perl よ、お別れだ。"
+  },
+  "takeaway": {
+    "en": "A language that makes the first program easy wins hearts fast. Before switching for the high, check what you are giving up and what the ecosystem gives you.",
+    "ja": "最初の一本が簡単に書ける言語は、あっという間に心をつかむ。その高揚感で乗り換える前に、何を手放し、そのエコシステムが何をくれるのかを確かめること。"
+  },
+  "note": {
+    "en": "Python took the joke literally: `import antigravity` is a real module in the standard library, and importing it opens this comic in a web browser. The strip is also a time capsule. `print \"Hello, world!\"` is Python 2; in Python 3, print is a function and needs parentheses.",
+    "ja": "Python はこのジョークを文字どおりに実装した。`import antigravity` は標準ライブラリに実在するモジュールで、import するとブラウザでこの漫画が開く。この作品は時代の記録でもある。`print \"Hello, world!\"` は Python 2 の書き方で、Python 3 では print は関数なので括弧が要る。"
+  },
+  "regions": [
+    {
+      "box": [352, 78, 67, 23],
+      "en": "PYTHON!",
+      "ja": "Python!",
+      "size": 15.5,
+      "keep": ["Python"]
+    },
+    {
+      "box": [118, 157, 115, 42],
+      "en": "YOU'RE FLYING!\nHOW?",
+      "ja": "飛んでる!\nどうやって?",
+      "size": 17.0,
+      "lineHeight": 1.2
+    },
+    {
+      "box": [6, 426, 145, 80],
+      "en": "I LEARNED IT LAST\nNIGHT! EVERYTHING\nIS SO SIMPLE!",
+      "ja": "ゆうべ覚えたんだ!\n何もかも\nすごく簡単!",
+      "size": 15.5,
+      "lineHeight": 1.25
+    },
+    {
+      "box": [7, 506, 148, 52],
+      "en": "HELLO WORLD IS JUST\nprint \"Hello, world!\"",
+      "ja": "Hello World も、ただの\nprint \"Hello, world!\"",
+      "size": 12.0,
+      "lineHeight": 1.25,
+      "keep": ["Hello World", "print \"Hello, world!\""]
+    },
+    {
+      "box": [179, 339, 130, 64],
+      "en": "I DUNNO...\nDYNAMIC TYPING?\nWHITESPACE?",
+      "ja": "どうかな……\n動的型付け?\nインデント?",
+      "size": 17.0,
+      "lineHeight": 1.2
+    },
+    {
+      "box": [201, 407, 113, 124],
+      "en": "COME JOIN US!\nPROGRAMMING\nIS FUN AGAIN!\nIT'S A WHOLE\nNEW WORLD\nUP HERE!",
+      "ja": "おいでよ!\nプログラミングが\nまた楽しく\nなったんだ!\nここは\nまるで新世界!",
+      "size": 13.0,
+      "lineHeight": 1.2
+    },
+    {
+      "box": [224, 542, 90, 40],
+      "en": "BUT HOW ARE\nYOU FLYING?",
+      "ja": "で、どうやって\n飛んでるの?",
+      "size": 12,
+      "lineHeight": 1.2
+    },
+    {
+      "box": [389, 351, 109, 50],
+      "en": "I JUST TYPED\nimport antigravity",
+      "ja": "打ち込んだだけ\nimport antigravity",
+      "size": 12,
+      "lineHeight": 1.25,
+      "text": [370, 349, 140, 52],
+      "keep": ["import antigravity"]
+    },
+    {
+      "box": [342, 402, 78, 24],
+      "en": "THAT'S IT?",
+      "ja": "それだけ?",
+      "size": 14.0
+    },
+    {
+      "box": [374, 421, 137, 95],
+      "en": "... I ALSO SAMPLED\nEVERYTHING IN THE\nMEDICINE CABINET\nFOR COMPARISON.",
+      "ja": "……比較のために、\n薬箱の中身も\nひととおり\n試してみたけど。",
+      "size": 15.5,
+      "lineHeight": 1.2
+    },
+    {
+      "box": [380, 533, 128, 45],
+      "en": "BUT I THINK THIS\nIS THE PYTHON.",
+      "ja": "でも効いたのは\nPython だと思う。",
+      "size": 12.5,
+      "lineHeight": 1.2,
+      "keep": ["Python"]
+    }
+  ]
+}

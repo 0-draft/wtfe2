@@ -1,0 +1,36 @@
+{
+  "slug": "browserling-20-vim",
+  "series": "browserling",
+  "number": 20,
+  "title": "VIM",
+  "titleJa": "VIM",
+  "url": "https://comic.browserling.com/20",
+  "imageSource": "https://comic.browserling.com/vim.png",
+  "author": "Browserling",
+  "license": "CC-BY-NC-4.0",
+  "image": {
+    "file": "browserling-20-vim.png",
+    "width": 500,
+    "height": 500,
+    "displayWidth": 560
+  },
+  "takeaway": {
+    "en": "A tool is only as easy as its way out. Whatever you build or adopt, make the escape hatch obvious: how to save, how to quit, how to undo, written where a newcomer will look.",
+    "ja": "道具の使いやすさは、抜け出し方の分かりやすさで決まる。作るものでも導入するものでも、逃げ道を見える場所に用意しておくこと。保存の仕方、終了の仕方、元に戻し方を、初めての人が探す場所に書いておく。"
+  },
+  "note": {
+    "en": "\"How do I exit Vim?\" is one of the most famous beginner questions in programming. The screen shows the attempt: a scatter of Ctrl sequences, quit, exit and :w!!!ZZq, which is as random a string as anyone could want.",
+    "ja": "「Vim の終了の仕方がわからない」は、プログラミング初心者の質問でもっとも有名なものの一つだ。画面には奮闘の跡が残っている。Ctrl の連打、quit、exit、そして :w!!!ZZq。これ以上ないほどランダムな文字列だ。"
+  },
+  "regions": [
+    {
+      "box": [18, 372, 465, 111],
+      "fill": "#bebdb9",
+      "en": "How do you generate a random string?\nPut a web designer in front of VIM\nand tell him to save and exit.",
+      "ja": "ランダムな文字列を作るには?\nWeb デザイナーを Vim の前に座らせて、\n保存して終了してと頼めばいい。",
+      "size": 21,
+      "align": "center",
+      "lineHeight": 1.3
+    }
+  ]
+}

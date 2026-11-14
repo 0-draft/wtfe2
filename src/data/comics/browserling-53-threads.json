@@ -1,0 +1,67 @@
+{
+  "slug": "browserling-53-threads",
+  "series": "browserling",
+  "number": 53,
+  "title": "Threads",
+  "titleJa": "スレッド",
+  "url": "https://comic.browserling.com/53",
+  "imageSource": "https://comic.browserling.com/threads.png",
+  "author": "Browserling",
+  "license": "CC-BY-NC-4.0",
+  "image": {
+    "file": "browserling-53-threads.png",
+    "width": 500,
+    "height": 500,
+    "displayWidth": 560
+  },
+  "takeaway": {
+    "en": "When two things can happen in either order, assume they will happen in the wrong one. Make the order explicit with a lock, a queue or a happens-before guarantee, and test with timing you do not control.",
+    "ja": "二つの処理がどちらの順番でも起こりうるなら、間違った順番で起こると想定すること。ロック、キュー、happens-before の保証で順序を明示し、自分では制御できないタイミングでテストすること。"
+  },
+  "note": {
+    "en": "A knock-knock joke told by two threads: the answer \"Race condition\" arrives before the question \"Who's there?\". Knock-knock jokes always open with \"Knock! Knock!\", answered by \"Who's there?\"; here the punchline cannot wait its turn.",
+    "ja": "二つのスレッドが語るノックノック・ジョーク。「どちらさま?」と聞かれる前に、答えの「競合状態です」が届いてしまう。ノックノック・ジョークは必ず「コンコン」「どちらさま?」の順で進むのが決まりだが、ここではオチが順番を待てない。"
+  },
+  "regions": [
+    {
+      "box": [148, 113, 84, 47],
+      "en": "Race\nCondition",
+      "ja": "競合\n状態です",
+      "size": 19,
+      "align": "center",
+      "lineHeight": 1.15
+    },
+    {
+      "box": [353, 76, 60, 22],
+      "fill": "#f9ed32",
+      "en": "Who's",
+      "ja": "どちら",
+      "size": 18,
+      "align": "center",
+      "lineHeight": 1.1
+    },
+    {
+      "box": [366, 94, 76, 26],
+      "fill": "#f9ed32",
+      "en": "There?",
+      "ja": "さま?",
+      "size": 21,
+      "align": "center",
+      "lineHeight": 1.1
+    },
+    {
+      "box": [20, 30, 165, 100],
+      "en": "KNOCK!\nKNOCK!",
+      "ja": "コン\nコン!",
+      "size": 22,
+      "align": "center",
+      "color": "#ffffff",
+      "weight": 700,
+      "rotate": -17,
+      "lineHeight": 1.1,
+      "fill": "#10276f",
+      "text": [34, 46, 124, 58],
+      "fillHull": true
+    }
+  ]
+}

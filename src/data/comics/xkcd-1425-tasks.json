@@ -1,0 +1,66 @@
+{
+  "slug": "xkcd-1425-tasks",
+  "series": "xkcd",
+  "number": 1425,
+  "title": "Tasks",
+  "titleJa": "タスク",
+  "published": "2014-09-24",
+  "url": "https://xkcd.com/1425/",
+  "imageSource": "https://imgs.xkcd.com/comics/tasks_2x.png",
+  "author": "Randall Munroe",
+  "license": "CC-BY-NC-2.5",
+  "image": {
+    "file": "xkcd-1425-tasks.png",
+    "width": 533,
+    "height": 895,
+    "displayWidth": 480
+  },
+  "titleText": {
+    "en": "In the 60s, Marvin Minsky assigned a couple of undergrads to spend the summer programming a computer to use a camera to identify objects in a scene. He figured they'd have the problem solved by the end of the summer. Half a century later, we're still working on it.",
+    "ja": "1960年代、Marvin Minsky は学部生二人に、カメラの画像に写っている物体をコンピューターに識別させるプログラムを夏休みのあいだに書くよう命じた。夏が終わるころには解決していると思っていたのだ。半世紀たったいまも、私たちはまだそれに取り組んでいる。"
+  },
+  "takeaway": {
+    "en": "Before estimating a feature, ask which part is a lookup and which part is an open research problem. Say so out loud, because the two sound equally simple to anyone outside the field.",
+    "ja": "機能の見積もりを出す前に、どの部分がただの照会で、どの部分が未解決の研究課題なのかを見極める。そしてそれを口に出して伝えること。分野の外から見ると、どちらも同じくらい簡単に聞こえる。"
+  },
+  "note": {
+    "en": "Two requests in one sentence: one is a database lookup, the other was an open research problem when the strip appeared in 2014. Deep learning has since made recognizing birds in photos routine, which only proves the point: the boundary moves, and it is still invisible from the outside.",
+    "ja": "一つの文に二つの依頼が入っている。片方はデータベースの照会で、もう片方は、この漫画が出た 2014 年の時点では未解決の研究課題だった。その後ディープラーニングで写真の鳥の認識は当たり前になったが、それもこの漫画の主張を裏付けている。境界は動き続け、しかも外からは見えない。"
+  },
+  "regions": [
+    {
+      "box": [27, 24, 430, 116],
+      "en": "WHEN A USER TAKES A PHOTO,\nTHE APP SHOULD CHECK WHETHER\nTHEY'RE IN A NATIONAL PARK...",
+      "ja": "ユーザーが写真を撮ったら、\nアプリでその人が\n国立公園にいるか確認して…",
+      "size": 29
+    },
+    {
+      "box": [193, 155, 304, 76],
+      "en": "SURE, EASY GIS LOOKUP.\nGIMME A FEW HOURS.",
+      "ja": "いいよ、GIS で一発。\n数時間ちょうだい。",
+      "size": 27,
+      "align": "right"
+    },
+    {
+      "box": [24, 251, 326, 73],
+      "en": "...AND CHECK WHETHER\nTHE PHOTO IS OF A BIRD.",
+      "ja": "…あと、その写真が\n鳥かどうかも判定して。",
+      "size": 27.5
+    },
+    {
+      "box": [188, 345, 314, 74],
+      "en": "I'LL NEED A RESEARCH\nTEAM AND FIVE YEARS.",
+      "ja": "研究チームと\n5年ちょうだい。",
+      "size": 27.5,
+      "align": "right"
+    },
+    {
+      "box": [16, 776, 503, 116],
+      "en": "IN CS, IT CAN BE HARD TO EXPLAIN\nTHE DIFFERENCE BETWEEN THE EASY\nAND THE VIRTUALLY IMPOSSIBLE.",
+      "ja": "コンピューターサイエンスでは、\n簡単なことと事実上不可能なことの\n違いを説明するのが難しい。",
+      "size": 28,
+      "align": "center",
+      "lineHeight": 1.25
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "slug": "xkcd-2054-data-pipeline",
+  "series": "xkcd",
+  "number": 2054,
+  "title": "Data Pipeline",
+  "titleJa": "データパイプライン",
+  "published": "2018-10-03",
+  "url": "https://xkcd.com/2054/",
+  "imageSource": "https://imgs.xkcd.com/comics/data_pipeline_2x.png",
+  "author": "Randall Munroe",
+  "license": "CC-BY-NC-2.5",
+  "image": {
+    "file": "xkcd-2054-data-pipeline.png",
+    "width": 1480,
+    "height": 532,
+    "displayWidth": 980
+  },
+  "titleText": {
+    "en": "\"Is the pipeline literally running from your laptop?\" \"Don't be silly, my laptop disconnects far too often to host a service we rely on. It's running on my phone.\"",
+    "ja": "「そのパイプライン、まさかきみのノートPCで動いてるの?」「まさか。ノートPCは接続がしょっちゅう切れるから、みんなが頼るサービスを載せるわけないだろ。スマホで動いてるよ」"
+  },
+  "takeaway": {
+    "en": "A pipeline people rely on needs an owner, monitoring and a place to run that is not someone's laptop. Before calling it automated, decide what happens when the input does something weird.",
+    "ja": "みんなが頼るパイプラインには、担当者と監視と、誰かのノートPC以外の実行場所が要る。「自動化した」と言う前に、入力が変なことをしたときにどうなるかを決めておくこと。"
+  },
+  "note": {
+    "en": "The middle panel is the honest one: a silent beat while the pipeline falls over. Most data pipelines start as a chain of scripts that worked once, and the hover text finds an even worse place to run them than a laptop.",
+    "ja": "正直なのは真ん中のコマで、パイプラインが崩れていくあいだの無言の一拍だ。たいていのデータパイプラインは、一度うまく動いたスクリプトの連なりとして始まる。ホバーテキストは、ノートPCよりさらにひどい実行場所を見つけてくる。"
+  },
+  "regions": [
+    {
+      "box": [14, 16, 326, 186],
+      "en": "CHECK IT OUT—I MADE A\nFULLY AUTOMATED DATA\nPIPELINE THAT COLLECTS\nAND PROCESSES ALL THE\nINFORMATION WE NEED.",
+      "ja": "見てよ。必要な情報を\n全部集めて処理する、\n完全自動のデータ\nパイプラインを\n作ったんだ。",
+      "size": 29,
+      "lineHeight": 1.25
+    },
+    {
+      "box": [392, 16, 384, 185],
+      "en": "IS IT A GIANT HOUSE OF CARDS\nBUILT FROM RANDOM SCRIPTS\nTHAT WILL ALL COMPLETELY\nCOLLAPSE THE MOMENT ANY\nINPUT DOES ANYTHING WEIRD?",
+      "ja": "それって、寄せ集めの\nスクリプトで組んだ\n巨大なトランプの塔で、\n入力がちょっと変なだけで\n全部崩れるやつ?",
+      "size": 28.5,
+      "lineHeight": 1.25
+    },
+    {
+      "box": [1094, 14, 252, 36],
+      "en": "IT... MIGHT NOT BE.",
+      "ja": "そう…じゃない、かもね。",
+      "size": 25
+    },
+    {
+      "box": [1132, 72, 329, 36],
+      "en": "I GUESS THAT'S SOMETH—",
+      "ja": "まあ、それなら一応—",
+      "size": 27
+    },
+    {
+      "box": [1093, 129, 249, 112],
+      "en": "WHOOPS, JUST\nCOLLAPSED. HANG\nON, I CAN PATCH IT.",
+      "ja": "おっと、いま崩れた。\n待って、パッチ\n当てるから。",
+      "size": 25
+    }
+  ]
+}

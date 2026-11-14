@@ -1,0 +1,65 @@
+{
+  "slug": "turnoff-the-depressed-developer",
+  "series": "turnoff",
+  "title": "the depressed developer",
+  "titleJa": "落ち込んだ開発者",
+  "published": "2016-11-27",
+  "url": "https://turnoff.us/geek/the-depressed-developer/",
+  "imageSource": "https://turnoff.us/image/en/depressed-developer.png",
+  "author": "Daniel Stori",
+  "license": "CC-BY-NC-SA-4.0",
+  "image": {
+    "file": "turnoff-the-depressed-developer.png",
+    "width": 1200,
+    "height": 623,
+    "displayWidth": 900
+  },
+  "takeaway": {
+    "en": "An exception nobody handles does not go away; it grows into everything that comes after it. Catch it where you can act on it, log it where someone will read it, and fail loudly everywhere else.",
+    "ja": "誰も処理しない例外は消えない。その後のすべてに育っていく。対処できる場所で捕まえ、誰かが読む場所に記録し、それ以外の場所では派手に失敗させること。"
+  },
+  "note": {
+    "en": "The first part of a series, ending on \"to be continued...\". A developer curled up on the floor is woken by his own code, now a spiny grey monster, and its origin story starts with one unhandled exception.",
+    "ja": "シリーズの第一話で、最後は「つづく…」で終わる。床にうずくまる開発者を起こしに来たのは、トゲだらけの灰色の怪物になった自分のコードで、その誕生秘話は一つの未処理の例外から始まる。"
+  },
+  "regions": [
+    {
+      "box": [53, 146, 216, 162],
+      "en": "Hello my\nfriend. Time\nto wake up!\nWe have to\ntalk.",
+      "ja": "やあ、友よ。\n起きる時間だ!\n話が\nあるんだ。",
+      "size": 27
+    },
+    {
+      "box": [335, 38, 211, 100],
+      "en": "But... What?\nWho the hell\nare you?",
+      "ja": "え……なに?\nいったい\nお前は誰だ?",
+      "size": 24
+    },
+    {
+      "box": [337, 215, 228, 98],
+      "en": "What do you\nmean? How did\nit happen?",
+      "ja": "どういうこと?\nどうして\nこうなった?",
+      "size": 24
+    },
+    {
+      "box": [529, 127, 163, 69],
+      "text": [529, 127, 150, 62],
+      "en": "I am your\ncode.",
+      "ja": "俺はお前の\nコードだ。",
+      "size": 23
+    },
+    {
+      "box": [965, 51, 197, 163],
+      "en": "Well, it\nall started\nwith an\nunhandled\nexception...",
+      "ja": "そう、\nすべては\n未処理の例外\nから始まった…",
+      "size": 26
+    },
+    {
+      "box": [991, 539, 179, 26],
+      "en": "to be continued...",
+      "ja": "つづく…",
+      "size": 17,
+      "align": "center"
+    }
+  ]
+}

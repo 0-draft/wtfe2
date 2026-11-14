@@ -50,6 +50,8 @@ const src =
             `height:${pct(h, H)}`,
             `font-size:${((r.size / W) * 100 * RASTER_MARGIN).toFixed(4)}cqi`,
             `line-height:${r.lineHeight}`,
+            ...(r.color ? [`color:${r.color}`] : []),
+            ...(r.rotate ? [`transform:rotate(${r.rotate}deg)`] : []),
           ].join(";");
           return (
             <span

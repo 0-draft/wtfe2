@@ -96,3 +96,38 @@ describe("eraseRegion", () => {
     expect(c.at(13, 13)).toBe(204);
   });
 });
+
+describe("eraseRegion on a dark ground", () => {
+  it("inverted regions erase light lettering and fill with the dark ground", () => {
+    const W = 30;
+    const H = 30;
+    const px = new Uint8Array(W * H * 3);
+    for (let i = 0; i < W * H; i++) {
+      px[i * 3] = 20;
+      px[i * 3 + 1] = 40;
+      px[i * 3 + 2] = 110;
+    }
+    for (let y = 12; y < 16; y++) for (let x = 12; x < 16; x++) px.fill(255, (y * W + x) * 3, (y * W + x) * 3 + 3);
+    const lum = new Float32Array(W * H);
+    for (let i = 0; i < W * H; i++) lum[i] = 0.299 * px[i * 3]! + 0.587 * px[i * 3 + 1]! + 0.114 * px[i * 3 + 2]!;
+    eraseRegion(Region.parse({ box: [5, 5, 20, 20], en: "X", ja: "X", size: 10, invert: true }), px, lum, W, H);
+    const i = (13 * W + 13) * 3;
+    expect([px[i], px[i + 1], px[i + 2]]).toEqual([20, 40, 110]);
+  });
+});
+
+describe("hullOf", () => {
+  it("contains the inside of a tilted patch and not the corners of its box", async () => {
+    const { hullOf } = await import("../../scripts/plates.ts");
+    const W = 40;
+    const px = new Uint8Array(W * W * 3).fill(255);
+    // a diamond of colour (10, 20, 30) centred at (20, 20)
+    for (let y = 0; y < W; y++)
+      for (let x = 0; x < W; x++) if (Math.abs(x - 20) + Math.abs(y - 20) <= 10) px.set([10, 20, 30], (y * W + x) * 3);
+    const inside = hullOf([5, 5, 30, 30], px, W, [10, 20, 30]);
+    expect(inside(20, 20)).toBe(true);
+    expect(inside(12, 20)).toBe(true);
+    expect(inside(6, 6)).toBe(false);
+    expect(inside(33, 33)).toBe(false);
+  });
+});

@@ -1,0 +1,51 @@
+{
+  "slug": "browserling-83-modern-web-development",
+  "series": "browserling",
+  "number": 83,
+  "title": "Modern Web Development",
+  "titleJa": "モダンな Web 開発",
+  "url": "https://comic.browserling.com/83",
+  "imageSource": "https://comic.browserling.com/modern-web-dev.png",
+  "author": "Browserling",
+  "license": "CC-BY-NC-4.0",
+  "image": {
+    "file": "browserling-83-modern-web-development.png",
+    "width": 500,
+    "height": 500,
+    "displayWidth": 560
+  },
+  "takeaway": {
+    "en": "A polished front end can hide a back end on fire, and users only see the first until it fails. Put the back end's health where people can see it: dashboards, error budgets, and an honest status page.",
+    "ja": "磨き上げたフロントエンドは、燃えているバックエンドを隠せてしまう。利用者に見えるのは前者だけで、それも壊れるまでの話だ。バックエンドの健全性を見える場所に出しておくこと。ダッシュボード、エラーバジェット、正直なステータスページ。"
+  },
+  "note": {
+    "en": "Front of house, a waiter presents a perfect dish to a delighted customer; through the door, the kitchen is smoke, spills and a pot on the floor. The restaurant metaphor fits web apps uncomfortably well.",
+    "ja": "表では、店員が完璧な料理を差し出して客が大喜びしている。扉の向こうの厨房は煙と飛び散ったソースと床に転がった鍋。レストランのたとえは、Web アプリに居心地が悪いほどよく当てはまる。"
+  },
+  "regions": [
+    {
+      "box": [30, 28, 108, 22],
+      "en": "FRONT END",
+      "ja": "フロントエンド",
+      "size": 14,
+      "align": "center"
+    },
+    {
+      "box": [371, 28, 88, 22],
+      "en": "BACK END",
+      "ja": "バックエンド",
+      "size": 13.5,
+      "align": "center"
+    }
+  ],
+  "related": [
+    {
+      "label": {
+        "en": "Hammurabi: Error budget",
+        "ja": "Hammurabi: エラーバジェット"
+      },
+      "url": "https://kanywst.github.io/hammurabi/laws/error-budget/",
+      "urlJa": "https://kanywst.github.io/hammurabi/ja/laws/error-budget/"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "slug": "xkcd-386-duty-calls",
+  "series": "xkcd",
+  "number": 386,
+  "title": "Duty Calls",
+  "titleJa": "使命が呼んでいる",
+  "published": "2008-02-20",
+  "url": "https://xkcd.com/386/",
+  "imageSource": "https://imgs.xkcd.com/comics/duty_calls_2x.png",
+  "author": "Randall Munroe",
+  "license": "CC-BY-NC-2.5",
+  "image": {
+    "file": "xkcd-386-duty-calls.png",
+    "width": 601,
+    "height": 659,
+    "displayWidth": 520
+  },
+  "titleText": {
+    "en": "What do you want me to do?  LEAVE?  Then they'll keep being wrong!",
+    "ja": "じゃあどうしろって言うんだ。立ち去れって? そしたらあいつら、ずっと間違ったままなんだぞ!"
+  },
+  "takeaway": {
+    "en": "Before replying to win an argument, ask what changes if you win. Spend the energy where someone is listening, or go to bed.",
+    "ja": "議論に勝つために返信する前に、勝ったら何が変わるのかを問うこと。その労力は耳を傾けてくれる相手に使うか、さもなくば寝ること。"
+  },
+  "note": {
+    "en": "\"Someone is wrong on the internet\" became one of the best-known lines from xkcd, used whenever a thread or code review turns into a fight that nobody will win. The hover text is the argument everyone has made to themselves at 2 a.m.",
+    "ja": "「ネットで誰かが間違ってる」は xkcd でもっとも知られたセリフの一つになり、スレッドやコードレビューが誰も勝てない言い争いになるたびに引用されてきた。ホバーテキストは、誰もが深夜 2 時に自分に言い聞かせてきた理屈そのものだ。"
+  },
+  "regions": [
+    {
+      "box": [61, 23, 392, 41],
+      "en": "ARE YOU COMING TO BED?",
+      "ja": "まだ寝ないの?",
+      "size": 30.5
+    },
+    {
+      "box": [151, 186, 100, 38],
+      "en": "WHAT?",
+      "ja": "え?",
+      "size": 28.5
+    },
+    {
+      "box": [253, 96, 226, 81],
+      "en": "I CAN'T. THIS\nIS IMPORTANT.",
+      "ja": "無理。これは\n大事なことなんだ。",
+      "size": 23.5,
+      "lineHeight": 1.25
+    },
+    {
+      "box": [269, 232, 286, 54],
+      "en": "SOMEONE IS WRONG",
+      "ja": "ネットで誰かが",
+      "size": 27
+    },
+    {
+      "box": [273, 278, 274, 36],
+      "underline": true,
+      "en": "ON THE INTERNET.",
+      "ja": "間違ってるんだ。",
+      "size": 27.0
+    }
+  ]
+}

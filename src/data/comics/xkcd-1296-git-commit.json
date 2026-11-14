@@ -1,0 +1,184 @@
+{
+  "slug": "xkcd-1296-git-commit",
+  "series": "xkcd",
+  "number": 1296,
+  "title": "Git Commit",
+  "titleJa": "Git のコミット",
+  "published": "2013-11-27",
+  "url": "https://xkcd.com/1296/",
+  "imageSource": "https://imgs.xkcd.com/comics/git_commit_2x.png",
+  "author": "Randall Munroe",
+  "license": "CC-BY-NC-2.5",
+  "image": {
+    "file": "xkcd-1296-git-commit.png",
+    "width": 878,
+    "height": 501,
+    "displayWidth": 700
+  },
+  "titleText": {
+    "en": "Merge branch 'asdfasjkfdlas/alkdjf' into sdkjfls-final",
+    "ja": "ブランチ 'asdfasjkfdlas/alkdjf' を sdkjfls-final にマージ"
+  },
+  "takeaway": {
+    "en": "Write the commit message for the reader six months from now, even late at night. If you cannot say what a commit does in one line, it is probably doing too much.",
+    "ja": "コミットメッセージは、深夜でも半年後の読み手に向けて書く。一行で何をしたか言えないコミットは、おそらく一度にやりすぎている。"
+  },
+  "note": {
+    "en": "The log reads like a timeline of someone's focus: specific messages at the start, then \"more code\", then a keyboard mash, then a cry for help. Anyone who has run git log on their own late-night branch has seen this. In the Japanese version the keyboard mash becomes ふじこlp, the Japanese internet's stock image of a panicked keyboard.",
+    "ja": "このログは、集中力が減っていく時系列そのものだ。最初は具体的なメッセージ、次に「コード追加」、そしてキーボードの乱打、最後は悲鳴。深夜に作った自分のブランチで git log を打ったことがあれば見覚えがあるはず。日本語版では、乱打の部分を日本のネットでおなじみの「ふじこlp」にした。"
+  },
+  "regions": [
+    {
+      "box": [274, 12, 135, 36],
+      "en": "COMMENT",
+      "ja": "コメント",
+      "size": 27,
+      "align": "center"
+    },
+    {
+      "box": [715, 14, 86, 35],
+      "en": "DATE",
+      "ja": "日時",
+      "size": 26,
+      "align": "center"
+    },
+    {
+      "box": [92, 50, 515, 37],
+      "en": "CREATED MAIN LOOP & TIMING CONTROL",
+      "ja": "メインループとタイミング制御を作成",
+      "size": 27
+    },
+    {
+      "box": [92, 86, 397, 35],
+      "en": "ENABLED CONFIG FILE PARSING",
+      "ja": "設定ファイルの解析を有効化",
+      "size": 26
+    },
+    {
+      "box": [92, 122, 206, 36],
+      "en": "MISC BUGFIXES",
+      "ja": "細かいバグ修正",
+      "size": 27
+    },
+    {
+      "box": [92, 156, 309, 40],
+      "en": "CODE ADDITIONS/EDITS",
+      "ja": "コードの追加・編集",
+      "size": 27
+    },
+    {
+      "box": [92, 194, 157, 36],
+      "en": "MORE CODE",
+      "ja": "コード追加",
+      "size": 27
+    },
+    {
+      "box": [92, 228, 237, 38],
+      "en": "HERE HAVE CODE",
+      "ja": "ほら、コードあげる",
+      "size": 27
+    },
+    {
+      "box": [93, 265, 161, 36],
+      "en": "AAAAAAAA",
+      "ja": "ああああああああ",
+      "size": 21.5
+    },
+    {
+      "box": [93, 302, 303, 36],
+      "en": "ADKFJSLKDFJSDKLFJ",
+      "ja": "あsdkふじこlp;@",
+      "size": 27
+    },
+    {
+      "box": [91, 337, 420, 37],
+      "en": "MY HANDS ARE TYPING WORDS",
+      "ja": "手が勝手に文字を打っている",
+      "size": 27
+    },
+    {
+      "box": [93, 373, 251, 36],
+      "en": "HAAAAAAAAANDS",
+      "ja": "手ぇぇぇぇぇぇぇぇ",
+      "size": 27
+    },
+    {
+      "box": [670, 52, 195, 34],
+      "en": "14 HOURS AGO",
+      "ja": "14時間前",
+      "size": 25.5,
+      "color": "#a8a8a8"
+    },
+    {
+      "box": [670, 88, 195, 34],
+      "en": "9 HOURS AGO",
+      "ja": "9時間前",
+      "size": 25.5,
+      "color": "#a8a8a8"
+    },
+    {
+      "box": [670, 123, 195, 34],
+      "en": "5 HOURS AGO",
+      "ja": "5時間前",
+      "size": 25.5,
+      "color": "#a8a8a8"
+    },
+    {
+      "box": [670, 160, 195, 34],
+      "en": "4 HOURS AGO",
+      "ja": "4時間前",
+      "size": 25.5,
+      "color": "#a8a8a8"
+    },
+    {
+      "box": [670, 197, 195, 33],
+      "en": "4 HOURS AGO",
+      "ja": "4時間前",
+      "size": 24.5,
+      "color": "#a8a8a8"
+    },
+    {
+      "box": [670, 232, 195, 34],
+      "en": "4 HOURS AGO",
+      "ja": "4時間前",
+      "size": 25.5,
+      "color": "#a8a8a8"
+    },
+    {
+      "box": [670, 268, 195, 33],
+      "en": "3 HOURS AGO",
+      "ja": "3時間前",
+      "size": 24.5,
+      "color": "#a8a8a8"
+    },
+    {
+      "box": [670, 303, 195, 34],
+      "en": "3 HOURS AGO",
+      "ja": "3時間前",
+      "size": 25.5,
+      "color": "#a8a8a8"
+    },
+    {
+      "box": [670, 338, 195, 35],
+      "en": "2 HOURS AGO",
+      "ja": "2時間前",
+      "size": 26,
+      "color": "#a8a8a8"
+    },
+    {
+      "box": [670, 374, 195, 34],
+      "en": "2 HOURS AGO",
+      "ja": "2時間前",
+      "size": 25.5,
+      "color": "#a8a8a8"
+    },
+    {
+      "box": [96, 420, 686, 80],
+      "en": "AS A PROJECT DRAGS ON, MY GIT COMMIT\nMESSAGES GET LESS AND LESS INFORMATIVE.",
+      "ja": "プロジェクトが長引くほど、git のコミット\nメッセージから情報が消えていく。",
+      "size": 30,
+      "align": "center",
+      "lineHeight": 1.25
+    }
+  ]
+}

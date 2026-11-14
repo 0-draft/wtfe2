@@ -1,0 +1,74 @@
+{
+  "slug": "xkcd-1838-machine-learning",
+  "series": "xkcd",
+  "number": 1838,
+  "title": "Machine Learning",
+  "titleJa": "機械学習",
+  "published": "2017-05-17",
+  "url": "https://xkcd.com/1838/",
+  "imageSource": "https://imgs.xkcd.com/comics/machine_learning_2x.png",
+  "author": "Randall Munroe",
+  "license": "CC-BY-NC-2.5",
+  "image": {
+    "file": "xkcd-1838-machine-learning.png",
+    "width": 742,
+    "height": 877,
+    "displayWidth": 560
+  },
+  "titleText": {
+    "en": "The pile gets soaked with data and starts to get mushy over time, so it's technically recurrent.",
+    "ja": "山はデータを吸ってだんだんぐちゃぐちゃになっていくので、厳密には再帰的 (recurrent) だ。"
+  },
+  "takeaway": {
+    "en": "If you cannot say why a model's answers are right, you cannot say when they will be wrong. Keep a held-out test set, look at the failures by hand, and do not tune until the output merely looks right.",
+    "ja": "モデルの答えがなぜ正しいのか言えなければ、いつ間違うかも言えない。評価用のデータを取り分けておき、失敗例を自分の目で見て、出力が「それっぽく見える」まで調整するだけで終わらせないこと。"
+  },
+  "note": {
+    "en": "A fair summary of how machine learning looks from the outside, and sometimes from the inside: a pile of linear algebra that gets stirred until the answers look right. The hover text is a pun on recurrent neural networks.",
+    "ja": "機械学習が外からどう見えるか、ときには中からどう見えるかを、うまくまとめている。線形代数の山を、答えがそれっぽく見えるまでかき混ぜる。ホバーテキストは、再帰型ニューラルネットワーク (RNN) にかけたダジャレだ。"
+  },
+  "regions": [
+    {
+      "box": [47, 34, 577, 41],
+      "en": "THIS IS YOUR MACHINE LEARNING SYSTEM?",
+      "ja": "これがきみの機械学習システム?",
+      "size": 30
+    },
+    {
+      "box": [156, 100, 551, 118],
+      "en": "YUP! YOU POUR THE DATA INTO THIS BIG\nPILE OF LINEAR ALGEBRA, THEN COLLECT\nTHE ANSWERS ON THE OTHER SIDE.",
+      "ja": "そう! データをこの線形代数の\n大きな山に流し込んで、\n反対側から答えを回収するんだ。",
+      "size": 29.5
+    },
+    {
+      "box": [45, 244, 491, 39],
+      "en": "WHAT IF THE ANSWERS ARE WRONG?",
+      "ja": "答えが間違ってたら?",
+      "size": 29
+    },
+    {
+      "box": [279, 311, 375, 86],
+      "en": "JUST STIR THE PILE UNTIL\nTHEY START LOOKING RIGHT.",
+      "ja": "それっぽく見えてくるまで、\n山をかき混ぜるだけさ。",
+      "size": 30
+    },
+    {
+      "box": [196, 614, 93, 63],
+      "text": [200, 626, 86, 36],
+      "en": "DATA",
+      "ja": "データ",
+      "size": 19,
+      "align": "center",
+      "rotate": -27
+    },
+    {
+      "box": [601, 756, 93, 56],
+      "text": [604, 766, 88, 34],
+      "en": "ANSWERS",
+      "ja": "答え",
+      "size": 19,
+      "align": "center",
+      "rotate": 28
+    }
+  ]
+}

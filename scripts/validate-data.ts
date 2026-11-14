@@ -17,9 +17,11 @@ for (const s of sites) {
   if (siteIds.has(s.id)) fail(`sites/${s.id}`, "duplicate id");
   siteIds.add(s.id);
   if (s.latest && s.latest.date > s.checked) fail(`sites/${s.id}`, "latest entry is dated after the check date");
-  if (s.tier === "linked" && s.terms.kind === "cc")
-    fail(`sites/${s.id}`, "a CC-licensed site should be translated, not linked");
-  if (s.tier === "translated" && s.terms.kind !== "cc") fail(`sites/${s.id}`, "only CC-licensed sites may be adapted");
+  const adaptable = s.terms.kind === "cc" || s.terms.kind === "translation-permitted";
+  if (s.tier === "linked" && adaptable)
+    fail(`sites/${s.id}`, "a site that allows translation should be translated, not linked");
+  if (s.tier === "translated" && !adaptable)
+    fail(`sites/${s.id}`, "only sites that allow adaptation or translation may be adapted");
 }
 
 const dir = path.join(root, "src/data/comics");
@@ -67,11 +69,15 @@ for (const f of files) {
       if (x + w > c.image.width || y + h > c.image.height) fail(at, `${name} ${JSON.stringify(b)} leaves the image`);
     }
     if (r.ja.trim() !== r.ja || r.en.trim() !== r.en) fail(at, "leading or trailing whitespace");
-    if (
-      /[A-Za-z]{4,}/.test(
-        r.ja.replace(/Linux|Emacs|Excel|IKEA|SIGKILL|SIGTERM|LongtimeUser|kill|submodule|git|Ctrl|CPU|C\+\+/g, ""),
-      )
-    ) {
+    let rest = r.ja.replace(
+      /Linux|Emacs|Excel|IKEA|SIGKILL|SIGTERM|LongtimeUser|kill|submodule|git|Ctrl|CPU|C\+\+/g,
+      "",
+    );
+    for (const k of r.keep ?? []) {
+      if (!r.ja.includes(k)) fail(at, `keep lists "${k}", which is not in the Japanese lettering`);
+      rest = rest.replaceAll(k, "");
+    }
+    if (/[A-Za-z]{4,}/.test(rest)) {
       fail(at, `untranslated English left in the Japanese lettering: ${r.ja}`);
     }
     if (r.size * r.lineHeight * r.ja.split("\n").length > (r.text ?? r.box)[3] * 1.15) {

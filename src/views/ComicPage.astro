@@ -80,6 +80,13 @@ description = description.trim();
           </div>
         )
       }
+      <p class="comic__credit">
+        <a href={comic.url} lang="en">
+          {comic.title}
+        </a>{" "}
+        © {inLang(comic.author, lang)} · <a href={site.url}>{site.name}</a> · <a href={license.url}>{license.label}</a>
+        {ja && <> · {t.adaptedBy}</>}
+      </p>
       {
         comic.titleText && (
           <figcaption class="hover">
@@ -300,6 +307,11 @@ description = description.trim();
     .swap__track::after {
       transition: none;
     }
+  }
+  .comic__credit {
+    margin: 0.75rem 0 0;
+    font-size: 0.82rem;
+    color: var(--ink-2);
   }
   .hover {
     margin-top: 1.25rem;

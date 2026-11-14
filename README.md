@@ -1,10 +1,11 @@
-<img src="./docs/banner.png" alt="wtfe2 — WTF, Engineer? An xkcd strip shown in the original and with Japanese lettering side by side" width="100%" />
+<img src="./docs/banner.png" alt="wtfe² — WTF, Engineer? An xkcd strip shown in the original and with Japanese lettering side by side" width="100%" />
 
-**Comics about the strange job of building software, read in English and Japanese.** Strips whose license allows adaptation get Japanese lettering drawn into the art; the rest are introduced with the creator's own reuse terms.
+**Comics about the strange job of building software, read in English and Japanese.** Strips whose license allows adaptation or translation get Japanese lettering drawn into the art; the rest are retold in our own words. Every page leads with what to take away from it. The ² is for the two languages.
 
 [![site](https://img.shields.io/badge/read-the%20comics-c9352a?style=for-the-badge&labelColor=17150f)](https://0-draft.github.io/wtfe2/)
 [![日本語](https://img.shields.io/badge/日本語版-読む-c9352a?style=for-the-badge&labelColor=17150f)](https://0-draft.github.io/wtfe2/ja/)
-[![comics](https://img.shields.io/badge/lettered-11%20strips-ffd94a?style=for-the-badge&labelColor=17150f)](https://0-draft.github.io/wtfe2/#translated)
+[![comics](https://img.shields.io/badge/lettered-35%20strips-ffd94a?style=for-the-badge&labelColor=17150f)](https://0-draft.github.io/wtfe2/#translated)
+[![explained](https://img.shields.io/badge/explained-12%20strips-ffd94a?style=for-the-badge&labelColor=17150f)](https://0-draft.github.io/wtfe2/#explained)
 [![CI](https://img.shields.io/github/actions/workflow/status/0-draft/wtfe2/ci.yml?branch=main&style=for-the-badge&label=CI&labelColor=17150f)](https://github.com/0-draft/wtfe2/actions/workflows/ci.yml)
 [![license](https://img.shields.io/badge/code-MIT-5c5f64?style=for-the-badge&labelColor=17150f)](./LICENSE)
 
@@ -14,7 +15,7 @@
 
 ## What it does
 
-Most "funny programming comics" lists are a wall of links, and the good strips stay out of reach for anyone who does not read English. wtfe2 takes the strips that are licensed for it and letters them in Japanese, the way a translated manga would be: the English lettering is removed from the art and Japanese is set in its place.
+Most "funny programming comics" lists are a wall of links, and the good strips stay out of reach for anyone who does not read English. wtfe² takes the strips that are licensed for it and letters them in Japanese, the way a translated manga would be: the English lettering is removed from the art and Japanese is set in its place.
 
 <img src="./docs/compare-turnoff-git-submodules.png" alt="TurnOff.us 'git submodules adoption flow': the original on the left, the Japanese edition on the right" width="100%" />
 
@@ -23,6 +24,7 @@ Most "funny programming comics" lists are a wall of links, and the good strips s
 Every comic page has:
 
 - the strip, in the original on the English page and lettered in Japanese on the Japanese page, with a switch to compare;
+- a takeaway at the top: what to do differently on Monday;
 - a short note on why it lands, and links into [Hammurabi](https://kanywst.github.io/hammurabi/) when a strip is an engineering law in disguise;
 - a full transcript in both languages, and xkcd's hover text translated;
 - the credit line the license asks for: original, author, image source and license.
@@ -33,14 +35,16 @@ Every comic page has:
 | --- | --- | --- | --- |
 | [xkcd](https://xkcd.com/) | Randall Munroe | CC BY-NC 2.5 | Lettered in Japanese |
 | [TurnOff.us](https://turnoff.us/) | Daniel Stori | CC BY-NC-SA 4.0 | Lettered in Japanese |
+| [Browserling Comics](https://comic.browserling.com/) | Browserling | CC BY-NC 4.0 | Lettered in Japanese |
+| [Bonkers World](https://bonkersworld.net/) | Manu Cornet | CC BY-NC-ND 3.0, translations allowed by the author | Lettered in Japanese |
 | [Abstruse Goose](https://github.com/s-macke/Abstruse-Goose-Archive) | anonymous | CC BY-NC 3.0 US | Lettered in Japanese |
-| [SMBC](https://www.smbc-comics.com/) | Zach Weinersmith | none published | Introduced |
-| [Existential Comics](https://existentialcomics.com/) | Corey Mohler | none published | Introduced |
-| [MonkeyUser](https://www.monkeyuser.com/) | uncredited | all rights reserved | Introduced |
-| [The Daily WTF](https://thedailywtf.com/) | Alex Papadimoulis, Remy Porter | copyright Inedo | Introduced |
-| [CommitStrip](https://www.commitstrip.com/en/) | Etienne Issartial, Thomas Gx | non-commercial use with credit | Introduced |
-| [The Oatmeal](https://theoatmeal.com/) | Matthew Inman | copyright | Introduced |
-| [PHD Comics](https://phdcomics.com/) | Jorge Cham | reprints by permission | Introduced |
+| [SMBC](https://www.smbc-comics.com/) | Zach Weinersmith | none published | Explained |
+| [Existential Comics](https://existentialcomics.com/) | Corey Mohler | none published | Explained |
+| [MonkeyUser](https://www.monkeyuser.com/) | uncredited | all rights reserved | Explained |
+| [The Daily WTF](https://thedailywtf.com/) | Alex Papadimoulis, Remy Porter | copyright Inedo | Explained |
+| [CommitStrip](https://www.commitstrip.com/en/) | Etienne Issartial, Thomas Gx | non-commercial use with credit | Explained |
+| [The Oatmeal](https://theoatmeal.com/) | Matthew Inman | copyright | Explained |
+| [PHD Comics](https://phdcomics.com/) | Jorge Cham | reprints by permission | Explained |
 
 The site carries no ads, sponsorships or affiliate links: every comic it adapts is licensed for non-commercial use only.
 

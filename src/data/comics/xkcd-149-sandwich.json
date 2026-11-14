@@ -1,0 +1,60 @@
+{
+  "slug": "xkcd-149-sandwich",
+  "series": "xkcd",
+  "number": 149,
+  "title": "Sandwich",
+  "titleJa": "サンドイッチ",
+  "published": "2006-08-28",
+  "url": "https://xkcd.com/149/",
+  "imageSource": "https://imgs.xkcd.com/comics/sandwich.png",
+  "author": "Randall Munroe",
+  "license": "CC-BY-NC-2.5",
+  "image": {
+    "file": "xkcd-149-sandwich.png",
+    "width": 360,
+    "height": 299,
+    "displayWidth": 560
+  },
+  "titleText": {
+    "en": "Proper User Policy apparently means Simon Says.",
+    "ja": "「適切なユーザーポリシー」とは、どうやら「船長さんの命令」ゲームのことらしい。"
+  },
+  "takeaway": {
+    "en": "Privilege escalation should be deliberate and rare. Know what runs as root on your machines, and why.",
+    "ja": "権限昇格は、意図して、めったに行わないもの。自分のマシンで何が root で動いているのか、なぜそうなのかを把握しておくこと。"
+  },
+  "note": {
+    "en": "sudo runs a command as the superuser, so the second request is one the other person cannot refuse. The line has been quoted at programmers ever since, and it is the shortest explanation of what sudo does that most people will ever hear.",
+    "ja": "sudo はコマンドをスーパーユーザーとして実行するので、二度目の頼みは相手が断れない。以来、このセリフはプログラマーのあいだで繰り返し引用されてきた。sudo が何をするのかを説明したものとしては、たいていの人が聞くことになるいちばん短い説明でもある。"
+  },
+  "regions": [
+    {
+      "box": [23, 23, 191, 27],
+      "en": "MAKE ME A SANDWICH.",
+      "ja": "サンドイッチ作って。",
+      "size": 18.0
+    },
+    {
+      "box": [221, 53, 118, 43],
+      "en": "WHAT? MAKE IT\nYOURSELF.",
+      "ja": "は? 自分で\n作れよ。",
+      "size": 17.5,
+      "lineHeight": 1.2
+    },
+    {
+      "box": [23, 91, 141, 53],
+      "en": "SUDO MAKE ME\nA SANDWICH.",
+      "ja": "sudo サンドイッチ\n作って。",
+      "size": 15.0,
+      "lineHeight": 1.2,
+      "keep": ["sudo"]
+    },
+    {
+      "box": [212, 136, 57, 38],
+      "text": [205, 136, 70, 38],
+      "en": "OKAY.",
+      "ja": "はい。",
+      "size": 21.5
+    }
+  ]
+}

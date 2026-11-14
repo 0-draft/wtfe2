@@ -33,6 +33,27 @@ export const Region = z
      * rect: erase every dark pixel inside `box`, for lettering that touches a border.
      */
     erase: z.enum(["strokes", "rect"]).default("strokes"),
+    /**
+     * With `fill`: paint only the convex hull of the pixels already that colour inside the
+     * box, so a tilted sign is repainted without touching what lies around it.
+     */
+    fillHull: z.boolean().default(false),
+    /** Light lettering on a dark ground: detect ink as lighter than the ground and fill with the ground. */
+    invert: z.boolean().default(false),
+    /** Paint the whole box this colour instead of erasing ink: for light lettering on a dark sign. */
+    fill: z
+      .string()
+      .regex(/^#[0-9a-f]{6}$/)
+      .optional(),
+    /** Words left in English on purpose: code, commands, passwords, user names. */
+    keep: z.array(z.string().min(1)).optional(),
+    /** Degrees, clockwise, for lettering drawn at an angle. The box stays axis-aligned. */
+    rotate: z.number().min(-90).max(90).optional(),
+    /** Lettering colour, when it is not black. */
+    color: z
+      .string()
+      .regex(/^#[0-9a-f]{6}$/)
+      .optional(),
     /** The original lettering, verbatim (line breaks as drawn). */
     en: z.string().min(1),
     /** The Japanese lettering, broken into lines by hand. */
@@ -48,13 +69,19 @@ export const Region = z
   .strict();
 export type Region = z.infer<typeof Region>;
 
-export const SERIES = ["xkcd", "turnoff", "abstruse-goose"] as const;
+export const SERIES = ["xkcd", "turnoff", "browserling", "bonkers-world", "abstruse-goose"] as const;
 export type SeriesId = (typeof SERIES)[number];
 
 export const LICENSES = {
   "CC-BY-NC-2.5": { label: "CC BY-NC 2.5", url: "https://creativecommons.org/licenses/by-nc/2.5/" },
   "CC-BY-NC-SA-4.0": { label: "CC BY-NC-SA 4.0", url: "https://creativecommons.org/licenses/by-nc-sa/4.0/" },
   "CC-BY-NC-3.0-US": { label: "CC BY-NC 3.0 US", url: "https://creativecommons.org/licenses/by-nc/3.0/us/" },
+  "CC-BY-NC-4.0": { label: "CC BY-NC 4.0", url: "https://creativecommons.org/licenses/by-nc/4.0/" },
+  /** Bonkers World is CC BY-NC-ND, and its author separately allows translations with credit next to the drawing. */
+  "CC-BY-NC-ND-3.0-TRANSLATION": {
+    label: "CC BY-NC-ND 3.0; translations allowed with credit",
+    url: "https://bonkersworld.net/about",
+  },
 } as const;
 export type LicenseId = keyof typeof LICENSES;
 
@@ -118,7 +145,7 @@ export const Site = z
     tier: z.enum(["translated", "linked"]),
     terms: z
       .object({
-        kind: z.enum(["cc", "permission", "noncommercial-use", "reserved", "none-stated"]),
+        kind: z.enum(["cc", "translation-permitted", "permission", "noncommercial-use", "reserved", "none-stated"]),
         label: Text,
         url: z.url(),
         quote: z.string().optional(),

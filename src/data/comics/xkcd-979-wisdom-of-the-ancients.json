@@ -1,0 +1,55 @@
+{
+  "slug": "xkcd-979-wisdom-of-the-ancients",
+  "series": "xkcd",
+  "number": 979,
+  "title": "Wisdom of the Ancients",
+  "titleJa": "古人の知恵",
+  "published": "2011-11-18",
+  "url": "https://xkcd.com/979/",
+  "imageSource": "https://imgs.xkcd.com/comics/wisdom_of_the_ancients.png",
+  "author": "Randall Munroe",
+  "license": "CC-BY-NC-2.5",
+  "image": {
+    "file": "xkcd-979-wisdom-of-the-ancients.png",
+    "width": 485,
+    "height": 270,
+    "displayWidth": 760
+  },
+  "titleText": {
+    "en": "All long help threads should have a sticky globally-editable post at the top saying 'DEAR PEOPLE FROM THE FUTURE: Here's what we've figured out so far ...'",
+    "ja": "長いサポートスレッドには、誰でも編集できる固定投稿を先頭に置くべきだ。「未来の皆さんへ: ここまでにわかったことは次のとおりです……」と。"
+  },
+  "takeaway": {
+    "en": "When you solve a problem someone asked about in public, post the answer, not just \"fixed it\". Write down what fixed it where the next person will search.",
+    "ja": "人前で質問された問題を自分が解決したら、「直った」だけでなく答えを書き残すこと。何で直ったのかを、次の人が検索する場所に書いておくこと。"
+  },
+  "note": {
+    "en": "DenverCoder9 became the name for every forum post that ends in \"never mind, fixed it\" with no explanation. The poem is the experience of finding the one person in the world with your exact problem, and discovering they took the answer with them.",
+    "ja": "DenverCoder9 は、説明なしに「自己解決しました」で終わるあらゆるフォーラム投稿の代名詞になった。この詩が描いているのは、世界でただ一人、自分とまったく同じ問題を抱えた人を見つけ、その人が答えを持ち去ってしまったと知る体験だ。"
+  },
+  "regions": [
+    {
+      "box": [2, 10, 231, 247],
+      "en": "NEVER HAVE I FELT SO\nCLOSE TO ANOTHER SOUL\nAND YET SO HELPLESSLY ALONE\nAS WHEN I GOOGLE AN ERROR\nAND THERE'S ONE RESULT\nA THREAD BY SOMEONE\nWITH THE SAME PROBLEM\nAND NO ANSWER\nLAST POSTED TO IN 2003",
+      "ja": "これほど誰かの魂を\n近くに、そして\nなすすべもなく遠くに\n感じたことはない。\nエラーをググって\nヒットは一件、\n同じ問題を抱えた人の\nスレッドで、回答はなし。\n最後の投稿は 2003 年。",
+      "size": 18.0,
+      "align": "right"
+    },
+    {
+      "box": [246, 8, 131, 49],
+      "en": "WHO WERE YOU,\nDENVERCODER9?",
+      "ja": "君は誰だったんだ、\nDenverCoder9?",
+      "size": 11.5,
+      "lineHeight": 1.2,
+      "erase": "rect",
+      "keep": ["DenverCoder9"]
+    },
+    {
+      "box": [244, 62, 180, 26],
+      "en": "WHAT DID YOU SEE?!",
+      "ja": "何を見たんだ?!",
+      "size": 17.0,
+      "erase": "rect"
+    }
+  ]
+}

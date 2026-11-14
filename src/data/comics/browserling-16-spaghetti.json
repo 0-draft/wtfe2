@@ -1,0 +1,45 @@
+{
+  "slug": "browserling-16-spaghetti",
+  "series": "browserling",
+  "number": 16,
+  "title": "Spaghetti",
+  "titleJa": "スパゲッティ",
+  "url": "https://comic.browserling.com/16",
+  "imageSource": "https://comic.browserling.com/spaghetti.png",
+  "author": "Browserling",
+  "license": "CC-BY-NC-4.0",
+  "image": {
+    "file": "browserling-16-spaghetti.png",
+    "width": 500,
+    "height": 500,
+    "displayWidth": 560
+  },
+  "takeaway": {
+    "en": "Writing everything from scratch is how a codebase turns to spaghetti. Reach for existing libraries and patterns first, and when you do hand-roll something, keep it small enough to untangle.",
+    "ja": "何でも一から書くと、コードベースはスパゲッティになる。まず既存のライブラリやパターンに頼り、どうしても自作するときは、あとでほどける程度の大きさに留めること。"
+  },
+  "note": {
+    "en": "A double pun in English: spaghetti code, and cooking from scratch. The Japanese lettering keeps it double with 手打ち, which means both handmade pasta and typing code in by hand.",
+    "ja": "英語では二重のダジャレになっている。スパゲッティコードと、料理を一から作る from scratch だ。日本語版では「手打ち」で二重にした。手打ちパスタと、コードを手で打ち込むことの両方の意味になる。"
+  },
+  "regions": [
+    {
+      "box": [40, 428, 430, 31],
+      "en": "Why did the Italian chef fail his web coding class? ...",
+      "ja": "イタリア人シェフが Web 開発の授業で落第した理由は?…",
+      "size": 15.5,
+      "align": "center",
+      "erase": "rect",
+      "text": [30, 428, 440, 28]
+    },
+    {
+      "box": [105, 455, 295, 32],
+      "text": [30, 455, 440, 32],
+      "en": "He wrote spaghetti from scratch.",
+      "ja": "スパゲッティを一から手打ちしたから。",
+      "size": 15.5,
+      "align": "center",
+      "erase": "rect"
+    }
+  ]
+}

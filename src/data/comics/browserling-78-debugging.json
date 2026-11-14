@@ -1,0 +1,36 @@
+{
+  "slug": "browserling-78-debugging",
+  "series": "browserling",
+  "number": 78,
+  "title": "Debugging",
+  "titleJa": "デバッグ",
+  "url": "https://comic.browserling.com/78",
+  "imageSource": "https://comic.browserling.com/debugging.png",
+  "author": "Browserling",
+  "license": "CC-BY-NC-4.0",
+  "image": {
+    "file": "browserling-78-debugging.png",
+    "width": 500,
+    "height": 500,
+    "displayWidth": 560
+  },
+  "takeaway": {
+    "en": "A bug report is a needle; the haystack is everything you have not ruled out yet. Shrink the haystack first: reproduce, then bisect the input, the commits or the code path until the needle has nowhere left to hide.",
+    "ja": "バグ報告は針で、干し草の山はまだ候補から外せていないものすべてだ。まず山を小さくすること。再現させてから、入力、コミット、実行経路を二分探索で絞り込めば、針の隠れ場所はなくなる。"
+  },
+  "note": {
+    "en": "A turn on the idiom \"a needle in a haystack\": the debugging job is not to find one needle but to remove all of them, and the developer has already torn half his hair out. The caption is the whole joke; the painting is the punchline.",
+    "ja": "「干し草の山から針を探す」という慣用句をひねった作品。デバッグの仕事は針を一本見つけることではなく全部取り除くことで、開発者はすでに髪を半分むしっている。キャプションがネタのすべてで、絵がオチになっている。"
+  },
+  "regions": [
+    {
+      "box": [25, 396, 452, 89],
+      "fill": "#c28752",
+      "en": "Debugging:\nRemoving the needles from the haystack.",
+      "ja": "デバッグ:\n干し草の山から針を抜き取ること。",
+      "size": 23,
+      "align": "center",
+      "lineHeight": 1.35
+    }
+  ]
+}

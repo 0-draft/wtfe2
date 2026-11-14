@@ -1,0 +1,107 @@
+{
+  "slug": "bonkers-world-2011-06-27-organizational-charts",
+  "series": "bonkers-world",
+  "title": "Organizational Charts",
+  "titleJa": "組織図",
+  "published": "2011-06-27",
+  "url": "https://bonkersworld.net/organizational-charts",
+  "imageSource": "https://bonkersworld.net/img/2011-06-27_organizational_charts.png",
+  "author": "Manu Cornet",
+  "license": "CC-BY-NC-ND-3.0-TRANSLATION",
+  "image": {
+    "file": "bonkers-world-2011-06-27-organizational-charts.png",
+    "width": 980,
+    "height": 955,
+    "displayWidth": 900
+  },
+  "takeaway": {
+    "en": "Your org chart is the shape your systems will take. Before you redraw the architecture, look at who talks to whom, and change that if the architecture has to change.",
+    "ja": "組織図は、システムがとる形そのものになる。アーキテクチャを描き直す前に、誰が誰と話しているかを見ること。アーキテクチャを変える必要があるなら、まずそこを変える。"
+  },
+  "note": {
+    "en": "Six companies as of 2011, drawn as six org charts: a neat hierarchy, a dense web, a network with no top, divisions pointing guns at each other, everyone wired to one centre, and a legal department bigger than engineering. Some of the companies have changed since, which makes it a snapshot as much as a joke.",
+    "ja": "2011 年時点の 6 社を 6 枚の組織図で描いた作品。整ったピラミッド、密に絡み合った網、頂点のないネットワーク、互いに銃を向け合う事業部、全員が一点につながる放射状、そしてエンジニアリングより大きい法務部。その後変わった会社もあるので、ジョークであると同時にスナップショットでもある。"
+  },
+  "related": [
+    {
+      "label": {
+        "en": "Hammurabi: Conway's Law",
+        "ja": "Hammurabi: コンウェイの法則"
+      },
+      "url": "https://kanywst.github.io/hammurabi/laws/conways-law/",
+      "urlJa": "https://kanywst.github.io/hammurabi/ja/laws/conways-law/"
+    }
+  ],
+  "regions": [
+    {
+      "box": [141, 32, 124, 26],
+      "en": "AMAZON",
+      "ja": "アマゾン",
+      "size": 22,
+      "align": "center",
+      "lineHeight": 1.1
+    },
+    {
+      "box": [674, 31, 105, 26],
+      "en": "GOOGLE",
+      "ja": "グーグル",
+      "size": 22,
+      "align": "center",
+      "lineHeight": 1.1
+    },
+    {
+      "box": [130, 354, 130, 28],
+      "en": "FACEBOOK",
+      "ja": "フェイスブック",
+      "size": 17.5,
+      "align": "center",
+      "lineHeight": 1.1
+    },
+    {
+      "box": [668, 352, 143, 30],
+      "en": "MICROSOFT",
+      "ja": "マイクロソフト",
+      "size": 19,
+      "align": "center",
+      "lineHeight": 1.1
+    },
+    {
+      "box": [162, 675, 80, 29],
+      "en": "APPLE",
+      "ja": "アップル",
+      "size": 19,
+      "align": "center",
+      "lineHeight": 1.1
+    },
+    {
+      "box": [670, 674, 112, 26],
+      "en": "ORACLE",
+      "ja": "オラクル",
+      "size": 22,
+      "align": "center",
+      "lineHeight": 1.1
+    },
+    {
+      "box": [512, 744, 49, 28],
+      "en": "Legal",
+      "ja": "法務",
+      "size": 17,
+      "align": "center"
+    },
+    {
+      "box": [829, 741, 57, 15],
+      "text": [826, 734, 72, 24],
+      "en": "Enginee-",
+      "ja": "エンジニ-",
+      "size": 13,
+      "erase": "rect"
+    },
+    {
+      "box": [899, 731, 36, 28],
+      "text": [899, 734, 56, 24],
+      "en": "ring",
+      "ja": "アリング",
+      "size": 13
+    }
+  ]
+}

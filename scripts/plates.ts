@@ -99,7 +99,9 @@ function backgroundOf(box: Region["box"], px: Uint8Array, lum: Float32Array, W: 
   return [(best >> 16) & 255, (best >> 8) & 255, best & 255];
 }
 
-export function eraseRegion(region: Region, px: Uint8Array, lum: Float32Array, W: number, H: number) {
+export function eraseRegion(region: Region, px: Uint8Array, lumIn: Float32Array, W: number, H: number) {
+  // Light lettering on a dark ground is the same problem with the tones flipped.
+  const lum = region.invert ? lumIn.map((v) => 255 - v) : lumIn;
   const [bx, by, bw, bh] = region.box;
   const [br, bg, bb] = backgroundOf(region.box, px, lum, W);
   const bgL = luma(br, bg, bb);
@@ -108,6 +110,23 @@ export function eraseRegion(region: Region, px: Uint8Array, lum: Float32Array, W
   const y0 = by - SLACK;
   const x1 = bx + bw - 1 + SLACK;
   const y1 = by + bh - 1 + SLACK;
+
+  if (region.fill) {
+    // A dark sign with light lettering: repaint the whole box; the text is set over it.
+    const f = region.fill;
+    const [r, g, b] = [1, 3, 5].map((o) => Number.parseInt(f.slice(o, o + 2), 16)) as [number, number, number];
+    const inside = region.fillHull ? hullOf(region.box, px, W, [r, g, b]) : () => true;
+    for (let y = by; y < by + bh; y++) {
+      for (let x = bx; x < bx + bw; x++) {
+        if (!inside(x, y)) continue;
+        const i = y * W + x;
+        px[i * 3] = r;
+        px[i * 3 + 1] = g;
+        px[i * 3 + 2] = b;
+      }
+    }
+    return { erased: 1, kept: 0 };
+  }
 
   const seen = new Uint8Array(W * H);
   const erase = new Uint8Array(W * H);
@@ -199,6 +218,40 @@ export function eraseRegion(region: Region, px: Uint8Array, lum: Float32Array, W
     px[i * 3 + 2] = bb;
   }
   return { erased, kept };
+}
+
+/** Convex hull (monotone chain) of the box's pixels close to `rgb`; returns a point-in-hull test. */
+export function hullOf(box: Region["box"], px: Uint8Array, W: number, rgb: [number, number, number]) {
+  const [bx, by, bw, bh] = box;
+  const pts: [number, number][] = [];
+  for (let y = by; y < by + bh; y++) {
+    for (let x = bx; x < bx + bw; x++) {
+      const i = (y * W + x) * 3;
+      const d = Math.abs(px[i]! - rgb[0]) + Math.abs(px[i + 1]! - rgb[1]) + Math.abs(px[i + 2]! - rgb[2]);
+      if (d < 60) pts.push([x, y]);
+    }
+  }
+  pts.sort((a, b) => a[0] - b[0] || a[1] - b[1]);
+  const cross = (o: [number, number], a: [number, number], b: [number, number]) =>
+    (a[0] - o[0]) * (b[1] - o[1]) - (a[1] - o[1]) * (b[0] - o[0]);
+  const lower: [number, number][] = [];
+  for (const p of pts) {
+    while (lower.length >= 2 && cross(lower[lower.length - 2]!, lower[lower.length - 1]!, p) <= 0) lower.pop();
+    lower.push(p);
+  }
+  const upper: [number, number][] = [];
+  for (const p of [...pts].reverse()) {
+    while (upper.length >= 2 && cross(upper[upper.length - 2]!, upper[upper.length - 1]!, p) <= 0) upper.pop();
+    upper.push(p);
+  }
+  const hull = [...lower.slice(0, -1), ...upper.slice(0, -1)];
+  return (x: number, y: number) => {
+    if (hull.length < 3) return false;
+    for (let k = 0; k < hull.length; k++) {
+      if (cross(hull[k]!, hull[(k + 1) % hull.length]!, [x, y]) < 0) return false;
+    }
+    return true;
+  };
 }
 
 export async function loadComics(): Promise<Comic[]> {

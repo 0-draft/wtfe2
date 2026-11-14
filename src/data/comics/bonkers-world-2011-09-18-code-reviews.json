@@ -1,0 +1,101 @@
+{
+  "slug": "bonkers-world-2011-09-18-code-reviews",
+  "series": "bonkers-world",
+  "title": "Code Reviews",
+  "titleJa": "コードレビュー",
+  "published": "2011-09-18",
+  "url": "https://bonkersworld.net/code-reviews",
+  "imageSource": "https://bonkersworld.net/img/2011-09-18_code_reviews.png",
+  "author": "Manu Cornet",
+  "license": "CC-BY-NC-ND-3.0-TRANSLATION",
+  "image": {
+    "file": "bonkers-world-2011-09-18-code-reviews.png",
+    "width": 1020,
+    "height": 660,
+    "displayWidth": 900
+  },
+  "takeaway": {
+    "en": "Two checks are not twice as safe when each side counts on the other. Make the author responsible for the change and the reviewer responsible for the review, and say in the review what you actually looked at.",
+    "ja": "二重のチェックも、お互いが相手を当てにしていれば二倍安全にはならない。変更の責任は作者に、レビューの責任はレビュアーに持たせ、レビューでは実際に何を見たかを書くこと。"
+  },
+  "note": {
+    "en": "The author skips the double-check because the reviewer will catch it; the reviewer skims because the author surely knows what they are doing. Each thought is reasonable alone, and together they mean nobody looked. \"Change list\" is the term Google uses for what elsewhere is a pull request.",
+    "ja": "作者はレビュアーが見つけてくれるからと見直しを省き、レビュアーは作者がわかっているはずだと流し読みする。どちらの考えも単独なら筋が通っているが、合わさると誰も見ていないことになる。「チェンジリスト (CL)」は、ほかでいうプルリクエストを指す Google の用語だ。"
+  },
+  "related": [
+    {
+      "label": {
+        "en": "Hammurabi: Bystander effect",
+        "ja": "Hammurabi: 傍観者効果"
+      },
+      "url": "https://kanywst.github.io/hammurabi/laws/bystander-effect/",
+      "urlJa": "https://kanywst.github.io/hammurabi/ja/laws/bystander-effect/"
+    }
+  ],
+  "regions": [
+    {
+      "box": [82, 72, 307, 28],
+      "en": "NO NEED TO DOUBLE CHECK",
+      "ja": "この変更、見直さなくていいや。",
+      "size": 20,
+      "align": "center",
+      "text": [82, 69, 307, 34]
+    },
+    {
+      "box": [45, 115, 379, 33],
+      "en": "THIS CHANGE LIST, IF SOME PRO-",
+      "ja": "問題が残っていても、",
+      "size": 20,
+      "align": "center",
+      "text": [45, 114, 379, 34]
+    },
+    {
+      "box": [63, 158, 319, 25],
+      "en": "BLEMS REMAIN THE REVIEWER",
+      "ja": "きっとレビュアーが",
+      "size": 20,
+      "align": "center",
+      "text": [63, 153, 319, 34]
+    },
+    {
+      "box": [168, 197, 186, 28],
+      "en": "WILL CATCH THEM.",
+      "ja": "見つけてくれる。",
+      "size": 20,
+      "align": "center",
+      "text": [168, 194, 186, 34]
+    },
+    {
+      "box": [621, 66, 272, 33],
+      "en": "NO NEED TO LOOK AT",
+      "ja": "この変更、そんなに",
+      "size": 20,
+      "align": "center",
+      "text": [621, 65, 272, 34]
+    },
+    {
+      "box": [585, 117, 368, 33],
+      "en": "THIS CHANGE LIST TOO CLOSELY,",
+      "ja": "細かく見なくていいや。",
+      "size": 20,
+      "align": "center",
+      "text": [585, 116, 368, 34]
+    },
+    {
+      "box": [604, 153, 284, 30],
+      "en": "I'M SURE THE AUTHOR",
+      "ja": "作者は自分のやってることを",
+      "size": 20,
+      "align": "center",
+      "text": [604, 151, 284, 34]
+    },
+    {
+      "box": [616, 189, 313, 37],
+      "en": "KNOWS WHAT HE'S DOING.",
+      "ja": "わかってるはずだし。",
+      "size": 20,
+      "align": "center",
+      "text": [616, 190, 313, 34]
+    }
+  ]
+}

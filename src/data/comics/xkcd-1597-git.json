@@ -1,0 +1,52 @@
+{
+  "slug": "xkcd-1597-git",
+  "series": "xkcd",
+  "number": 1597,
+  "title": "Git",
+  "titleJa": "Git",
+  "published": "2015-10-30",
+  "url": "https://xkcd.com/1597/",
+  "imageSource": "https://imgs.xkcd.com/comics/git_2x.png",
+  "author": "Randall Munroe",
+  "license": "CC-BY-NC-2.5",
+  "image": {
+    "file": "xkcd-1597-git.png",
+    "width": 661,
+    "height": 956,
+    "displayWidth": 520
+  },
+  "titleText": {
+    "en": "If that doesn't fix it, git.txt contains the phone number of a friend of mine who understands git. Just wait through a few minutes of 'It's really pretty simple, just think of branches as...' and eventually you'll learn the commands that will fix everything.",
+    "ja": "それでも直らなかったら、git.txt に git が分かる友人の電話番号が書いてある。「ほんとに簡単なんだよ、ブランチってのは要するに……」という話を数分我慢して聞けば、最後には全部を直すコマンドを教えてもらえる。"
+  },
+  "takeaway": {
+    "en": "Learn the model behind a tool you depend on every day, not just its commands. For git, an hour spent on commits, refs and branches saves the delete-and-reclone ritual.",
+    "ja": "毎日頼っている道具は、コマンドだけでなく、その裏にあるモデルを学ぶこと。git なら、コミット、参照、ブランチを一時間学ぶだけで、消して clone し直す儀式から解放される。"
+  },
+  "note": {
+    "en": "The joke lands because the advice is real: plenty of people use git exactly this way, with a handful of memorized commands and a fresh clone as the error handler. The hover text adds the other common fix, the friend who understands git.",
+    "ja": "笑えるのは、このアドバイスが本当に行われているからだ。覚えた数個のコマンドと、エラー処理としての clone し直しで git を使っている人は少なくない。ホバーテキストは、もう一つのよくある解決策、git が分かる友人を付け加えている。"
+  },
+  "regions": [
+    {
+      "box": [35, 34, 582, 125],
+      "en": "THIS IS GIT. IT TRACKS COLLABORATIVE WORK\nON PROJECTS THROUGH A BEAUTIFUL\nDISTRIBUTED GRAPH THEORY TREE MODEL.",
+      "ja": "これが git。美しい分散グラフ理論の\nツリーモデルで、プロジェクトの\n共同作業を追跡するんだ。",
+      "size": 30
+    },
+    {
+      "box": [266, 171, 360, 38],
+      "en": "COOL. HOW DO WE USE IT?",
+      "ja": "すごい。どう使うの?",
+      "size": 28.5,
+      "align": "right"
+    },
+    {
+      "box": [34, 237, 538, 202],
+      "en": "NO IDEA. JUST MEMORIZE THESE SHELL\nCOMMANDS AND TYPE THEM TO SYNC UP.\nIF YOU GET ERRORS, SAVE YOUR WORK\nELSEWHERE, DELETE THE PROJECT,\nAND DOWNLOAD A FRESH COPY.",
+      "ja": "さあね。このシェルコマンドを\n覚えて、打てば同期できる。\nエラーが出たら、作業内容を\n別の場所に保存して、プロジェクトを\n消し、新しくダウンロードし直す。",
+      "size": 30,
+      "lineHeight": 1.25
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "slug": "xkcd-538-security",
+  "series": "xkcd",
+  "number": 538,
+  "title": "Security",
+  "titleJa": "セキュリティ",
+  "published": "2009-02-02",
+  "url": "https://xkcd.com/538/",
+  "imageSource": "https://imgs.xkcd.com/comics/security.png",
+  "author": "Randall Munroe",
+  "license": "CC-BY-NC-2.5",
+  "image": {
+    "file": "xkcd-538-security.png",
+    "width": 448,
+    "height": 274,
+    "displayWidth": 720
+  },
+  "titleText": {
+    "en": "Actual actual reality: nobody cares about his secrets.  (Also, I would be hard-pressed to find that wrench for $5.)",
+    "ja": "本当の本当の現実: 誰も彼の秘密なんか気にしていない。(それと、あのレンチを 5 ドルで見つけるのはなかなか難しいと思う。)"
+  },
+  "takeaway": {
+    "en": "Defend against the attack that is cheapest for the attacker, not the one that is most interesting to you. Strong encryption does not help if the key can be phished, stolen or forced out of someone.",
+    "ja": "自分にとって面白い攻撃ではなく、攻撃者にとっていちばん安い攻撃から守ること。鍵をフィッシングで盗めたり、奪えたり、人から無理やり聞き出せたりするなら、強い暗号は役に立たない。"
+  },
+  "note": {
+    "en": "Security people call the second panel rubber-hose cryptanalysis: getting a secret out of a person instead of breaking the cipher. The point is about threat models. Attackers go around the strongest part of a system, so the strength of the weakest one is the strength of the whole.",
+    "ja": "セキュリティの世界では、二コマ目のやり方をゴムホース暗号解読と呼ぶ。暗号を破る代わりに、人から秘密を聞き出すことだ。要点は脅威モデルにある。攻撃者はシステムのいちばん強い部分を迂回するので、全体の強さはいちばん弱い部分の強さで決まる。"
+  },
+  "regions": [
+    {
+      "box": [9, 4, 128, 33],
+      "en": "A CRYPTO NERD'S\nIMAGINATION:",
+      "ja": "暗号オタクの\n想像:",
+      "size": 14.0,
+      "lineHeight": 1.15,
+      "erase": "rect"
+    },
+    {
+      "box": [8, 36, 200, 68],
+      "en": "HIS LAPTOP'S ENCRYPTED.\nLET'S BUILD A MILLION-DOLLAR\nCLUSTER TO CRACK IT.",
+      "ja": "やつのノート PC は暗号化済みだ。\n100 万ドルのクラスタを組んで\n解読しよう。",
+      "size": 12.0,
+      "lineHeight": 1.25
+    },
+    {
+      "box": [99, 101, 109, 45],
+      "en": "NO GOOD! IT'S\n4096-BIT RSA!",
+      "ja": "ダメだ!\n4096 ビット RSA だ!",
+      "size": 10.5,
+      "lineHeight": 1.2
+    },
+    {
+      "box": [13, 141, 92, 58],
+      "en": "BLAST! OUR\nEVIL PLAN\nIS FOILED!",
+      "ja": "くそっ! 我々の\n悪の計画が\n台無しだ!",
+      "size": 12.5,
+      "lineHeight": 1.2
+    },
+    {
+      "box": [240, 4, 131, 33],
+      "en": "WHAT WOULD\nACTUALLY HAPPEN:",
+      "ja": "実際に\n起こること:",
+      "size": 14.0,
+      "lineHeight": 1.15,
+      "erase": "rect"
+    },
+    {
+      "box": [236, 36, 205, 78],
+      "en": "HIS LAPTOP'S ENCRYPTED.\nDRUG HIM AND HIT HIM WITH\nTHIS $5 WRENCH UNTIL\nHE TELLS US THE PASSWORD.",
+      "ja": "やつのノート PC は暗号化済みだ。\n薬を盛って、パスワードを吐くまで\nこの 5 ドルのレンチで\nぶん殴れ。",
+      "size": 12.0,
+      "lineHeight": 1.2
+    },
+    {
+      "box": [341, 132, 62, 18],
+      "text": [340, 126, 70, 28],
+      "en": "GOT IT.",
+      "ja": "了解。",
+      "size": 19.0,
+      "erase": "rect"
+    }
+  ]
+}

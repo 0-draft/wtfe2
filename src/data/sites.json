@@ -77,6 +77,53 @@
     ]
   },
   {
+    "id": "browserling",
+    "name": "Browserling Comics",
+    "url": "https://comic.browserling.com/",
+    "creator": "Browserling",
+    "status": "irregular",
+    "checked": "2026-11-15",
+    "tier": "translated",
+    "terms": {
+      "kind": "cc",
+      "label": "CC BY-NC 4.0",
+      "url": "https://comic.browserling.com/53",
+      "quote": "Cartoons and jokes are licensed under a Creative Commons Attribution-NonCommercial 4.0 International."
+    },
+    "about": {
+      "en": "Painted one-panel jokes for web developers from the team behind the Browserling cross-browser testing service: front end versus back end, Vim, race conditions, spaghetti code. Each strip is a pun or a one-liner, drawn with far more care than the joke strictly needs.",
+      "ja": "クロスブラウザテストのサービス Browserling のチームが描く、Web 開発者向けの一枚絵のジョーク。フロントエンド対バックエンド、Vim、競合状態、スパゲッティコード。どれもダジャレか一言ネタで、ネタに必要な以上に丁寧に描き込まれている。"
+    },
+    "picks": []
+  },
+  {
+    "id": "bonkers-world",
+    "name": "Bonkers World",
+    "url": "https://bonkersworld.net/",
+    "creator": "Manu Cornet",
+    "status": "active",
+    "latest": {
+      "date": "2026-01-29",
+      "url": "https://bonkersworld.net/"
+    },
+    "checked": "2026-11-15",
+    "tier": "translated",
+    "terms": {
+      "kind": "translation-permitted",
+      "label": {
+        "en": "CC BY-NC-ND 3.0; translations allowed with credit",
+        "ja": "CC BY-NC-ND 3.0。クレジット付きの翻訳は可"
+      },
+      "url": "https://bonkersworld.net/about",
+      "quote": "OK: Translate a comic to post it on your own blog, with credit and a link back to the original site."
+    },
+    "about": {
+      "en": "Cartoons about tech companies and the people who work in them. Best known for \"Organizational Charts\", which drew six tech giants as six org charts. The author's own terms allow translations, as long as the credit and a link sit next to the drawing and the signature stays.",
+      "ja": "テック企業と、そこで働く人たちを描いた漫画。いちばん有名なのは、巨大テック企業 6 社を 6 枚の組織図で描いた「Organizational Charts」。作者自身の利用条件で、絵のすぐ横にクレジットとリンクを置き、署名を消さなければ、翻訳してよいとされている。"
+    },
+    "picks": []
+  },
+  {
     "id": "abstruse-goose",
     "name": "Abstruse Goose",
     "url": "https://github.com/s-macke/Abstruse-Goose-Archive",

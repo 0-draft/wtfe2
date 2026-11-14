@@ -1,0 +1,61 @@
+{
+  "slug": "browserling-15-full-stack",
+  "series": "browserling",
+  "number": 15,
+  "title": "Full Stack",
+  "titleJa": "フルスタック",
+  "url": "https://comic.browserling.com/15",
+  "imageSource": "https://comic.browserling.com/full-stack.png",
+  "author": "Browserling",
+  "license": "CC-BY-NC-4.0",
+  "image": {
+    "file": "browserling-15-full-stack.png",
+    "width": 500,
+    "height": 500,
+    "displayWidth": 560
+  },
+  "takeaway": {
+    "en": "What users see is a small, friendly surface on a much larger system that they never meet. Judge a product by the whole creature: what happens when the tide goes out is the back end's job.",
+    "ja": "利用者に見えているのは、ずっと大きなシステムの上に乗った小さくて感じのいい表面だけだ。プロダクトは怪物の全身で評価すること。潮が引いたときに何が起きるかは、バックエンドの仕事だ。"
+  },
+  "note": {
+    "en": "A user looks up at a mermaid on a rock: the pretty half is labelled front end, and the scaly sea-monster half curling behind the rock is the back end.",
+    "ja": "岩の上の人魚をユーザーが見上げている。きれいな上半身にはフロントエンド、岩の裏で鱗だらけの海の怪物になっている下半身にはバックエンドと書かれている。"
+  },
+  "regions": [
+    {
+      "box": [126, 74, 76, 19],
+      "fill": "#a8dbe5",
+      "en": "FRONT END",
+      "ja": "フロントエンド",
+      "size": 10.5,
+      "align": "center",
+      "lineHeight": 1.1
+    },
+    {
+      "box": [350, 71, 80, 17],
+      "fill": "#a8dbe5",
+      "en": "BACK END",
+      "ja": "バックエンド",
+      "size": 12.5,
+      "align": "center",
+      "lineHeight": 1.1
+    },
+    {
+      "box": [129, 197, 34, 17],
+      "text": [118, 195, 56, 19],
+      "en": "USER",
+      "ja": "ユーザー",
+      "size": 12,
+      "align": "center",
+      "lineHeight": 1.1
+    },
+    {
+      "box": [109, 450, 284, 31],
+      "en": "Front end vs. Back end.",
+      "ja": "フロントエンド vs. バックエンド",
+      "size": 16.5,
+      "align": "center"
+    }
+  ]
+}

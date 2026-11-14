@@ -1,0 +1,480 @@
+{
+  "slug": "xkcd-1205-is-it-worth-the-time",
+  "series": "xkcd",
+  "number": 1205,
+  "title": "Is It Worth the Time?",
+  "titleJa": "その時間、元は取れる?",
+  "published": "2013-04-29",
+  "url": "https://xkcd.com/1205/",
+  "imageSource": "https://imgs.xkcd.com/comics/is_it_worth_the_time_2x.png",
+  "author": "Randall Munroe",
+  "license": "CC-BY-NC-2.5",
+  "image": {
+    "file": "xkcd-1205-is-it-worth-the-time.png",
+    "width": 1141,
+    "height": 927,
+    "displayWidth": 900
+  },
+  "titleText": {
+    "en": "Don't forget the time you spend finding the chart to look up what you save. And the time spent reading this reminder about the time spent. And the time trying to figure out if either of those actually make sense. Remember, every second counts toward your life total, including these right now.",
+    "ja": "表で節約できる時間を調べるのにかかる時間も忘れずに。それから、この注意書きを読む時間も。さらに、そのどちらかに意味があるのか考える時間も。いいかい、一秒一秒があなたの人生の合計に数えられる。いま読んでいるこの数秒もだ。"
+  },
+  "takeaway": {
+    "en": "Before automating, multiply the time saved per run by how often you run it over the period you care about. If the job takes longer than that product, do it by hand and move on.",
+    "ja": "自動化する前に、一回あたりの短縮時間と実行頻度を掛けて、気にしている期間でどれだけ節約できるかを出す。作業にそれ以上かかるなら、手でやって先に進むこと。"
+  },
+  "note": {
+    "en": "A lookup table for a question that otherwise turns into an argument: how much effort a routine shortcut is worth over five years. Shaving one second off something you do fifty times a day buys you a full day of work; shaving a day off something yearly buys five. The hover text keeps counting.",
+    "ja": "放っておくと議論になる問いに答える早見表。五年間で見て、定型作業の手間を減らすのにどれだけ労力をかけてよいか。一日に50回やる作業を1秒縮めれば丸一日ぶん、年に一度の作業を1日縮めれば5日ぶん、かけてよいことになる。ホバーテキストは、その計算にかかる時間まで数え続ける。"
+  },
+  "regions": [
+    {
+      "box": [142, 7, 858, 72],
+      "en": "HOW LONG CAN YOU WORK ON MAKING A ROUTINE TASK MORE\nEFFICIENT BEFORE YOU'RE SPENDING MORE TIME THAN YOU SAVE?",
+      "ja": "定型作業の効率化に、どれだけ時間をかけたら\n節約できる時間より、かける時間のほうが多くなる?",
+      "size": 27,
+      "align": "center"
+    },
+    {
+      "box": [458, 79, 218, 32],
+      "en": "(ACROSS FIVE YEARS)",
+      "ja": "(5年間で計算)",
+      "size": 22,
+      "align": "center"
+    },
+    {
+      "box": [494, 150, 408, 36],
+      "en": "HOW OFTEN YOU DO THE TASK",
+      "ja": "その作業をする頻度",
+      "size": 27,
+      "align": "center"
+    },
+    {
+      "box": [28, 462, 103, 210],
+      "text": [22, 470, 110, 190],
+      "en": "HOW\nMUCH\nTIME\nYOU\nSHAVE\nOFF",
+      "ja": "短縮\nできる\n時間",
+      "size": 28,
+      "align": "center"
+    },
+    {
+      "box": [324, 186, 106, 52],
+      "en": "50/DAY",
+      "ja": "1日50回",
+      "size": 27,
+      "align": "center"
+    },
+    {
+      "box": [460, 187, 88, 51],
+      "en": "5/DAY",
+      "ja": "1日5回",
+      "size": 27,
+      "align": "center"
+    },
+    {
+      "box": [591, 198, 82, 35],
+      "en": "DAILY",
+      "ja": "毎日",
+      "size": 26,
+      "align": "center"
+    },
+    {
+      "box": [707, 195, 115, 38],
+      "en": "WEEKLY",
+      "ja": "毎週",
+      "size": 27,
+      "align": "center"
+    },
+    {
+      "box": [833, 197, 118, 35],
+      "en": "MONTHLY",
+      "ja": "毎月",
+      "size": 26,
+      "align": "center"
+    },
+    {
+      "box": [967, 196, 107, 37],
+      "en": "YEARLY",
+      "ja": "毎年",
+      "size": 27,
+      "align": "center"
+    },
+    {
+      "box": [179, 259, 122, 36],
+      "en": "1 SECOND",
+      "ja": "1秒",
+      "size": 27,
+      "align": "right"
+    },
+    {
+      "box": [159, 332, 142, 35],
+      "en": "5 SECONDS",
+      "ja": "5秒",
+      "size": 26,
+      "align": "right"
+    },
+    {
+      "box": [140, 402, 160, 37],
+      "en": "30 SECONDS",
+      "ja": "30秒",
+      "size": 27.5,
+      "align": "right"
+    },
+    {
+      "box": [168, 474, 131, 36],
+      "en": "1 MINUTE",
+      "ja": "1分",
+      "size": 27,
+      "align": "right"
+    },
+    {
+      "box": [154, 546, 146, 38],
+      "en": "5 MINUTES",
+      "ja": "5分",
+      "size": 28.5,
+      "align": "right"
+    },
+    {
+      "box": [142, 618, 158, 39],
+      "en": "30 MINUTES",
+      "ja": "30分",
+      "size": 29,
+      "align": "right"
+    },
+    {
+      "box": [195, 690, 100, 39],
+      "en": "1 HOUR",
+      "ja": "1時間",
+      "size": 29,
+      "align": "right"
+    },
+    {
+      "box": [180, 762, 120, 38],
+      "en": "6 HOURS",
+      "ja": "6時間",
+      "size": 28.5,
+      "align": "right"
+    },
+    {
+      "box": [242, 836, 54, 34],
+      "en": "DAY",
+      "ja": "日",
+      "size": 25.5
+    },
+    {
+      "box": [373, 262, 59, 33],
+      "text": [370, 248, 62, 59],
+      "en": "DAY",
+      "ja": "日",
+      "size": 30
+    },
+    {
+      "box": [452, 258, 103, 38],
+      "en": "2 HOURS",
+      "ja": "2時間",
+      "size": 28.5,
+      "align": "center"
+    },
+    {
+      "box": [575, 246, 112, 61],
+      "en": "30\nMINUTES",
+      "ja": "30分",
+      "size": 30,
+      "align": "center"
+    },
+    {
+      "box": [708, 247, 112, 64],
+      "en": "4\nMINUTES",
+      "ja": "4分",
+      "size": 30,
+      "align": "center"
+    },
+    {
+      "box": [843, 244, 98, 64],
+      "en": "1\nMINUTE",
+      "ja": "1分",
+      "size": 30,
+      "align": "center"
+    },
+    {
+      "box": [966, 246, 103, 66],
+      "en": "5\nSECONDS",
+      "ja": "5秒",
+      "size": 30,
+      "align": "center"
+    },
+    {
+      "box": [367, 333, 67, 32],
+      "text": [370, 319, 62, 60],
+      "en": "DAYS",
+      "ja": "日",
+      "size": 30
+    },
+    {
+      "box": [451, 330, 109, 38],
+      "en": "12 HOURS",
+      "ja": "12時間",
+      "size": 28.5,
+      "align": "center"
+    },
+    {
+      "box": [581, 329, 106, 39],
+      "en": "2 HOURS",
+      "ja": "2時間",
+      "size": 29,
+      "align": "center"
+    },
+    {
+      "box": [705, 317, 112, 65],
+      "en": "21\nMINUTES",
+      "ja": "21分",
+      "size": 30,
+      "align": "center"
+    },
+    {
+      "box": [834, 314, 112, 68],
+      "en": "5\nMINUTES",
+      "ja": "5分",
+      "size": 30,
+      "align": "center"
+    },
+    {
+      "box": [966, 320, 103, 62],
+      "en": "25\nSECONDS",
+      "ja": "25秒",
+      "size": 30,
+      "align": "center"
+    },
+    {
+      "box": [313, 407, 120, 48],
+      "en": "4 WEEKS",
+      "ja": "4週間",
+      "size": 28,
+      "align": "center"
+    },
+    {
+      "box": [496, 407, 66, 32],
+      "text": [500, 391, 62, 61],
+      "en": "DAYS",
+      "ja": "日",
+      "size": 30
+    },
+    {
+      "box": [579, 404, 112, 37],
+      "en": "12 HOURS",
+      "ja": "12時間",
+      "size": 27.5,
+      "align": "center"
+    },
+    {
+      "box": [710, 401, 107, 39],
+      "en": "2 HOURS",
+      "ja": "2時間",
+      "size": 29,
+      "align": "center"
+    },
+    {
+      "box": [834, 389, 112, 66],
+      "en": "30\nMINUTES",
+      "ja": "30分",
+      "size": 30,
+      "align": "center"
+    },
+    {
+      "box": [962, 391, 113, 63],
+      "en": "2\nMINUTES",
+      "ja": "2分",
+      "size": 30,
+      "align": "center"
+    },
+    {
+      "box": [312, 480, 122, 47],
+      "en": "8 WEEKS",
+      "ja": "8週間",
+      "size": 28,
+      "align": "center"
+    },
+    {
+      "box": [496, 480, 66, 32],
+      "text": [500, 464, 62, 60],
+      "en": "DAYS",
+      "ja": "日",
+      "size": 30
+    },
+    {
+      "box": [630, 478, 60, 32],
+      "text": [630, 464, 60, 60],
+      "en": "DAY",
+      "ja": "日",
+      "size": 30
+    },
+    {
+      "box": [707, 473, 109, 41],
+      "en": "4 HOURS",
+      "ja": "4時間",
+      "size": 30,
+      "align": "center"
+    },
+    {
+      "box": [845, 472, 91, 43],
+      "en": "1 HOUR",
+      "ja": "1時間",
+      "size": 30,
+      "align": "center"
+    },
+    {
+      "box": [963, 459, 112, 69],
+      "en": "5\nMINUTES",
+      "ja": "5分",
+      "size": 30,
+      "align": "center"
+    },
+    {
+      "box": [312, 546, 125, 43],
+      "en": "9 MONTHS",
+      "ja": "9か月",
+      "size": 30,
+      "align": "center"
+    },
+    {
+      "box": [443, 552, 124, 49],
+      "en": "4 WEEKS",
+      "ja": "4週間",
+      "size": 28,
+      "align": "center"
+    },
+    {
+      "box": [627, 551, 66, 32],
+      "text": [630, 536, 60, 61],
+      "en": "DAYS",
+      "ja": "日",
+      "size": 30
+    },
+    {
+      "box": [706, 547, 112, 38],
+      "en": "21 HOURS",
+      "ja": "21時間",
+      "size": 28.5,
+      "align": "center"
+    },
+    {
+      "box": [839, 546, 106, 39],
+      "en": "5 HOURS",
+      "ja": "5時間",
+      "size": 29,
+      "align": "center"
+    },
+    {
+      "box": [963, 532, 112, 69],
+      "en": "25\nMINUTES",
+      "ja": "25分",
+      "size": 30,
+      "align": "center"
+    },
+    {
+      "box": [442, 617, 122, 37],
+      "en": "6 MONTHS",
+      "ja": "6か月",
+      "size": 27.5,
+      "align": "center"
+    },
+    {
+      "box": [569, 625, 124, 47],
+      "en": "5 WEEKS",
+      "ja": "5週間",
+      "size": 28,
+      "align": "center"
+    },
+    {
+      "box": [754, 623, 67, 31],
+      "text": [758, 609, 61, 59],
+      "en": "DAYS",
+      "ja": "日",
+      "size": 30
+    },
+    {
+      "box": [890, 622, 59, 33],
+      "text": [887, 609, 60, 59],
+      "en": "DAY",
+      "ja": "日",
+      "size": 30
+    },
+    {
+      "box": [968, 618, 104, 39],
+      "en": "2 HOURS",
+      "ja": "2時間",
+      "size": 29,
+      "align": "center"
+    },
+    {
+      "box": [441, 691, 125, 35],
+      "en": "10 MONTHS",
+      "ja": "10か月",
+      "size": 26,
+      "align": "center"
+    },
+    {
+      "box": [575, 691, 116, 36],
+      "en": "2 MONTHS",
+      "ja": "2か月",
+      "size": 27,
+      "align": "center"
+    },
+    {
+      "box": [754, 694, 66, 32],
+      "text": [758, 680, 61, 61],
+      "en": "DAYS",
+      "ja": "日",
+      "size": 30
+    },
+    {
+      "box": [884, 696, 67, 32],
+      "text": [887, 680, 60, 61],
+      "en": "DAYS",
+      "ja": "日",
+      "size": 30
+    },
+    {
+      "box": [969, 692, 107, 37],
+      "en": "5 HOURS",
+      "ja": "5時間",
+      "size": 27.5,
+      "align": "center"
+    },
+    {
+      "box": [703, 764, 117, 37],
+      "en": "2 MONTHS",
+      "ja": "2か月",
+      "size": 27.5,
+      "align": "center"
+    },
+    {
+      "box": [828, 769, 123, 42],
+      "en": "2 WEEKS",
+      "ja": "2週間",
+      "size": 28,
+      "align": "center"
+    },
+    {
+      "box": [1018, 767, 59, 32],
+      "text": [1015, 753, 62, 59],
+      "en": "DAY",
+      "ja": "日",
+      "size": 30
+    },
+    {
+      "box": [828, 840, 122, 47],
+      "en": "8 WEEKS",
+      "ja": "8週間",
+      "size": 28,
+      "align": "center"
+    },
+    {
+      "box": [1013, 841, 67, 32],
+      "text": [1015, 824, 62, 61],
+      "en": "DAYS",
+      "ja": "日",
+      "size": 30
+    }
+  ]
+}
