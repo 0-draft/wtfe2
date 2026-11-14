@@ -6,7 +6,10 @@
     "creator": "Randall Munroe",
     "since": "2006",
     "status": "active",
-    "latest": { "date": "2026-11-13", "url": "https://xkcd.com/3324/" },
+    "latest": {
+      "date": "2026-11-13",
+      "url": "https://xkcd.com/3324/"
+    },
     "checked": "2026-11-15",
     "tier": "translated",
     "terms": {
@@ -45,7 +48,10 @@
     "url": "https://turnoff.us/",
     "creator": "Daniel Stori",
     "status": "dormant",
-    "latest": { "date": "2025-01-30", "url": "https://turnoff.us/geek/git-submodules/" },
+    "latest": {
+      "date": "2025-01-30",
+      "url": "https://turnoff.us/geek/git-submodules/"
+    },
     "checked": "2026-11-15",
     "tier": "translated",
     "terms": {
@@ -74,7 +80,10 @@
     "id": "abstruse-goose",
     "name": "Abstruse Goose",
     "url": "https://github.com/s-macke/Abstruse-Goose-Archive",
-    "creator": "Anonymous",
+    "creator": {
+      "en": "Anonymous",
+      "ja": "匿名"
+    },
     "status": "ended",
     "checked": "2026-11-15",
     "tier": "translated",
@@ -97,12 +106,18 @@
     "creator": "Zach Weinersmith",
     "since": "2002",
     "status": "active",
-    "latest": { "date": "2026-11-14", "url": "https://www.smbc-comics.com/comic/field" },
+    "latest": {
+      "date": "2026-11-14",
+      "url": "https://www.smbc-comics.com/comic/field"
+    },
     "checked": "2026-11-15",
     "tier": "linked",
     "terms": {
       "kind": "none-stated",
-      "label": "No reuse terms published",
+      "label": {
+        "en": "No reuse terms published",
+        "ja": "利用条件の記載なし"
+      },
       "url": "https://www.smbc-comics.com/"
     },
     "feed": "https://www.smbc-comics.com/comic/rss",
@@ -127,12 +142,18 @@
     "url": "https://existentialcomics.com/",
     "creator": "Corey Mohler",
     "status": "active",
-    "latest": { "date": "2026-11-09", "url": "https://existentialcomics.com/comic/680" },
+    "latest": {
+      "date": "2026-11-09",
+      "url": "https://existentialcomics.com/comic/680"
+    },
     "checked": "2026-11-15",
     "tier": "linked",
     "terms": {
       "kind": "none-stated",
-      "label": "No reuse terms published",
+      "label": {
+        "en": "No reuse terms published",
+        "ja": "利用条件の記載なし"
+      },
       "url": "https://existentialcomics.com/"
     },
     "feed": "https://existentialcomics.com/rss.xml",
@@ -163,15 +184,24 @@
     "id": "monkeyuser",
     "name": "MonkeyUser",
     "url": "https://www.monkeyuser.com/",
-    "creator": "Uncredited on the site",
+    "creator": {
+      "en": "Uncredited on the site",
+      "ja": "サイト上に作者名の記載なし"
+    },
     "since": "2016",
     "status": "dormant",
-    "latest": { "date": "2025-04-10", "url": "https://www.monkeyuser.com/2025/button/" },
+    "latest": {
+      "date": "2025-04-10",
+      "url": "https://www.monkeyuser.com/2025/button/"
+    },
     "checked": "2026-11-15",
     "tier": "linked",
     "terms": {
       "kind": "reserved",
-      "label": "All rights reserved",
+      "label": {
+        "en": "All rights reserved",
+        "ja": "全権利留保 (All rights reserved)"
+      },
       "url": "https://www.monkeyuser.com/",
       "quote": "Copyright Monkeyuser 2025. All rights reserved."
     },
@@ -203,15 +233,24 @@
     "id": "the-daily-wtf",
     "name": "The Daily WTF",
     "url": "https://thedailywtf.com/",
-    "creator": "Alex Papadimoulis (founder); Remy Porter (editor-in-chief)",
+    "creator": {
+      "en": "Alex Papadimoulis (founder); Remy Porter (editor-in-chief)",
+      "ja": "Alex Papadimoulis (創設者)、Remy Porter (編集長)"
+    },
     "since": "2004",
     "status": "active",
-    "latest": { "date": "2026-11-13", "url": "https://thedailywtf.com/articles/the-artist-formerly-known-as" },
+    "latest": {
+      "date": "2026-11-13",
+      "url": "https://thedailywtf.com/articles/the-artist-formerly-known-as"
+    },
     "checked": "2026-11-15",
     "tier": "linked",
     "terms": {
       "kind": "reserved",
-      "label": "Copyright Inedo Publishing",
+      "label": {
+        "en": "Copyright Inedo Publishing",
+        "ja": "著作権は Inedo Publishing"
+      },
       "url": "https://thedailywtf.com/",
       "quote": "Copyright © 2026 Inedo Publishing"
     },
@@ -243,15 +282,24 @@
     "id": "commitstrip",
     "name": "CommitStrip",
     "url": "https://www.commitstrip.com/en/",
-    "creator": "Etienne Issartial (art), Thomas Gx (stories); English by Mark Nightingale",
+    "creator": {
+      "en": "Etienne Issartial (art), Thomas Gx (stories); English by Mark Nightingale",
+      "ja": "Etienne Issartial (作画)、Thomas Gx (原作)、英訳 Mark Nightingale"
+    },
     "since": "2012",
     "status": "dormant",
-    "latest": { "date": "2024-08-27", "url": "https://www.commitstrip.com/en/2024/08/27/hello-world/" },
+    "latest": {
+      "date": "2024-08-27",
+      "url": "https://www.commitstrip.com/en/2024/08/27/hello-world/"
+    },
     "checked": "2026-11-15",
     "tier": "linked",
     "terms": {
       "kind": "noncommercial-use",
-      "label": "Non-commercial use with link and credit",
+      "label": {
+        "en": "Non-commercial use with link and credit",
+        "ja": "非商用ならリンクとクレジット付きで利用可"
+      },
       "url": "https://www.commitstrip.com/en/about/",
       "quote": "You can use our strips for any non-commercial purpose. You can use them to illustrate an article or a blog post, as long as you aren't just duplicating our content for the sake of it. In all cases, a link to the strip and attribution to us is required."
     },
@@ -290,7 +338,10 @@
     "tier": "linked",
     "terms": {
       "kind": "reserved",
-      "label": "Copyright Matthew Inman",
+      "label": {
+        "en": "Copyright Matthew Inman",
+        "ja": "著作権は Matthew Inman"
+      },
       "url": "https://theoatmeal.com/pages/about",
       "quote": "All content is Copyright © 2025 Matthew Inman."
     },
@@ -321,7 +372,10 @@
     "tier": "linked",
     "terms": {
       "kind": "permission",
-      "label": "Reprints by permission only",
+      "label": {
+        "en": "Reprints by permission only",
+        "ja": "転載は許可制"
+      },
       "url": "https://phdcomics.com/about.php",
       "quote": "They may not be copied or duplicated in any form, in whole or in part, without prior written consent"
     },

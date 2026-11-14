@@ -1,6 +1,6 @@
 ---
 import ComicStage from "../components/ComicStage.astro";
-import type { Comic } from "../data/schema.ts";
+import { type Comic, inLang } from "../data/schema.ts";
 import Base from "../layouts/Base.astro";
 import { comicLabel, comics, licenseOf, siteFor } from "../lib/data.ts";
 import { asset, formatDate, href, type Lang, ui } from "../lib/i18n.ts";
@@ -48,7 +48,7 @@ description = description.trim();
       }
       <p class="comic__meta">
         <span>
-          {t.by} {comic.author}
+          {t.by} {inLang(comic.author, lang)}
         </span>
         <span>
           {t.published}:{" "}
@@ -145,9 +145,19 @@ description = description.trim();
               <a href={comic.url} lang="en">
                 {comic.title}
               </a>{" "}
-              — {comic.author}, {site.name}
+              — {inLang(comic.author, lang)}, {site.name}
             </dd>
           </div>
+          {
+            comic.formerUrl && (
+              <div>
+                <dt>{t.creditFirst}</dt>
+                <dd>
+                  <span class="mono">{comic.formerUrl}</span> ({t.offline})
+                </dd>
+              </div>
+            )
+          }
           <div>
             <dt>{t.creditImage}</dt>
             <dd>

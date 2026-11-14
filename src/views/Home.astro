@@ -1,5 +1,6 @@
 ---
 import ComicCard from "../components/ComicCard.astro";
+import { inLang } from "../data/schema.ts";
 import Base from "../layouts/Base.astro";
 import { comics, sites } from "../lib/data.ts";
 import { href, type Lang, ui } from "../lib/i18n.ts";
@@ -44,7 +45,7 @@ const linked = sites.filter((s) => s.tier === "linked");
           <li class="spine">
             <a href={href(lang, `shelf/#${s.id}`)}>
               <span class="spine__name">{s.name}</span>
-              <span class="spine__by">{s.creator}</span>
+              <span class="spine__by">{inLang(s.creator, lang)}</span>
             </a>
           </li>
         ))

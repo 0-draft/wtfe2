@@ -56,6 +56,8 @@ export const ui = {
     credits: "Credits",
     creditOriginal: "Original",
     creditImage: "Image file",
+    creditFirst: "First published at",
+    offline: "offline",
     creditModified:
       "The English page shows the original image unmodified. The Japanese page shows an adaptation by wtfe2: the lettering was erased from the art and replaced with a Japanese translation. The adaptation is shared under the same license as the original.",
     prev: "Previous",
@@ -111,6 +113,8 @@ export const ui = {
     credits: "クレジット",
     creditOriginal: "原作",
     creditImage: "画像ファイル",
+    creditFirst: "初出",
+    offline: "現在は閲覧不可",
     creditModified:
       "英語版のページは原画をそのまま表示している。日本語版のページは wtfe2 による翻案で、原画から描き文字を消し、日本語訳に差し替えている。翻案は原作と同じライセンスで公開する。",
     prev: "前へ",

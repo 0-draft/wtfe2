@@ -6,7 +6,8 @@
   "titleJa": "ハッピーなプログラマー",
   "url": "https://github.com/s-macke/Abstruse-Goose-Archive/blob/master/comics/467.md",
   "imageSource": "https://raw.githubusercontent.com/s-macke/Abstruse-Goose-Archive/master/comics/the_art_of_happy_programming.png",
-  "author": "Abstruse Goose (anonymous)",
+  "author": { "en": "Abstruse Goose (anonymous)", "ja": "Abstruse Goose (作者匿名)" },
+  "formerUrl": "abstrusegoose.com/467",
   "license": "CC-BY-NC-3.0-US",
   "image": { "file": "abstruse-goose-467-the-happy-programmer.png", "width": 744, "height": 299, "displayWidth": 980 },
   "note": {

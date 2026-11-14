@@ -35,7 +35,7 @@ const src =
   <img class="art art--main" src={src} width={W} height={H} alt={alt} loading={loading} decoding="async" />
   {
     withOriginal && lettered && (
-      <img class="art art--original" src={asset(`comics/${file}`)} width={W} height={H} alt="" loading="lazy" decoding="async" />
+      <img class="art art--original" src={asset(`comics/${file}`)} width={W} height={H} alt={alt} loading="lazy" decoding="async" />
     )
   }
   {

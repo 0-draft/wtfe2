@@ -5,7 +5,7 @@ import { readdir, readFile } from "node:fs/promises";
 import path from "node:path";
 import sharp from "sharp";
 import { z } from "zod";
-import { Comic, LICENSES, Site } from "../src/data/schema.ts";
+import { Comic, inLang, LICENSES, Site } from "../src/data/schema.ts";
 
 const root = path.resolve(import.meta.dirname, "..");
 const problems: string[] = [];
@@ -42,8 +42,8 @@ for (const f of files) {
   if (!site) fail(where, `no site entry for series ${c.series}`);
   else {
     if (site.tier !== "translated") fail(where, `${site.id} is not a translated site`);
-    if (site.terms.label !== LICENSES[c.license].label) {
-      fail(where, `license ${LICENSES[c.license].label} differs from the site's ${site.terms.label}`);
+    if (inLang(site.terms.label, "en") !== LICENSES[c.license].label) {
+      fail(where, `license ${LICENSES[c.license].label} differs from the site's ${inLang(site.terms.label, "en")}`);
     }
   }
 
@@ -78,6 +78,13 @@ for (const f of files) {
       fail(at, "lettering cannot fit its box at this size and line count");
     }
   });
+}
+
+// Only images of adapted comics may ship: anything else in public/comics would be
+// a copy of a strip this site has no licence to show.
+const referenced = new Set([...slugs].map((s) => `${s}.png`));
+for (const f of await readdir(path.join(root, "public/comics"))) {
+  if (!referenced.has(f)) fail(`public/comics/${f}`, "image is not used by any comic entry");
 }
 
 if (problems.length > 0) {

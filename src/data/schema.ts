@@ -12,6 +12,13 @@ export type Box = z.infer<typeof Box>;
 const Bilingual = z.object({ en: z.string().min(1), ja: z.string().min(1) }).strict();
 export type Bilingual = z.infer<typeof Bilingual>;
 
+/** A proper name stays one string; anything with words in it carries both languages. */
+const Text = z.union([z.string().min(1), Bilingual]);
+export type Text = z.infer<typeof Text>;
+export function inLang(t: Text, lang: "en" | "ja"): string {
+  return typeof t === "string" ? t : t[lang];
+}
+
 /**
  * One piece of lettering. `box` is where the original lettering sits: the plate
  * builder erases the ink inside it, and the translation is set inside it unless
@@ -66,7 +73,9 @@ export const Comic = z
     url: z.url(),
     /** Where the image file was taken from, when that is not `url` itself. */
     imageSource: z.url(),
-    author: z.string().min(1),
+    author: Text,
+    /** Where the strip was first published, when that address no longer serves it. Shown as text, not linked. */
+    formerUrl: z.string().optional(),
     license: z.enum(Object.keys(LICENSES) as [LicenseId, ...LicenseId[]]),
     image: z
       .object({
@@ -91,7 +100,7 @@ export const Site = z
     id: z.string().regex(/^[a-z0-9-]+$/),
     name: z.string().min(1),
     url: z.url(),
-    creator: z.string().min(1),
+    creator: Text,
     since: z
       .string()
       .regex(/^\d{4}$/)
@@ -108,7 +117,7 @@ export const Site = z
     terms: z
       .object({
         kind: z.enum(["cc", "permission", "noncommercial-use", "reserved", "none-stated"]),
-        label: z.string().min(1),
+        label: Text,
         url: z.url(),
         quote: z.string().optional(),
       })

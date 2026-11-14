@@ -6,7 +6,8 @@
   "titleJa": "プログラミングを独学する方法",
   "url": "https://github.com/s-macke/Abstruse-Goose-Archive/blob/master/comics/249.md",
   "imageSource": "https://raw.githubusercontent.com/s-macke/Abstruse-Goose-Archive/master/comics/ars_longa_vita_brevis.png",
-  "author": "Abstruse Goose (anonymous)",
+  "author": { "en": "Abstruse Goose (anonymous)", "ja": "Abstruse Goose (作者匿名)" },
+  "formerUrl": "abstrusegoose.com/249",
   "license": "CC-BY-NC-3.0-US",
   "image": {
     "file": "abstruse-goose-249-how-to-teach-yourself-programming.png",
