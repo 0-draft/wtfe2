@@ -92,17 +92,27 @@ const linked = sites.filter((s) => s.tier === "linked");
     border: 3px solid var(--rule);
     border-radius: 48% 52% 46% 54% / 60% 55% 45% 40%;
   }
+  /* The tail: an ink triangle with a paper triangle inside it, overlapping the
+     balloon's border so the outline opens into the tail. */
+  .hero__bubble::before,
   .hero__bubble::after {
     content: "";
     position: absolute;
-    left: 18%;
-    bottom: -0.42em;
-    width: 0.5em;
-    height: 0.5em;
+    clip-path: polygon(0 0, 100% 0, 8% 100%);
+  }
+  .hero__bubble::before {
+    top: calc(100% - 6px);
+    left: 30%;
+    width: 0.62em;
+    height: 0.55em;
+    background: var(--rule);
+  }
+  .hero__bubble::after {
+    top: calc(100% - 9px);
+    left: calc(30% + 4.5px);
+    width: calc(0.62em - 13px);
+    height: calc(0.55em - 6px);
     background: var(--card);
-    border-right: 3px solid var(--rule);
-    border-bottom: 3px solid var(--rule);
-    transform: skewX(-28deg) rotate(40deg);
   }
   .hero__lede {
     max-width: 52ch;
