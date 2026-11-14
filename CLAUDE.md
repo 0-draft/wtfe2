@@ -4,7 +4,9 @@ Bilingual (English default, Japanese at `/ja/`) Astro site that introduces webco
 
 ## Invariants
 
-- Only sites whose terms are a Creative Commons license allowing adaptation (`"tier": "translated"`, `"terms.kind": "cc"` in `src/data/sites.json`) may have images in `public/comics/`. Everything else is described and linked; never copy its images, and quote its terms verbatim.
+- Images in `public/comics/` are allowed only for sites with `"tier": "translated"` in `src/data/sites.json`, and only when `terms.kind` is `cc` (a Creative Commons license allowing adaptation), `translation-permitted` (the creator's own terms allow translations; follow their credit rules, e.g. Bonkers World: credit and link next to the drawing, signature kept), or `permission-granted` (a recorded `permission` with `scope`; strips outside the scope are refused by `validate:data`). The grant record stays in the data; the site itself only credits the creator by name.
+- Everything else is an explainer in `src/data/explainers/`: retold in our own words, never a copied image. The one exception is a site whose terms allow its strips to illustrate an article (`noncommercial-use`, CommitStrip), whose images may sit in `public/strips/` unmodified with Japanese subtitles. Quote terms verbatim.
+- Every comic and explainer carries a `takeaway`: something to act on, in a sentence or two.
 - No ads, sponsorships or affiliate links: every comic here is non-commercial only.
 - `en` in a region is the original lettering verbatim; `ja` is a faithful translation with line breaks chosen by hand. Do not invent jokes or drop lines.
 - Facts in notes, site blurbs and picks must come from the publisher's own pages (or the strip itself, viewed). Record the check date in `checked`. If something could not be verified, leave it out rather than guess.
