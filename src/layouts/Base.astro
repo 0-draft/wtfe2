@@ -13,9 +13,11 @@ interface Props {
   title?: string;
   description?: string;
   image?: string;
+  /** The 404 page has no canonical URL or counterpart; its language switch goes to the other home page. */
+  notFound?: boolean;
 }
 
-const { lang, path, title, description, image } = Astro.props;
+const { lang, path, title, description, image, notFound = false } = Astro.props;
 const t = ui[lang];
 const pageTitle = title ? `${title} — ${t.siteName}` : `${t.siteName} — ${t.tagline}`;
 const desc = description ?? t.description;
@@ -38,10 +40,17 @@ const nav = [
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{pageTitle}</title>
     <meta name="description" content={desc} />
-    <link rel="canonical" href={canonical} />
-    <link rel="alternate" hreflang="en" href={alt("en")} />
-    <link rel="alternate" hreflang="ja" href={alt("ja")} />
-    <link rel="alternate" hreflang="x-default" href={alt("en")} />
+    {
+      !notFound && (
+        <>
+          <link rel="canonical" href={canonical} />
+          <link rel="alternate" hreflang="en" href={alt("en")} />
+          <link rel="alternate" hreflang="ja" href={alt("ja")} />
+          <link rel="alternate" hreflang="x-default" href={alt("en")} />
+        </>
+      )
+    }
+    {notFound && <meta name="robots" content="noindex" />}
     <link rel="icon" href={`${import.meta.env.BASE_URL}favicon.svg`} type="image/svg+xml" />
     <meta name="theme-color" content="#f4f0e4" media="(prefers-color-scheme: light)" />
     <meta name="theme-color" content="#13120e" media="(prefers-color-scheme: dark)" />
@@ -49,7 +58,7 @@ const nav = [
     <meta property="og:site_name" content={t.siteName} />
     <meta property="og:title" content={pageTitle} />
     <meta property="og:description" content={desc} />
-    <meta property="og:url" content={canonical} />
+    {!notFound && <meta property="og:url" content={canonical} />}
     <meta property="og:locale" content={lang === "ja" ? "ja_JP" : "en_US"} />
     {ogImage && <meta property="og:image" content={ogImage} />}
     <meta name="twitter:card" content={ogImage ? "summary_large_image" : "summary"} />
@@ -74,7 +83,7 @@ const nav = [
             }
           </ul>
         </nav>
-        <a class="lang-switch" href={href(other(lang), path)} hreflang={other(lang)} lang={other(lang)}>
+        <a class="lang-switch" href={notFound ? href(other(lang)) : href(other(lang), path)} hreflang={other(lang)} lang={other(lang)}>
           {t.switchTo}
         </a>
       </div>

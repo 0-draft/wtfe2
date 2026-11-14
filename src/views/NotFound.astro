@@ -9,7 +9,7 @@ const { lang } = Astro.props;
 const t = ui[lang];
 ---
 
-<Base lang={lang} path="404/" title={t.notFound}>
+<Base lang={lang} path="404/" title={t.notFound} notFound>
   <div class="wrap prose">
     <h1>{t.notFound}</h1>
     <p>{t.notFoundLede}</p>
