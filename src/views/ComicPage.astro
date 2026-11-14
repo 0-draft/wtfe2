@@ -1,5 +1,6 @@
 ---
 import ComicStage from "../components/ComicStage.astro";
+import Takeaway from "../components/Takeaway.astro";
 import { type Comic, inLang } from "../data/schema.ts";
 import Base from "../layouts/Base.astro";
 import { comicLabel, comics, licenseOf, siteFor } from "../lib/data.ts";
@@ -93,6 +94,8 @@ description = description.trim();
         )
       }
     </figure>
+
+    <Takeaway text={comic.takeaway} lang={lang} />
 
     <div class="comic__body">
       <section aria-labelledby="why" class="prose">

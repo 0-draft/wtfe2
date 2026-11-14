@@ -9,6 +9,10 @@
   "author": "Daniel Stori",
   "license": "CC-BY-NC-SA-4.0",
   "image": { "file": "turnoff-dont-sigkill.png", "width": 1200, "height": 2416, "displayWidth": 720 },
+  "takeaway": {
+    "en": "Stop processes with SIGTERM, give them time to finish, and use SIGKILL only when that fails. On your own side, handle SIGTERM so a clean shutdown is possible.",
+    "ja": "プロセスを止めるときは SIGTERM を送って終わる時間を与え、それでも止まらないときだけ SIGKILL を使う。自分が書くプログラムの側では、きれいに終われるよう SIGTERM を処理しておくこと。"
+  },
   "note": {
     "en": "Signal handling as a family drama. A process can catch SIGTERM and use the time to let its threads finish and clean up; SIGKILL cannot be caught or ignored, so nothing gets to say goodbye. The practical rule matches the comic: send SIGTERM, wait, and reach for SIGKILL only when that fails.",
     "ja": "シグナル処理を家族ドラマとして描いた作品。プロセスは SIGTERM を捕まえて、スレッドに仕事を終えさせ、後片付けをする時間に使える。SIGKILL は捕まえることも無視することもできないので、誰もお別れを言えない。実務のルールもこの漫画のとおりで、まず SIGTERM を送って待ち、それでも止まらないときだけ SIGKILL を使う。"

@@ -1,0 +1,38 @@
+{
+  "slug": "the-oatmeal-how-a-web-design-goes-straight-to-hell",
+  "site": "the-oatmeal",
+  "title": "How a Web Design Goes Straight to Hell",
+  "titleJa": "Web デザインがまっすぐ地獄に落ちるまで",
+  "url": "https://theoatmeal.com/comics/design_hell",
+  "author": "Matthew Inman",
+  "hook": {
+    "en": "A clean design, one \"minor change\" at a time.",
+    "ja": "すっきりしたデザインが、「ちょっとした修正」一つずつで。"
+  },
+  "beats": [
+    {
+      "en": "Everything is great at the start. The client shows their current site, and designer and client laugh at how bad it is.",
+      "ja": "最初はすべて順調。クライアントが今のサイトを見せ、デザイナーと一緒にそのひどさを笑う。"
+    },
+    {
+      "en": "The redesign looks good and works well: the high point of the project. Then come a few \"minor\" changes: make it \"pop\", make it \"edgy\".",
+      "ja": "作り直したデザインは見た目も使い勝手も良く、これがプロジェクトの頂点になる。そこへ「ちょっとした」修正が来る。もっと「映える」ように、もっと「尖った」感じに。"
+    },
+    {
+      "en": "The changes pile up: Comic Sans, a lens flare, less \"liney\". Then the client's mother joins in with brighter colours and a kitten, and the client's dog gets its own stream-of-consciousness copy.",
+      "ja": "修正は積み重なる。Comic Sans、レンズフレア、「線っぽさ」を減らす。クライアントの母親まで加わって、明るい色と子猫を足せと言い、クライアントの犬の独白文までページに載ることになる。"
+    },
+    {
+      "en": "The designer becomes a mouse cursor the client operates by email. Footnotes throughout say real clients made these requests.",
+      "ja": "デザイナーは、クライアントがメールで操作するマウスカーソルになり果てる。脚注には、どれも実際のクライアントに言われたことだと書かれている。"
+    }
+  ],
+  "takeaway": {
+    "en": "Agree on the goal and who decides before the first mockup, and tie each requested change to that goal. Feedback that cannot say what problem it solves is a preference, and preferences add up.",
+    "ja": "最初のモックを出す前に、目的と決定者を合意しておき、依頼された修正は一つずつその目的に結び付けること。どの問題を解くのか言えないフィードバックは好みにすぎず、好みは積み重なる。"
+  },
+  "note": {
+    "en": "Written about web design, but it is the story of any project where feedback arrives without criteria and from people outside the decision. The footnotes are what make it land: none of it was invented.",
+    "ja": "Web デザインの話として描かれているが、判断基準のないフィードバックが、決定権のない人からも届くプロジェクトならどれにも当てはまる。効いているのは脚注で、どれも作り話ではない。"
+  }
+}

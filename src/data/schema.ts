@@ -88,6 +88,8 @@ export const Comic = z
       .strict(),
     /** xkcd's hover text. */
     titleText: Bilingual.optional(),
+    /** What to take away: the lesson, in a sentence or two, written as something to act on. */
+    takeaway: Bilingual,
     note: Bilingual,
     related: z.array(z.object({ label: Bilingual, url: z.url(), urlJa: z.url().optional() }).strict()).default([]),
     regions: z.array(Region).min(1),
@@ -128,3 +130,48 @@ export const Site = z
   })
   .strict();
 export type Site = z.infer<typeof Site>;
+
+/**
+ * A strip from a site that does not allow adaptation, explained in this site's own
+ * words. Only a site whose terms allow reuse with credit may have its image shown
+ * (unmodified, with subtitles); for everyone else the strip is retold and linked.
+ */
+export const Explainer = z
+  .object({
+    slug: z.string().regex(/^[a-z0-9]+(-[a-z0-9]+)*$/),
+    site: z.string().regex(/^[a-z0-9-]+$/),
+    title: z.string().min(1),
+    titleJa: z.string().min(1),
+    url: z.url(),
+    published: z
+      .string()
+      .regex(/^\d{4}-\d{2}-\d{2}$/)
+      .optional(),
+    author: Text,
+    kind: z.enum(["strip", "article"]).default("strip"),
+    /** One line for the card. */
+    hook: Bilingual,
+    image: z
+      .object({
+        file: z.string().regex(/^[a-z0-9-]+\.(png|jpg)$/),
+        width: z.number().int().positive(),
+        height: z.number().int().positive(),
+        source: z.url(),
+      })
+      .strict()
+      .optional(),
+    /** Subtitles for a shown image: the original lines verbatim, with a translation. */
+    dialogue: z
+      .array(z.object({ who: Bilingual.optional(), en: z.string().min(1), ja: z.string().min(1) }).strict())
+      .optional(),
+    /** For a strip that is not shown: what happens, panel by panel, in this site's own words. */
+    beats: z.array(Bilingual).optional(),
+    takeaway: Bilingual,
+    note: Bilingual,
+    related: z.array(z.object({ label: Bilingual, url: z.url(), urlJa: z.url().optional() }).strict()).default([]),
+  })
+  .strict()
+  .refine((e) => (e.image ? !e.beats : !!e.beats && !e.dialogue), {
+    message: "a shown strip has dialogue and no beats; a retold strip has beats and no image or dialogue",
+  });
+export type Explainer = z.infer<typeof Explainer>;

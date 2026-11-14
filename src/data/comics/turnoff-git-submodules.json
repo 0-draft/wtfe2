@@ -9,6 +9,10 @@
   "author": "Daniel Stori",
   "license": "CC-BY-NC-SA-4.0",
   "image": { "file": "turnoff-git-submodules.png", "width": 1528, "height": 1703, "displayWidth": 720 },
+  "takeaway": {
+    "en": "Before adding a submodule, ask whether a package manager or a vendored copy would do. If it really has to be a submodule, document the clone and update steps for everyone.",
+    "ja": "submodule を足す前に、パッケージマネージャーかリポジトリへの取り込み (vendoring) で済まないかを考える。どうしても submodule にするなら、clone と更新の手順を全員向けに書いておくこと。"
+  },
   "note": {
     "en": "A flowchart in which every path ends without submodules: answer yes four times and it still says don't. Submodules pin another repository at an exact commit, which is sometimes what you want, but cloning, pulling and switching branches each gain a step every contributor has to remember. The arrows in the original are marked S and N; the Japanese version spells them out as yes and no.",
     "ja": "どの道をたどっても submodule を使わずに終わるフローチャート。「はい」を 4 回続けても、最後は「やめとけ」になる。submodule は別のリポジトリを特定のコミットに固定できて、それが必要な場面もある。ただ clone も pull もブランチの切り替えも、関わる全員が覚えておくべき手順が一つずつ増える。原画の矢印には S と N と書かれているが、日本語版では「はい」「いいえ」にした。"

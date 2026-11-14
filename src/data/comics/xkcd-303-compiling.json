@@ -14,6 +14,10 @@
     "en": "'Are you stealing those LCDs?' 'Yeah, but I'm doing it while my code compiles.'",
     "ja": "「その液晶ディスプレイ、盗んでるの?」「うん、でもコードのコンパイル中にやってるから」"
   },
+  "takeaway": {
+    "en": "Waiting on the build is a cost the whole team pays, many times a day. Measure it and make it shorter; the time the sword fights take is time nobody is shipping.",
+    "ja": "ビルド待ちは、チーム全員が一日に何度も払うコストだ。計測して短くすること。チャンバラをしている時間は、誰も何も出荷していない時間でもある。"
+  },
   "note": {
     "en": "From 2007, when a full build of a large C or C++ codebase could take long enough for a sword fight. Builds have got faster since, but the excuse never went away; it moved to CI queues, dependency installs and container image pulls.",
     "ja": "2007 年の作品。大きな C や C++ のコードベースのフルビルドが、チャンバラできるくらい長くかかった時代のもの。ビルドはその後速くなったが、この言い訳は消えていない。CI の待ち行列、依存パッケージのインストール、コンテナイメージの pull へと居場所を移しただけだ。"

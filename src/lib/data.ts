@@ -1,8 +1,9 @@
 import { z } from "zod";
-import { Comic, LICENSES, SERIES, type SeriesId, Site } from "../data/schema.ts";
+import { Comic, Explainer, LICENSES, SERIES, type SeriesId, Site } from "../data/schema.ts";
 import rawSites from "../data/sites.json";
 
 const comicModules = import.meta.glob<{ default: unknown }>("../data/comics/*.json", { eager: true });
+const explainerModules = import.meta.glob<{ default: unknown }>("../data/explainers/*.json", { eager: true });
 
 const seriesOrder = new Map(SERIES.map((s, i) => [s, i]));
 
@@ -18,7 +19,23 @@ export const comics: Comic[] = Object.values(comicModules)
 
 export const sites: Site[] = z.array(Site).parse(rawSites);
 
-export function siteFor(series: SeriesId): Site {
+const siteOrder = new Map(sites.map((s, i) => [s.id, i]));
+
+/** Strips from sites that do not allow adaptation, explained here; in site order, newest first. */
+export const explainers: Explainer[] = Object.values(explainerModules)
+  .map((m) => Explainer.parse(m.default))
+  .sort(
+    (a, b) =>
+      (siteOrder.get(a.site) ?? 99) - (siteOrder.get(b.site) ?? 99) ||
+      (b.published ?? "").localeCompare(a.published ?? "") ||
+      a.slug.localeCompare(b.slug),
+  );
+
+export function explainerFor(url: string): Explainer | undefined {
+  return explainers.find((e) => e.url === url);
+}
+
+export function siteFor(series: SeriesId | string): Site {
   const site = sites.find((s) => s.id === series);
   if (!site) throw new Error(`no site entry for series ${series}`);
   return site;

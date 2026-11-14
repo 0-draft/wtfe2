@@ -1,0 +1,39 @@
+{
+  "slug": "monkeyuser-regex-explained",
+  "site": "monkeyuser",
+  "title": "Regex Explained",
+  "titleJa": "正規表現の解説",
+  "url": "https://www.monkeyuser.com/2020/regex-explained/",
+  "published": "2020-08-11",
+  "author": "MonkeyUser",
+  "hook": {
+    "en": "Explaining one part of a regex goes as expected.",
+    "ja": "正規表現の一部を説明すると、まあそうなる。"
+  },
+  "beats": [
+    {
+      "en": "A developer stands at a whiteboard covered in a long regular expression and starts: \"Now, this part of the regex...\"",
+      "ja": "長い正規表現が書かれたホワイトボードの前で、開発者が「さて、この部分だけど……」と説明を始める。"
+    },
+    {
+      "en": "A piece of the expression breaks loose and attacks him. \"Oops!\"",
+      "ja": "式の一部が外れて、彼に襲いかかる。「おっと!」"
+    },
+    {
+      "en": "He bends down to pick up the pieces: \"Sorry, bad capture group.\"",
+      "ja": "彼はかがんで破片を拾う。「ごめん、キャプチャグループが悪かった」"
+    },
+    {
+      "en": "Back at the board, the regex has turned into a row of emoji and symbols. \"Now where was I... God damn it!!!\"",
+      "ja": "ボードに戻ると、正規表現は絵文字と記号の列に変わっている。「どこまで話したっけ……ちくしょう!!!」"
+    }
+  ],
+  "takeaway": {
+    "en": "If a regex needs a whiteboard session, it needs to be broken up. Use named groups, verbose mode with comments, or a small parser, and keep tests beside it.",
+    "ja": "ホワイトボードで説明しないといけない正規表現は、分割すべきだ。名前付きグループ、コメントを書ける拡張モード、小さなパーサーを使い、テストをすぐ横に置くこと。"
+  },
+  "note": {
+    "en": "Regular expressions are dense enough that explaining one often changes it. The hover text puts it as a law: how long you can follow a regex is inversely proportional to the square of its capture groups.",
+    "ja": "正規表現は密度が高すぎて、説明しているうちに書き換わってしまうことがよくある。ホバーテキストはこれを法則に仕立てていて、正規表現を理解していられる時間はキャプチャグループの数の二乗に反比例する、と書いている。"
+  }
+}

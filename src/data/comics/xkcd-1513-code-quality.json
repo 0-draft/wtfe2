@@ -14,6 +14,10 @@
     "en": "I honestly didn't think you could even USE emoji in variable names. Or that there were so many different crying ones.",
     "ja": "正直、変数名に絵文字が「使える」とすら思ってなかった。泣き顔の絵文字があんなに種類あるってことも。"
   },
+  "takeaway": {
+    "en": "Code that compiles is not yet code someone else can read. Ask for a review early, and treat readability as part of the work rather than polish for later.",
+    "ja": "コンパイルが通るコードは、まだ他人が読めるコードではない。早めにレビューを頼み、読みやすさは後で仕上げる飾りではなく仕事の一部として扱うこと。"
+  },
   "note": {
     "en": "Three escalating similes for unreadable code, then a one-line surrender. The joke rests on a real gap: \"it compiles without errors\" is a much lower bar than \"someone else can read it\", and a style guide only closes part of it.",
     "ja": "読めないコードを表す比喩が三段階でエスカレートし、最後は一行で降参する。笑いの土台にあるのは本物のギャップだ。「エラーなしでコンパイルが通る」は「他人が読める」よりずっと低いハードルで、コード規約で埋まるのはその一部にすぎない。"

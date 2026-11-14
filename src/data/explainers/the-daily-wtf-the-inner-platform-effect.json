@@ -1,0 +1,36 @@
+{
+  "slug": "the-daily-wtf-the-inner-platform-effect",
+  "site": "the-daily-wtf",
+  "kind": "article",
+  "title": "The Inner-Platform Effect",
+  "titleJa": "内部プラットフォーム効果",
+  "url": "https://thedailywtf.com/articles/the_inner-platform_effect",
+  "published": "2006-04-21",
+  "author": "Alex Papadimoulis",
+  "hook": {
+    "en": "So customizable it rebuilt the platform it ran on, badly.",
+    "ja": "カスタマイズ性を追い求め、土台のプラットフォームを劣化コピーしたシステム。"
+  },
+  "beats": [
+    {
+      "en": "A loan system is built so that users can change its data structures with a built-in modeler, instead of asking programmers.",
+      "ja": "あるローン審査システムは、プログラマーに頼まなくても利用者がデータ構造を変えられるよう、組み込みのモデラーを備えて作られた。"
+    },
+    {
+      "en": "A developer is brought in to add one field to one form.",
+      "ja": "そこへ、フォームに項目を一つ追加するためだけに開発者が呼ばれる。"
+    },
+    {
+      "en": "The modeler has become so complex that only a programmer can use it, and the article names the pattern: a system so customizable that it ends up a poor replica of the platform it was built with.",
+      "ja": "モデラーは複雑になりすぎて、結局プログラマーにしか扱えない。記事はこのパターンに名前を付ける。カスタマイズ性を追い求めたあまり、それを作るのに使ったプラットフォームの劣化コピーになってしまうシステム、と。"
+    }
+  ],
+  "takeaway": {
+    "en": "When a configuration system starts to grow types, conditions and loops, stop: you are writing a worse programming language. Use the real one, or keep the configuration small.",
+    "ja": "設定の仕組みに型や条件分岐やループが生え始めたら、手を止める。それは出来の悪いプログラミング言語を作っているのと同じだ。本物の言語を使うか、設定を小さく保つこと。"
+  },
+  "note": {
+    "en": "The name stuck far beyond the site. Database tables that store \"entity, attribute, value\" rows, YAML that grows conditionals, rule engines that need their own debugger: each started as flexibility and ended as a second, worse platform inside the first.",
+    "ja": "この名前はサイトの外でも定着した。「エンティティ、属性、値」の行を保存するテーブル、条件分岐が生えた YAML、専用のデバッガが必要になったルールエンジン。どれも柔軟性として始まり、最初のプラットフォームの中にもう一つ、出来の悪いプラットフォームを作って終わる。"
+  }
+}

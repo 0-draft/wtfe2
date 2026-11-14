@@ -1,8 +1,9 @@
 ---
 import ComicCard from "../components/ComicCard.astro";
+import ExplainerCard from "../components/ExplainerCard.astro";
 import { inLang } from "../data/schema.ts";
 import Base from "../layouts/Base.astro";
-import { comics, sites } from "../lib/data.ts";
+import { comics, explainers, sites } from "../lib/data.ts";
 import { href, type Lang, ui } from "../lib/i18n.ts";
 
 interface Props {
@@ -30,6 +31,17 @@ const linked = sites.filter((s) => s.tier === "linked");
     <p class="prose lede">{t.translatedLede}</p>
     <div class="grid">
       {comics.map((c, i) => <ComicCard comic={c} lang={lang} eager={i < 3} />)}
+    </div>
+  </section>
+
+  <section class="wrap block" aria-labelledby="explained">
+    <div class="section-head">
+      <h2 id="explained">{t.explained}</h2>
+      <span class="badge mono">{explainers.length}</span>
+    </div>
+    <p class="prose lede">{t.explainedLede}</p>
+    <div class="grid">
+      {explainers.map((e) => <ExplainerCard e={e} lang={lang} />)}
     </div>
   </section>
 

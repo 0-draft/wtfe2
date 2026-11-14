@@ -1,0 +1,308 @@
+---
+import Takeaway from "../components/Takeaway.astro";
+import { type Explainer, inLang } from "../data/schema.ts";
+import Base from "../layouts/Base.astro";
+import { explainers, siteFor } from "../lib/data.ts";
+import { asset, formatDate, href, type Lang, ui } from "../lib/i18n.ts";
+
+interface Props {
+  lang: Lang;
+  e: Explainer;
+}
+const { lang, e } = Astro.props;
+const t = ui[lang];
+const ja = lang === "ja";
+const site = siteFor(e.site);
+const title = ja ? e.titleJa : e.title;
+const idx = explainers.findIndex((x) => x.slug === e.slug);
+const prev = idx > 0 ? explainers[idx - 1] : undefined;
+const next = idx < explainers.length - 1 ? explainers[idx + 1] : undefined;
+const path = `explained/${e.slug}/`;
+const terms = site.terms;
+---
+
+<Base lang={lang} path={path} title={title} description={e.takeaway[lang]}>
+  <article class="wrap ex">
+    <header class="ex__head">
+      <p class="kicker"><a href={href(lang, `sites/#${site.id}`)}>{site.name}</a>{e.kind === "article" && ` · ${t.article}`}</p>
+      <h1 class="ex__title">{title}</h1>
+      {
+        ja && (
+          <p class="ex__orig">
+            {t.originalTitle}: <span lang="en">{e.title}</span>
+          </p>
+        )
+      }
+      <p class="ex__meta">
+        <span>
+          {t.by} {inLang(e.author, lang)}
+        </span>
+        {
+          e.published && (
+            <span>
+              {t.published}: <time datetime={e.published}>{formatDate(e.published, lang)}</time>
+            </span>
+          )
+        }
+      </p>
+      <p class="ex__go">
+        <a class="ex__btn" href={e.url} lang="en">{t.readOriginal} ↗</a>
+      </p>
+    </header>
+
+    <Takeaway text={e.takeaway} lang={lang} />
+
+    {
+      e.image && e.dialogue ? (
+        <section class="ex__shown" aria-labelledby="dialogue">
+          <figure class="ex__figure panel">
+            <img
+              src={asset(`strips/${e.image.file}`)}
+              width={e.image.width}
+              height={e.image.height}
+              alt={ja ? `「${e.titleJa}」の原画。セリフは右に日本語訳付きで書き起こしている。` : `${e.title}, as published. The dialogue is transcribed alongside.`}
+              loading="eager"
+            />
+            <figcaption>
+              <a href={e.url} lang="en">{e.title}</a> — {inLang(e.author, lang)}. <a href={terms.url}>{inLang(terms.label, lang)}</a>
+            </figcaption>
+          </figure>
+          <div class="ex__dialogue">
+            <h2 id="dialogue">{t.subtitles}</h2>
+            <ol>
+              {e.dialogue.map((d) => (
+                <li>
+                  {d.who && <span class="ex__who">{d.who[lang]}</span>}
+                  {ja ? (
+                    <>
+                      <span class="ex__line">{d.ja}</span>
+                      <span class="ex__line-en" lang="en">
+                        {d.en}
+                      </span>
+                    </>
+                  ) : (
+                    <span class="ex__line">{d.en}</span>
+                  )}
+                </li>
+              ))}
+            </ol>
+          </div>
+        </section>
+      ) : (
+        <section class="ex__beats" aria-labelledby="beats">
+          <h2 id="beats">{t.whatHappens}</h2>
+          <ol>
+            {e.beats?.map((b) => (
+              <li class="panel">{b[lang]}</li>
+            ))}
+          </ol>
+          <p class="ex__go">
+            <a class="ex__btn" href={e.url} lang="en">{t.readOriginal} ↗</a>
+          </p>
+        </section>
+      )
+    }
+
+    <section class="prose ex__note" aria-labelledby="why">
+      <h2 id="why">{t.whyItLands}</h2>
+      <p>{e.note[lang]}</p>
+      {
+        e.related.length > 0 && (
+          <>
+            <h3 class="kicker">{t.related}</h3>
+            <ul>
+              {e.related.map((r) => (
+                <li>
+                  <a href={ja && r.urlJa ? r.urlJa : r.url}>{r.label[lang]}</a>
+                </li>
+              ))}
+            </ul>
+          </>
+        )
+      }
+      <p class="ex__terms">
+        {t.termsLabel}: <a href={terms.url}>{inLang(terms.label, lang)}</a>
+        {terms.quote && <q lang="en">{terms.quote}</q>}
+      </p>
+    </section>
+
+    <nav class="pager" aria-label={ja ? "前後の解説" : "More explainers"}>
+      {
+        prev ? (
+          <a href={href(lang, `explained/${prev.slug}/`)} rel="prev">
+            <span class="kicker">← {t.prev}</span>
+            <span>{ja ? prev.titleJa : prev.title}</span>
+          </a>
+        ) : (
+          <span />
+        )
+      }
+      {
+        next && (
+          <a class="pager__next" href={href(lang, `explained/${next.slug}/`)} rel="next">
+            <span class="kicker">{t.next} →</span>
+            <span>{ja ? next.titleJa : next.title}</span>
+          </a>
+        )
+      }
+    </nav>
+  </article>
+</Base>
+
+<style>
+  .ex__head {
+    margin-bottom: 2.25rem;
+  }
+  .ex__head .kicker {
+    margin: 0;
+  }
+  .ex__head .kicker a {
+    text-decoration: none;
+  }
+  .ex__title {
+    font-size: clamp(1.7rem, 4.5vw, 2.6rem);
+    margin: 0.15rem 0 0.25rem;
+  }
+  .ex__orig {
+    margin: 0;
+    color: var(--ink-2);
+  }
+  .ex__meta {
+    margin: 0.5rem 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.2rem 1.25rem;
+    font-size: 0.88rem;
+    color: var(--ink-2);
+  }
+  .ex__go {
+    margin: 1rem 0 0;
+  }
+  .ex__btn {
+    display: inline-block;
+    padding: 0.45rem 1rem;
+    border: 2.5px solid var(--rule);
+    background: var(--card);
+    box-shadow: 3px 3px 0 var(--rule);
+    font-weight: 700;
+    text-decoration: none;
+  }
+  .ex__btn:hover {
+    background: var(--hl);
+    color: #17150f;
+  }
+  .ex__shown {
+    display: grid;
+    grid-template-columns: minmax(0, 650px) minmax(0, 1fr);
+    gap: clamp(1.5rem, 4vw, 3rem);
+    align-items: start;
+    margin-bottom: 2.5rem;
+  }
+  @media (max-width: 900px) {
+    .ex__shown {
+      grid-template-columns: 1fr;
+    }
+  }
+  .ex__figure {
+    margin: 0;
+    padding: clamp(6px, 1.4vw, 12px);
+    background: #fff;
+  }
+  .ex__figure img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .ex__figure figcaption {
+    margin-top: 0.5rem;
+    font-size: 0.82rem;
+    color: #4c4739;
+  }
+  .ex__dialogue h2,
+  .ex__beats h2,
+  .ex__note h2 {
+    font-size: 1.3rem;
+  }
+  .ex__dialogue ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: grid;
+    gap: 0.85rem;
+  }
+  .ex__who {
+    display: block;
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    color: var(--ink-2);
+  }
+  .ex__line {
+    display: block;
+    font-family: var(--font-hand);
+    font-weight: 600;
+    font-size: 1.05rem;
+    font-feature-settings: "palt" 1;
+  }
+  .ex__line-en {
+    display: block;
+    font-size: 0.85rem;
+    color: var(--ink-2);
+  }
+  .ex__beats {
+    max-width: 52rem;
+    margin-bottom: 2.5rem;
+  }
+  .ex__beats ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    counter-reset: beat;
+    display: grid;
+    gap: 1rem;
+  }
+  .ex__beats li {
+    counter-increment: beat;
+    position: relative;
+    padding: 0.9rem 1rem 0.9rem 3.2rem;
+    background: var(--card);
+  }
+  .ex__beats li::before {
+    content: counter(beat);
+    position: absolute;
+    left: 0.9rem;
+    top: 0.85rem;
+    width: 1.6rem;
+    height: 1.6rem;
+    display: grid;
+    place-items: center;
+    background: var(--ink);
+    color: var(--paper);
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+  }
+  .ex__terms {
+    font-size: 0.85rem;
+    color: var(--ink-2);
+  }
+  .ex__terms q {
+    display: block;
+    font-style: italic;
+  }
+  .pager {
+    margin-top: 3rem;
+    padding-top: 1rem;
+    border-top: 2.5px solid var(--rule);
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+  .pager a {
+    display: grid;
+    text-decoration: none;
+    max-width: 45%;
+  }
+  .pager__next {
+    text-align: right;
+    margin-left: auto;
+  }
+</style>

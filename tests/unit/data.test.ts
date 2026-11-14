@@ -52,7 +52,21 @@ describe("sites", () => {
   });
 
   it("throws for an unknown series", () => {
-    // @ts-expect-error deliberately wrong id
     expect(() => siteFor("nope")).toThrow();
+  });
+});
+
+describe("explainers", () => {
+  it("only shows images for sites whose terms allow reuse", async () => {
+    const { explainers } = await import("../../src/lib/data.ts");
+    expect(explainers.length).toBeGreaterThanOrEqual(12);
+    for (const e of explainers) {
+      const site = siteFor(e.site);
+      expect(site.tier).toBe("linked");
+      if (e.image) expect(site.terms.kind).toBe("noncommercial-use");
+      else expect(e.beats?.length ?? 0).toBeGreaterThan(0);
+      expect(e.takeaway.en.length).toBeGreaterThan(0);
+      expect(e.takeaway.ja.length).toBeGreaterThan(0);
+    }
   });
 });

@@ -15,6 +15,10 @@
     "height": 638,
     "displayWidth": 900
   },
+  "takeaway": {
+    "en": "Skill comes from years of practice, other people and mistakes, not from a 21-day plan. Measure your learning in projects finished and lessons learned, not days elapsed.",
+    "ja": "技術は 21 日間の計画からではなく、何年もの練習と、人との関わりと、失敗から身につく。学びの進み具合は経過日数ではなく、やり遂げたプロジェクトと得た教訓で測ること。"
+  },
   "note": {
     "en": "A parody of the \"Teach Yourself C++ in 21 Days\" kind of book: the only way to fit it into 21 days is a time machine. Peter Norvig's essay \"Teach Yourself Programming in Ten Years\" makes the same argument in prose and links to this comic. The image file is named ars_longa_vita_brevis: the art is long, life is short.",
     "ja": "「21 日でわかる C++」のたぐいの本のパロディ。21 日に収める唯一の方法はタイムマシンだ、というオチ。Peter Norvig のエッセイ「Teach Yourself Programming in Ten Years」は同じ主張を文章で展開していて、この漫画にもリンクしている。画像のファイル名は ars_longa_vita_brevis (技芸は長く、人生は短し)。"

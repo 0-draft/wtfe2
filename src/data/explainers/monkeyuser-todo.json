@@ -1,0 +1,39 @@
+{
+  "slug": "monkeyuser-todo",
+  "site": "monkeyuser",
+  "title": "// TODO",
+  "titleJa": "// TODO",
+  "url": "https://www.monkeyuser.com/2017/todo/",
+  "published": "2017-06-27",
+  "author": "MonkeyUser",
+  "hook": {
+    "en": "The TODO you meant to pull out while it was small.",
+    "ja": "小さいうちに抜くはずだった TODO。"
+  },
+  "beats": [
+    {
+      "en": "A tiny sprout grows next to a sign that says \"//TODO REMOVE\". A developer walks past it.",
+      "ja": "「//TODO REMOVE」と書かれた立て札の横に、小さな芽が生えている。開発者はその横を通り過ぎる。"
+    },
+    {
+      "en": "Later he comes back and starts to pull it, looking determined.",
+      "ja": "しばらくして戻ってきた彼は、決意の表情で引き抜きにかかる。"
+    },
+    {
+      "en": "He pulls with everything he has and falls forward; behind him the ground cracks open along the roots.",
+      "ja": "全力で引っぱった彼は前のめりに倒れ、その後ろで根に沿って地面がひび割れていく。"
+    },
+    {
+      "en": "He walks off whistling with a single leaf. The ground has split open over a huge root system, bugs are living in it, and the sign now reads \"REMOVE\" crossed out, \"CLEANUP\".",
+      "ja": "彼は葉っぱ一枚を手に、口笛を吹きながら去っていく。地面は巨大な根で裂け、そこには虫が住みつき、立て札の「REMOVE」は線で消されて「CLEANUP」になっている。"
+    }
+  ],
+  "takeaway": {
+    "en": "A TODO is cheapest the day it is written. Give each one an owner and a deadline, or a ticket, and remove it while it is still small.",
+    "ja": "TODO は書いたその日がいちばん安く片付く。担当者と期限、またはチケットを付けて、小さいうちに取り除くこと。"
+  },
+  "note": {
+    "en": "Everyone has met this TODO: a small shortcut that other code grew around until removing it meant digging up half the system. The quiet edit on the sign, from REMOVE to CLEANUP, is the most honest part.",
+    "ja": "誰もが一度は出会っている TODO だ。小さな手抜きのまわりに他のコードが育ち、取り除くにはシステムの半分を掘り返すことになる。立て札が REMOVE からこっそり CLEANUP に書き換えられているところが、いちばん正直だ。"
+  }
+}

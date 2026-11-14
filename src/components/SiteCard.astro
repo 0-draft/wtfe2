@@ -1,6 +1,6 @@
 ---
 import { inLang, type Site } from "../data/schema.ts";
-import { comics } from "../lib/data.ts";
+import { comics, explainerFor, explainers } from "../lib/data.ts";
 import { formatDate, href, type Lang, ui } from "../lib/i18n.ts";
 
 interface Props {
@@ -11,7 +11,14 @@ interface Props {
 const { site, lang, headingLevel = 3 } = Astro.props;
 const t = ui[lang];
 const H = `h${headingLevel}` as "h2" | "h3";
-const here = comics.filter((c) => c.series === site.id);
+const here = [
+  ...comics
+    .filter((c) => c.series === site.id)
+    .map((c) => ({ path: `comics/${c.slug}/`, title: lang === "ja" ? c.titleJa : c.title })),
+  ...explainers
+    .filter((e) => e.site === site.id)
+    .map((e) => ({ path: `explained/${e.slug}/`, title: lang === "ja" ? e.titleJa : e.title })),
+];
 const statusClass = site.status === "active" ? "badge--hot" : site.status === "ended" ? "badge--quiet" : "";
 ---
 
@@ -34,14 +41,22 @@ const statusClass = site.status === "active" ? "badge--hot" : site.status === "e
       <div class="site__picks">
         <p class="kicker">{t.picks}</p>
         <ul>
-          {site.picks.map((p) => (
-            <li>
-              <a href={p.url} lang="en">
-                {p.title}
-              </a>
-              <span class="site__why">{p.why[lang]}</span>
-            </li>
-          ))}
+          {site.picks.map((p) => {
+            const ex = explainerFor(p.url);
+            return (
+              <li>
+                <a href={p.url} lang="en">
+                  {p.title}
+                </a>
+                <span class="site__why">{p.why[lang]}</span>
+                {ex && (
+                  <a class="site__ex" href={href(lang, `explained/${ex.slug}/`)}>
+                    {t.readExplainer} →
+                  </a>
+                )}
+              </li>
+            );
+          })}
         </ul>
       </div>
     )
@@ -54,7 +69,7 @@ const statusClass = site.status === "active" ? "badge--hot" : site.status === "e
         <ul class="site__here">
           {here.map((c) => (
             <li>
-              <a href={href(lang, `comics/${c.slug}/`)}>{lang === "ja" ? c.titleJa : c.title}</a>
+              <a href={href(lang, c.path)}>{c.title}</a>
             </li>
           ))}
         </ul>
@@ -146,6 +161,12 @@ const statusClass = site.status === "active" ? "badge--hot" : site.status === "e
   }
   .site__picks a {
     font-weight: 700;
+  }
+  .site__ex {
+    display: inline-block;
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--accent);
   }
   .site__why {
     display: block;

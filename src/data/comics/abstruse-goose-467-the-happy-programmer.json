@@ -10,6 +10,10 @@
   "formerUrl": "abstrusegoose.com/467",
   "license": "CC-BY-NC-3.0-US",
   "image": { "file": "abstruse-goose-467-the-happy-programmer.png", "width": 744, "height": 299, "displayWidth": 980 },
+  "takeaway": {
+    "en": "Enjoyment is part of doing good work. Leave room to play with code without a deadline, because that is where much of the learning happens.",
+    "ja": "楽しむことは良い仕事の一部だ。締め切りのないところでコードと遊ぶ余地を残しておくこと。学びの多くはそこで起きる。"
+  },
   "note": {
     "en": "Bob Ross's painting show, The Joy of Painting, recast as a programming tutorial, happy little binary trees included. The Japanese caption borrows the show's Japanese title, ボブの絵画教室 (Bob's Painting Class).",
     "ja": "ボブ・ロスの絵画番組「The Joy of Painting」をプログラミング講座に置き換えた作品で、楽しい小さな二分木まで出てくる。日本語版のキャプションは、この番組の邦題「ボブの絵画教室」をもじった。"

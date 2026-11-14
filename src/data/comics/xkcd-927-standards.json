@@ -14,6 +14,10 @@
     "en": "Fortunately, the charging one has been solved now that we've all standardized on mini-USB. Or is it micro-USB? Shit.",
     "ja": "幸い、充電器の件はもう解決した。みんな mini-USB に統一したからね。いや、micro-USB だっけ? くそっ。"
   },
+  "takeaway": {
+    "en": "Before proposing a new standard, format or framework, check whether an existing one can be extended. A replacement only reduces the count if the old ones actually retire.",
+    "ja": "新しい規格やフォーマット、フレームワークを提案する前に、既存のものを拡張できないかを確かめる。置き換えで数が減るのは、古いほうが本当に引退したときだけだ。"
+  },
   "note": {
     "en": "The usual fate of the one standard meant to replace all the others: it becomes one more. Worth rereading before proposing a new format, protocol or in-house framework, and a reason to ask first whether one of the existing fourteen can be extended.",
     "ja": "ほかの全部を置き換えるはずの統一規格が、たいていたどる運命。結局もう一つ増えるだけになる。新しいフォーマットやプロトコル、社内フレームワークを提案する前に読み返したい一枚で、まず既存の 14 個のどれかを拡張できないかを考える理由にもなる。"

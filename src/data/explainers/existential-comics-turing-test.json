@@ -1,0 +1,34 @@
+{
+  "slug": "existential-comics-turing-test",
+  "site": "existential-comics",
+  "title": "Turing Test",
+  "titleJa": "チューリングテスト",
+  "url": "https://existentialcomics.com/comic/15",
+  "author": "Corey Mohler",
+  "hook": {
+    "en": "Indistinguishable from a dog, according to the dogs.",
+    "ja": "犬たちいわく、犬と区別がつかない。"
+  },
+  "beats": [
+    {
+      "en": "A scientist with a clipboard watches a dog bark at another dog hidden behind a wall.",
+      "ja": "クリップボードを持った科学者が、壁の向こうに隠れた犬に向かって吠える犬を観察している。"
+    },
+    {
+      "en": "In the next panel the hidden dog has been replaced by a radio that barks back, and the dog barks just the same.",
+      "ja": "次のコマでは、隠れていた犬が吠え返すラジオに置き換えられているが、犬は同じように吠え続ける。"
+    },
+    {
+      "en": "The scientist congratulates the inventor on a machine as intelligent and conscious as dogs; the inventor says that with the grant money, humans are not far behind. The checklist on the clipboard reads: barks, doesn't stop when yelled at, more barking.",
+      "ja": "科学者は発明者に、犬と同じくらい知的で意識のある機械を作ったと祝福する。発明者は「この研究費があれば、人間もすぐですよ」と答える。クリップボードのチェックリストには「吠える」「怒鳴っても止まらない」「さらに吠える」とある。"
+    }
+  ],
+  "takeaway": {
+    "en": "A test that only checks behaviour, judged by whoever is easiest to fool, measures the judge as much as the machine. When you evaluate a system, ask what your test can and cannot tell apart.",
+    "ja": "振る舞いだけを見て、いちばん騙されやすい審査員に判定させるテストは、機械と同じくらい審査員のほうを測っている。システムを評価するときは、そのテストが何を見分けられて何を見分けられないかを問うこと。"
+  },
+  "note": {
+    "en": "Turing proposed his imitation game as a replacement for the vague question \"can machines think?\". The strip keeps the procedure and swaps the audience, and the procedure still passes. It reads differently now that chatbots are routinely described as passing one test or another.",
+    "ja": "Turing は「機械は考えられるか」という曖昧な問いの代わりに、模倣ゲームを提案した。この漫画は手順はそのままに審査員だけを入れ替え、それでも手順は合格を出してしまう。チャットボットがあれこれのテストに合格したと日常的に報じられるいまは、読み味が変わる。"
+  }
+}

@@ -5,7 +5,7 @@ import { readdir, readFile } from "node:fs/promises";
 import path from "node:path";
 import sharp from "sharp";
 import { z } from "zod";
-import { Comic, inLang, LICENSES, Site } from "../src/data/schema.ts";
+import { Comic, Explainer, inLang, LICENSES, Site } from "../src/data/schema.ts";
 
 const root = path.resolve(import.meta.dirname, "..");
 const problems: string[] = [];
@@ -80,6 +80,46 @@ for (const f of files) {
   });
 }
 
+// Explainers: an image may be shown only where the site's own terms allow reuse with
+// credit; every other strip is retold, never copied.
+const exDir = path.join(root, "src/data/explainers");
+const exFiles = (await readdir(exDir)).filter((f) => f.endsWith(".json")).sort();
+const shownStrips = new Set<string>();
+for (const f of exFiles) {
+  const where = `explainers/${f}`;
+  const parsed = Explainer.safeParse(JSON.parse(await readFile(path.join(exDir, f), "utf8")));
+  if (!parsed.success) {
+    fail(where, z.prettifyError(parsed.error));
+    continue;
+  }
+  const e = parsed.data;
+  if (`${e.slug}.json` !== f) fail(where, `slug ${e.slug} does not match the file name`);
+  const site = sites.find((s) => s.id === e.site);
+  if (!site) {
+    fail(where, `no site entry for ${e.site}`);
+    continue;
+  }
+  if (site.tier !== "linked") fail(where, `${site.id} is adapted, so its strips belong in comics/, not explainers/`);
+  if (e.image) {
+    if (site.terms.kind !== "noncommercial-use") fail(where, `${site.id}'s terms do not allow showing its strips`);
+    const img = path.join(root, "public/strips", e.image.file);
+    if (!existsSync(img)) fail(where, `missing image ${e.image.file}`);
+    else {
+      const meta = await sharp(img).metadata();
+      if (meta.width !== e.image.width || meta.height !== e.image.height) {
+        fail(where, `image is ${meta.width}x${meta.height}, data says ${e.image.width}x${e.image.height}`);
+      }
+    }
+    shownStrips.add(e.image.file);
+  }
+  if (!new URL(e.url).hostname.endsWith(new URL(site.url).hostname.replace(/^www\./, ""))) {
+    fail(where, `url ${e.url} is not on ${site.url}`);
+  }
+}
+for (const f of await readdir(path.join(root, "public/strips"))) {
+  if (!shownStrips.has(f)) fail(`public/strips/${f}`, "image is not used by any explainer");
+}
+
 // Only images of adapted comics may ship: anything else in public/comics would be
 // a copy of a strip this site has no licence to show.
 const referenced = new Set([...slugs].map((s) => `${s}.png`));
@@ -91,4 +131,4 @@ if (problems.length > 0) {
   console.error(`${problems.length} problem(s):\n${problems.map((p) => `  - ${p}`).join("\n")}`);
   process.exit(1);
 }
-console.log(`ok: ${files.length} comics, ${sites.length} sites`);
+console.log(`ok: ${files.length} comics, ${exFiles.length} explainers, ${sites.length} sites`);

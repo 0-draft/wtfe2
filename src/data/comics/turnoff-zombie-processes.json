@@ -9,6 +9,10 @@
   "author": "Daniel Stori",
   "license": "CC-BY-NC-SA-4.0",
   "image": { "file": "turnoff-zombie-processes.png", "width": 1200, "height": 700, "displayWidth": 900 },
+  "takeaway": {
+    "en": "A process that starts children must collect their exit status with wait(), or handle SIGCHLD. Zombies piling up mean the parent is not listening, not that the children are broken.",
+    "ja": "子プロセスを起動するプロセスは、wait() で終了ステータスを回収するか、SIGCHLD を処理しなければならない。ゾンビが溜まるのは子が壊れているからではなく、親が聞いていないからだ。"
+  },
   "note": {
     "en": "A zombie is a process that has already exited but whose parent has not yet collected its exit status with wait(). It holds no memory, only a slot in the process table, and it stays until the parent reaps it, or until the parent itself exits and init adopts and reaps it. The busy parent with the phone is exactly that bug.",
     "ja": "ゾンビとは、すでに終了しているのに、親プロセスが wait() で終了ステータスを回収していないプロセスのこと。メモリは持たず、プロセステーブルの一枠だけを占める。親が回収するか、親自身が終了して init に引き取られるまで残り続ける。電話に夢中な忙しい親は、まさにそのバグを描いている。"

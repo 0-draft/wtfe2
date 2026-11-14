@@ -1,8 +1,14 @@
 import AxeBuilder from "@axe-core/playwright";
 import { expect, type Page, test } from "@playwright/test";
-import { comics } from "./fixtures.ts";
+import { comics, explainers } from "./fixtures.ts";
 
-const pages = ["", "sites/", "about/", ...comics.map((s) => `comics/${s}/`)];
+const pages = [
+  "",
+  "sites/",
+  "about/",
+  ...comics.map((s) => `comics/${s}/`),
+  ...explainers.map((s) => `explained/${s}/`),
+];
 
 async function noHorizontalScroll(page: Page) {
   const overflow = await page.evaluate(
@@ -121,6 +127,20 @@ for (const url of [
     expect(serious.map((v) => `${v.id}: ${v.nodes.map((n) => n.target.join(" ")).join(", ")}`)).toEqual([]);
   });
 }
+
+test("every comic and explainer page leads with a takeaway", async ({ page }) => {
+  for (const url of [`comics/${comics[0]}/`, `ja/explained/${explainers[0]}/`]) {
+    await page.goto(url);
+    await expect(page.locator(".takeaway")).toHaveCount(1);
+    await expect(page.locator(".takeaway__text")).not.toBeEmpty();
+  }
+});
+
+test("retold strips never show an image from their site", async ({ page }) => {
+  await page.goto("explained/monkeyuser-todo/");
+  await expect(page.locator("main img")).toHaveCount(0);
+  await expect(page.locator(".ex__beats li")).toHaveCount(4);
+});
 
 test("unknown pages get the 404 page", async ({ page }) => {
   const res = await page.goto("no-such-page/");

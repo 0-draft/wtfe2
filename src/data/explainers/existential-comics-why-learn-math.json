@@ -1,0 +1,38 @@
+{
+  "slug": "existential-comics-why-learn-math",
+  "site": "existential-comics",
+  "title": "Why Learn Math?",
+  "titleJa": "なぜ数学を学ぶのか",
+  "url": "https://existentialcomics.com/comic/449",
+  "author": "Corey Mohler",
+  "hook": {
+    "en": "\"I'm never going to use this\" meets the question of which society you want.",
+    "ja": "「どうせ使わない」に、どんな社会に住みたいかで返す。"
+  },
+  "beats": [
+    {
+      "en": "A teacher finishes explaining the area of an equilateral triangle; a student asks why they have to learn it if he will never use it.",
+      "ja": "教師が正三角形の面積の求め方を説明し終えると、生徒が「どうせ使わないのに、なんで学ぶ必要があるの」と聞く。"
+    },
+    {
+      "en": "The teacher answers that education is not designed for one student's personal use. The question is whether you want to live in a society where the subject is taught.",
+      "ja": "教師は、教育は一人の生徒の個人的な「使い道」のために設計されているわけではないと答える。問うべきは、その科目が教えられている社会に住みたいかどうかだ、と。"
+    },
+    {
+      "en": "One society can work out what a bridge can hold, calculate interest and program video game graphics; the other is full of people as dull as the student.",
+      "ja": "一方は、橋が耐えられる重さを計算でき、金利を計算でき、ゲームのグラフィックをプログラムできる社会。もう一方は、その生徒と同じくらいぼんやりした人ばかりの社会だ。"
+    },
+    {
+      "en": "The student raises his hand again: in the second society, is math replaced by an extended recess, or just more history?",
+      "ja": "生徒がまた手を挙げる。「二つ目の社会では、数学の代わりに休み時間が延びるの? それとも歴史が増えるだけ?」"
+    }
+  ],
+  "takeaway": {
+    "en": "The value of shared knowledge shows up across a team or a society, not in each person's daily use. When you decide what everyone should learn, weigh what the group can do, not what each person will touch.",
+    "ja": "共有された知識の価値は、一人ひとりの日々の使い道ではなく、チームや社会全体に現れる。全員が何を学ぶべきかを決めるときは、各自が触れるかどうかではなく、集団として何ができるようになるかで考えること。"
+  },
+  "note": {
+    "en": "The argument is a familiar one in software teams: why learn the fundamentals, or the parts of the system you do not work on? The student's last question is the comic's way of admitting that a good argument rarely persuades the person it is aimed at.",
+    "ja": "この議論はソフトウェアチームでもおなじみだ。なぜ基礎を学ぶのか、自分が担当しない部分まで知る必要があるのか。生徒の最後の質問は、良い議論ほど相手には刺さらないことを、漫画なりに認めている。"
+  }
+}

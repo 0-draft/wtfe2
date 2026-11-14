@@ -14,6 +14,10 @@
     "en": "Someday ImageMagick will finally break for good and we'll have a long period of scrambling as we try to reassemble civilization from the rubble.",
     "ja": "いつか ImageMagick が完全に壊れる日が来て、私たちは瓦礫の中から文明を組み立て直そうと、長いあいだ右往左往することになる。"
   },
+  "takeaway": {
+    "en": "Know which small projects your system rests on, and who keeps them alive. A dependency with one maintainer is a risk you carry, so fund it, help maintain it, or plan for the day it stops.",
+    "ja": "自分のシステムがどの小さなプロジェクトに支えられていて、それを誰が維持しているのかを把握しておく。メンテナーが一人しかいない依存は自分が抱えているリスクだ。資金を出すか、メンテを手伝うか、止まる日に備えておくこと。"
+  },
   "note": {
     "en": "A picture often shown in talks on open-source sustainability. Large parts of the stack rest on small projects kept alive by one or two unpaid people. The hover text names ImageMagick; the 2024 xz-utils backdoor, slipped in through a project with a single overworked maintainer, made the same point the hard way.",
     "ja": "オープンソースの持続性を語る発表でよく引用される一枚。スタックの大部分は、一人か二人が無償で支えている小さなプロジェクトの上に載っている。ホバーテキストでは ImageMagick が名指しされている。2024 年の xz-utils のバックドアは、一人で抱え込んでいたメンテナーのプロジェクトから入り込み、同じことを痛い形で示した。"

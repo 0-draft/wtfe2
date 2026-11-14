@@ -1,0 +1,51 @@
+{
+  "slug": "commitstrip-a-very-comprehensive-and-precise-spec",
+  "site": "commitstrip",
+  "title": "A very comprehensive and precise spec",
+  "titleJa": "網羅的で正確な仕様書",
+  "url": "https://www.commitstrip.com/en/2016/08/25/a-very-comprehensive-and-precise-spec/",
+  "published": "2016-08-25",
+  "author": {
+    "en": "Etienne Issartial and Thomas Gx (CommitStrip)",
+    "ja": "Etienne Issartial、Thomas Gx (CommitStrip)"
+  },
+  "hook": {
+    "en": "The industry term for a spec precise enough to generate a program.",
+    "ja": "プログラムを生成できるほど正確な仕様書を、業界では何と呼ぶか。"
+  },
+  "image": {
+    "file": "commitstrip-2016-08-25-a-very-comprehensive-and-precise-spec.jpg",
+    "width": 650,
+    "height": 613,
+    "source": "https://www.commitstrip.com/wp-content/uploads/2016/08/Strip-Les-specs-cest-du-code-650-finalenglish.jpg"
+  },
+  "dialogue": [
+    {
+      "who": { "en": "Coffee drinker", "ja": "コーヒーの男" },
+      "en": "Some day we won't even need coders any more. We'll be able to just write the specification and the program will write itself",
+      "ja": "そのうちプログラマーなんて要らなくなるよ。仕様書を書くだけで、プログラムが勝手にできあがるようになる"
+    },
+    {
+      "who": { "en": "Developer", "ja": "開発者" },
+      "en": "Oh wow, you're right! We'll be able to write a comprehensive and precise spec and bam, we won't need programmers any more!",
+      "ja": "おお、たしかに! 網羅的で正確な仕様書を書けば、ドーン、もうプログラマーは要らないってわけだ!"
+    },
+    { "who": { "en": "Coffee drinker", "ja": "コーヒーの男" }, "en": "Exactly!", "ja": "そのとおり!" },
+    {
+      "who": { "en": "Developer", "ja": "開発者" },
+      "en": "And do you know the industry term for a project specification that is comprehensive and precise enough to generate a program?",
+      "ja": "で、プログラムを生成できるくらい網羅的で正確なプロジェクトの仕様書のことを、業界で何て呼ぶか知ってる?"
+    },
+    { "who": { "en": "Coffee drinker", "ja": "コーヒーの男" }, "en": "Uh... no...", "ja": "え……知らない……" },
+    { "who": { "en": "Developer", "ja": "開発者" }, "en": "Code", "ja": "コード" },
+    { "who": { "en": "Developer", "ja": "開発者" }, "en": "It's called code", "ja": "コードって言うんだよ" }
+  ],
+  "takeaway": {
+    "en": "Writing down exactly what a program should do is programming. When a tool promises to remove that work, ask where the precision will come from.",
+    "ja": "プログラムがすべきことを正確に書き下す作業は、それ自体がプログラミングだ。その作業をなくすと約束するツールに出会ったら、その正確さを誰がどこで担うのかを問うこと。"
+  },
+  "note": {
+    "en": "From 2016, and it has come back with every tool since that promises to turn requirements into software. A specification precise enough to leave nothing to interpret is a program; the work does not disappear, it moves into the spec. The coffee being spilled in the last panel is the right reaction.",
+    "ja": "2016 年の作品だが、要件をそのままソフトウェアに変えると約束するツールが出るたびに、この話は蒸し返されてきた。解釈の余地がないほど正確な仕様書は、それ自体がプログラムだ。仕事は消えるのではなく、仕様書の側に移るだけ。最後のコマでコーヒーをこぼしているのが正しい反応だと思う。"
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "slug": "commitstrip-west-side-project-story",
+  "site": "commitstrip",
+  "title": "West Side-project story",
+  "titleJa": "ウエスト・サイドプロジェクト物語",
+  "url": "https://www.commitstrip.com/en/2014/11/25/west-side-project-story/",
+  "published": "2014-11-25",
+  "author": {
+    "en": "Etienne Issartial and Thomas Gx (CommitStrip)",
+    "ja": "Etienne Issartial、Thomas Gx (CommitStrip)"
+  },
+  "hook": {
+    "en": "Nearly done. Then a new framework, just for fun.",
+    "ja": "もうすぐ完成。そこへ新しいフレームワークを、ちょっと試しに。"
+  },
+  "image": {
+    "file": "commitstrip-2014-11-25-west-side-project-story.jpg",
+    "width": 650,
+    "height": 995,
+    "source": "https://www.commitstrip.com/wp-content/uploads/2014/11/Strip-Side-project-650-finalenglish.jpg"
+  },
+  "dialogue": [
+    { "en": "Side-project", "ja": "サイドプロジェクト" },
+    {
+      "who": { "en": "Builder (thinking)", "ja": "建てている男 (心の声)" },
+      "en": "There we are, nearly done. Just a few more hours and this thing will be up and running...",
+      "ja": "よし、もうすぐ完成だ。あと数時間で動くようになるぞ……"
+    },
+    {
+      "who": { "en": "Builder", "ja": "建てている男" },
+      "en": "Oh wait, I just had an idea...",
+      "ja": "あ、待てよ。いいこと思いついた……"
+    },
+    {
+      "who": { "en": "Builder (thinking)", "ja": "建てている男 (心の声)" },
+      "en": "Let's try out that new framework, just for fun...",
+      "ja": "あの新しいフレームワーク、ちょっと試しに使ってみよう……"
+    },
+    {
+      "who": { "en": "Passer-by", "ja": "通りがかりの男" },
+      "en": "Starting another side-project, are we?",
+      "ja": "また新しいサイドプロジェクト始めたの?"
+    },
+    {
+      "who": { "en": "Builder", "ja": "建てている男" },
+      "en": "Yeah... Well no actually, I've nearly finished the other one so I just wanted to test out this other thing",
+      "ja": "うん……いや、そうじゃなくて、前のはほぼ終わったから、これをちょっと試したかっただけ"
+    }
+  ],
+  "takeaway": {
+    "en": "Starting is the fun part and finishing is the job. Before trying the new thing, ship the old one, or decide out loud that you are dropping it.",
+    "ja": "始めるのは楽しく、終わらせるのが仕事だ。新しいものに手を出す前に、前のものを出しきるか、やめると口に出して決めること。"
+  },
+  "note": {
+    "en": "The title puns on West Side Story, and the last panel pays it off: the field is full of half-built houses, each abandoned at \"nearly done\" for the next new thing. Anyone with a folder of unfinished side projects knows the pattern; the last 10% of a project is where it stops being new.",
+    "ja": "タイトルは『ウエスト・サイド物語』のもじりで、最後のコマがオチになっている。野原には建てかけの家がいくつも並び、どれも「もうすぐ完成」のところで次の新しいものに乗り換えられた跡だ。未完成のサイドプロジェクトのフォルダを持っている人なら覚えのある流れで、プロジェクトの最後の 1 割は、新しさが消える場所でもある。"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "slug": "the-daily-wtf-the-brillant-paula-bean",
+  "site": "the-daily-wtf",
+  "kind": "article",
+  "title": "The Brillant Paula Bean",
+  "titleJa": "ブリリアントなポーラ・ビーン",
+  "url": "https://thedailywtf.com/articles/the_brillant_paula_bean",
+  "published": "2005-08-05",
+  "author": "Alex Papadimoulis",
+  "hook": {
+    "en": "Weeks of \"steady progress\", one Java class.",
+    "ja": "何週間もの「順調です」と、Java クラス一つ。"
+  },
+  "beats": [
+    {
+      "en": "A contractor named Paula joins a team building a shipping and warehousing system and reports steady progress on her part.",
+      "ja": "Paula という契約開発者が、配送と倉庫管理のシステムを作るチームに加わり、担当部分は順調だと報告し続ける。"
+    },
+    {
+      "en": "As the deadline nears, her teammates step in to help integrate her work.",
+      "ja": "締め切りが近づき、チームメイトが彼女の成果物の統合を手伝おうとする。"
+    },
+    {
+      "en": "Her whole contribution turns out to be a single Java class with one string field: private String paula = \"Brillant\";",
+      "ja": "彼女の成果物の全部は、文字列のフィールドを一つ持つ Java クラスだった。private String paula = \"Brillant\";"
+    }
+  ],
+  "takeaway": {
+    "en": "\"It's going fine\" is not a status. Look at working code early and often, especially from someone new, and make progress visible in the repository rather than in meetings.",
+    "ja": "「順調です」は進捗報告ではない。動くコードを早めに、こまめに見ること。新しく入った人ならなおさらだ。進捗は会議ではなくリポジトリの上で見えるようにしておくこと。"
+  },
+  "note": {
+    "en": "One of the site's most famous stories, and \"Brillant\", misspelled, became shorthand among readers for confident nonsense. The lesson is less about Paula than about a process that let weeks pass without anyone looking at the code.",
+    "ja": "このサイトでもっとも有名な話の一つで、綴りを間違えた \"Brillant\" は、読者のあいだで自信満々のでたらめを指す言葉になった。教訓は Paula 本人よりも、誰もコードを見ないまま何週間も過ぎてしまったプロセスのほうにある。"
+  }
+}
