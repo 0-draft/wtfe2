@@ -87,8 +87,8 @@ export const LICENSES = {
   "CC-BY-NC-4.0": { label: "CC BY-NC 4.0", url: "https://creativecommons.org/licenses/by-nc/4.0/" },
   /** Bonkers World is CC BY-NC-ND, and its author separately allows translations with credit next to the drawing. */
   /** Strips used with the creator's direct permission; the grant is recorded on the site entry. */
-  "PERMISSION-PHD": { label: "Used with permission of Jorge Cham", url: "https://phdcomics.com/about.php" },
-  "PERMISSION-SMBC": { label: "Used with permission of Zach Weinersmith", url: "https://www.smbc-comics.com/" },
+  "PERMISSION-PHD": { label: "© Jorge Cham", url: "https://phdcomics.com/" },
+  "PERMISSION-SMBC": { label: "© Zach Weinersmith", url: "https://www.smbc-comics.com/" },
   "CC-BY-NC-ND-3.0-TRANSLATION": {
     label: "CC BY-NC-ND 3.0; translations allowed with credit",
     url: "https://bonkersworld.net/about",

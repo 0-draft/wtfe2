@@ -161,13 +161,13 @@
     "tier": "translated",
     "terms": {
       "kind": "permission-granted",
-      "label": "Used with permission of Zach Weinersmith",
+      "label": "© Zach Weinersmith",
       "url": "https://www.smbc-comics.com/"
     },
     "feed": "https://www.smbc-comics.com/comic/rss",
     "about": {
-      "en": "A daily gag strip that keeps returning to physics, math, economics and philosophy, usually with a final panel that undercuts the setup. Each comic also has a hidden bonus panel behind a button. One strip is shown here in Japanese with the author's permission.",
-      "ja": "物理、数学、経済学、哲学に何度も戻ってくる日刊のギャグ漫画で、最後のコマが前振りをひっくり返すのが定番。どの回にも、ボタンの裏にボーナスのコマが隠れている。 作者の許可を得て、1 本を日本語版にしている。"
+      "en": "A daily gag strip that keeps returning to physics, math, economics and philosophy, usually with a final panel that undercuts the setup. Each comic also has a hidden bonus panel behind a button.",
+      "ja": "物理、数学、経済学、哲学に何度も戻ってくる日刊のギャグ漫画で、最後のコマが前振りをひっくり返すのが定番。どの回にも、ボタンの裏にボーナスのコマが隠れている。"
     },
     "picks": [
       {
@@ -424,14 +424,14 @@
     "tier": "translated",
     "terms": {
       "kind": "permission-granted",
-      "label": "Used with permission of Jorge Cham",
+      "label": "© Jorge Cham",
       "url": "https://phdcomics.com/about.php",
       "quote": "We'll be happy to grant you permission, but you MUST e-mail us at questions(at)phdcomics.com to let us know how and which strips you are using."
     },
     "feed": "http://phdcomics.com/gradfeed.php",
     "about": {
-      "en": "Life in graduate school: advisors, procrastination, funding and the thesis that never ends. Not about software, but anyone who has worked on a long project with an unclear finish line will recognise it. Two strips are shown here in Japanese with the author's permission.",
-      "ja": "大学院生活を描いた漫画で、指導教員、先延ばし、研究費、終わらない博士論文が題材。ソフトウェアの話ではないが、ゴールの見えない長いプロジェクトを経験した人なら身に覚えがあるはず。 作者の許可を得て、2 本を日本語版にしている。"
+      "en": "Life in graduate school: advisors, procrastination, funding and the thesis that never ends. Not about software, but anyone who has worked on a long project with an unclear finish line will recognise it.",
+      "ja": "大学院生活を描いた漫画で、指導教員、先延ばし、研究費、終わらない博士論文が題材。ソフトウェアの話ではないが、ゴールの見えない長いプロジェクトを経験した人なら身に覚えがあるはず。"
     },
     "picks": [
       {

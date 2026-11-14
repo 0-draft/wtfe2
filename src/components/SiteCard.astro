@@ -86,16 +86,6 @@ const statusClass = site.status === "active" ? "badge--hot" : site.status === "e
       </dd>
     </div>
     {
-      site.permission && (
-        <div>
-          <dt>{t.permission}</dt>
-          <dd>
-            {site.permission.from}, <time datetime={site.permission.date}>{formatDate(site.permission.date, lang)}</time>
-          </dd>
-        </div>
-      )
-    }
-    {
       site.latest && (
         <div>
           <dt>{t.latest}</dt>

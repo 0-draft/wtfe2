@@ -38,13 +38,13 @@ Every comic page has:
 | [Browserling Comics](https://comic.browserling.com/) | Browserling | CC BY-NC 4.0 | Lettered in Japanese |
 | [Bonkers World](https://bonkersworld.net/) | Manu Cornet | CC BY-NC-ND 3.0, translations allowed by the author | Lettered in Japanese |
 | [Abstruse Goose](https://github.com/s-macke/Abstruse-Goose-Archive) | anonymous | CC BY-NC 3.0 US | Lettered in Japanese |
-| [SMBC](https://www.smbc-comics.com/) | Zach Weinersmith | used with permission | Lettered in Japanese |
+| [SMBC](https://www.smbc-comics.com/) | Zach Weinersmith | © Zach Weinersmith | Lettered in Japanese |
 | [Existential Comics](https://existentialcomics.com/) | Corey Mohler | none published | Explained |
 | [MonkeyUser](https://www.monkeyuser.com/) | uncredited | all rights reserved | Explained |
 | [The Daily WTF](https://thedailywtf.com/) | Alex Papadimoulis, Remy Porter | copyright Inedo | Explained |
 | [CommitStrip](https://www.commitstrip.com/en/) | Etienne Issartial, Thomas Gx | non-commercial use with credit | Explained |
 | [The Oatmeal](https://theoatmeal.com/) | Matthew Inman | copyright | Explained |
-| [PHD Comics](https://phdcomics.com/) | Jorge Cham | used with permission | Lettered in Japanese |
+| [PHD Comics](https://phdcomics.com/) | Jorge Cham | © Jorge Cham | Lettered in Japanese |
 
 The site carries no ads, sponsorships or affiliate links: every comic it adapts is licensed for non-commercial use only.
 

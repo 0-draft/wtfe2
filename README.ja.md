@@ -38,13 +38,13 @@
 | [Browserling Comics](https://comic.browserling.com/) | Browserling | CC BY-NC 4.0 | 日本語版あり |
 | [Bonkers World](https://bonkersworld.net/) | Manu Cornet | CC BY-NC-ND 3.0 (作者が翻訳を許可) | 日本語版あり |
 | [Abstruse Goose](https://github.com/s-macke/Abstruse-Goose-Archive) | 匿名 | CC BY-NC 3.0 US | 日本語版あり |
-| [SMBC](https://www.smbc-comics.com/) | Zach Weinersmith | 作者の許可を得て使用 | 日本語版あり |
+| [SMBC](https://www.smbc-comics.com/) | Zach Weinersmith | © Zach Weinersmith | 日本語版あり |
 | [Existential Comics](https://existentialcomics.com/) | Corey Mohler | 記載なし | 解説あり |
 | [MonkeyUser](https://www.monkeyuser.com/) | 記載なし | 全権利留保 | 解説あり |
 | [The Daily WTF](https://thedailywtf.com/) | Alex Papadimoulis、Remy Porter | 著作権は Inedo | 解説あり |
 | [CommitStrip](https://www.commitstrip.com/en/) | Etienne Issartial、Thomas Gx | 非商用ならクレジット付きで利用可 | 解説あり |
 | [The Oatmeal](https://theoatmeal.com/) | Matthew Inman | 著作権あり | 解説あり |
-| [PHD Comics](https://phdcomics.com/) | Jorge Cham | 作者の許可を得て使用 | 日本語版あり |
+| [PHD Comics](https://phdcomics.com/) | Jorge Cham | © Jorge Cham | 日本語版あり |
 
 翻案している作品はどれも非商用に限って利用が許されているので、広告もスポンサーもアフィリエイトリンクも置かない。
 
