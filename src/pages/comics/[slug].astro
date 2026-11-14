@@ -1,0 +1,12 @@
+---
+import type { GetStaticPaths } from "astro";
+import { comics } from "../../lib/data.ts";
+import ComicPage from "../../views/ComicPage.astro";
+
+export const getStaticPaths = (() =>
+  comics.map((comic) => ({ params: { slug: comic.slug }, props: { comic } }))) satisfies GetStaticPaths;
+
+const { comic } = Astro.props;
+---
+
+<ComicPage lang="en" comic={comic} />

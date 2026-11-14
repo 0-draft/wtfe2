@@ -1,0 +1,97 @@
+{
+  "slug": "xkcd-1172-workflow",
+  "series": "xkcd",
+  "number": 1172,
+  "title": "Workflow",
+  "titleJa": "ワークフロー",
+  "published": "2013-02-11",
+  "url": "https://xkcd.com/1172/",
+  "imageSource": "https://imgs.xkcd.com/comics/workflow_2x.png",
+  "author": "Randall Munroe",
+  "license": "CC-BY-NC-2.5",
+  "image": { "file": "xkcd-1172-workflow.png", "width": 555, "height": 772, "displayWidth": 480 },
+  "titleText": {
+    "en": "There are probably children out there holding down spacebar to stay warm in the winter! YOUR UPDATE MURDERS CHILDREN.",
+    "ja": "冬にスペースキーを長押しして暖を取っている子どもだって、きっとどこかにいるんだ! あなたのアップデートは子どもを殺す。"
+  },
+  "note": {
+    "en": "Hyrum's Law in one strip: with enough users, every observable behaviour of a system, even a CPU overheating, becomes something somebody depends on. The bottom line is the part to keep. A fix is still a change, and someone will feel it.",
+    "ja": "ハイラムの法則を一コマで描いたような作品。利用者が十分に多ければ、CPU の過熱のようなものまで含めて、観測できる挙動はすべて誰かに依存される。覚えておきたいのは最後の一行だ。バグ修正も変更であることに変わりはなく、誰かがその影響を受ける。"
+  },
+  "related": [
+    {
+      "label": { "en": "Hammurabi: Hyrum's Law", "ja": "Hammurabi: ハイラムの法則" },
+      "url": "https://kanywst.github.io/hammurabi/laws/hyrums-law/",
+      "urlJa": "https://kanywst.github.io/hammurabi/ja/laws/hyrums-law/"
+    }
+  ],
+  "regions": [
+    {
+      "box": [26, 3, 208, 23],
+      "erase": "rect",
+      "text": [26, 1, 208, 25],
+      "en": "LATEST: 10.17",
+      "ja": "最新: 10.17",
+      "size": 15
+    },
+    {
+      "box": [346, 3, 122, 20],
+      "erase": "rect",
+      "text": [346, 3, 122, 22],
+      "en": "UPDATE",
+      "ja": "更新",
+      "size": 13,
+      "align": "center"
+    },
+    {
+      "box": [43, 55, 416, 38],
+      "en": "CHANGES IN VERSION 10.17:",
+      "ja": "バージョン10.17の変更点:",
+      "size": 27.5,
+      "weight": 700
+    },
+    {
+      "box": [43, 91, 458, 71],
+      "en": "THE CPU NO LONGER OVERHEATS\nWHEN YOU HOLD DOWN SPACEBAR.",
+      "ja": "スペースキーを長押ししても\nCPUが過熱しなくなりました。",
+      "size": 26.5,
+      "lineHeight": 1.25
+    },
+    { "box": [207, 182, 138, 32], "en": "COMMENTS:", "ja": "コメント:", "size": 23, "align": "center" },
+    {
+      "box": [38, 221, 319, 38],
+      "en": "LONGTIMEUSER4 WRITES:",
+      "ja": "LongtimeUser4 さんの投稿:",
+      "size": 24,
+      "weight": 700
+    },
+    {
+      "box": [36, 267, 472, 178],
+      "en": "THIS UPDATE BROKE MY WORKFLOW!\nMY CONTROL KEY IS HARD TO REACH,\nSO I HOLD SPACEBAR INSTEAD, AND I\nCONFIGURED EMACS TO INTERPRET A\nRAPID TEMPERATURE RISE AS \"CONTROL\".",
+      "ja": "このアップデートでワークフローが壊れた!\nCtrlキーは遠くて押しにくいから、\n代わりにスペースを長押ししてて、\nEmacsは「急な温度上昇」を\nCtrlとして解釈するよう設定してたのに。",
+      "size": 25.5
+    },
+    { "box": [39, 463, 173, 31], "en": "ADMIN WRITES:", "ja": "管理者の投稿:", "size": 22.5, "weight": 700 },
+    { "box": [36, 491, 281, 40], "en": "THAT'S HORRIFYING.", "ja": "ゾッとする。", "size": 29 },
+    {
+      "box": [39, 549, 299, 39],
+      "en": "LONGTIMEUSER4 WRITES:",
+      "ja": "LongtimeUser4 さんの投稿:",
+      "size": 22.5,
+      "weight": 700
+    },
+    {
+      "box": [37, 586, 458, 108],
+      "en": "LOOK, MY SETUP WORKS FOR ME.\nJUST ADD AN OPTION TO REENABLE\nSPACEBAR HEATING.",
+      "ja": "いいか、うちの環境はこれで回ってるんだ。\nスペースキー加熱を復活させる\nオプションを付けてくれ。",
+      "size": 25
+    },
+    {
+      "box": [0, 735, 555, 34],
+      "en": "EVERY CHANGE BREAKS SOMEONE'S WORKFLOW.",
+      "ja": "どんな変更も、誰かのワークフローを壊す。",
+      "size": 24.5,
+      "align": "center"
+    }
+  ]
+}

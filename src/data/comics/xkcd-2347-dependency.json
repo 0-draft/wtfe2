@@ -1,0 +1,43 @@
+{
+  "slug": "xkcd-2347-dependency",
+  "series": "xkcd",
+  "number": 2347,
+  "title": "Dependency",
+  "titleJa": "依存関係",
+  "published": "2020-08-17",
+  "url": "https://xkcd.com/2347/",
+  "imageSource": "https://imgs.xkcd.com/comics/dependency_2x.png",
+  "author": "Randall Munroe",
+  "license": "CC-BY-NC-2.5",
+  "image": { "file": "xkcd-2347-dependency.png", "width": 770, "height": 978, "displayWidth": 520 },
+  "titleText": {
+    "en": "Someday ImageMagick will finally break for good and we'll have a long period of scrambling as we try to reassemble civilization from the rubble.",
+    "ja": "いつか ImageMagick が完全に壊れる日が来て、私たちは瓦礫の中から文明を組み立て直そうと、長いあいだ右往左往することになる。"
+  },
+  "note": {
+    "en": "The picture most talks on open-source sustainability now open with. Large parts of the stack rest on small projects kept alive by one or two unpaid people. The hover text names ImageMagick; the 2024 xz-utils backdoor, slipped in through a project with a single overworked maintainer, made the same point the hard way.",
+    "ja": "オープンソースの持続性を語る発表で、いまや冒頭の定番になった一枚。スタックの大部分は、一人か二人が無償で支えている小さなプロジェクトの上に載っている。ホバーテキストでは ImageMagick が名指しされている。2024 年の xz-utils のバックドアは、一人で抱え込んでいたメンテナーのプロジェクトから入り込み、同じことを痛い形で示した。"
+  },
+  "related": [
+    {
+      "label": { "en": "Hammurabi: Bus factor", "ja": "Hammurabi: バス係数" },
+      "url": "https://kanywst.github.io/hammurabi/laws/bus-factor/",
+      "urlJa": "https://kanywst.github.io/hammurabi/ja/laws/bus-factor/"
+    }
+  ],
+  "regions": [
+    {
+      "box": [93, 34, 368, 95],
+      "en": "ALL MODERN DIGITAL\nINFRASTRUCTURE",
+      "ja": "現代のデジタル\nインフラすべて",
+      "size": 34.5,
+      "align": "center"
+    },
+    {
+      "box": [477, 526, 259, 237],
+      "en": "A PROJECT SOME\nRANDOM PERSON\nIN NEBRASKA HAS\nBEEN THANKLESSLY\nMAINTAINING\nSINCE 2003",
+      "ja": "ネブラスカの\nどこかの誰かが\n2003年から\n感謝もされずに\nメンテし続けて\nいるプロジェクト",
+      "size": 28.5
+    }
+  ]
+}

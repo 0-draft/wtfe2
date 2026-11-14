@@ -1,0 +1,7 @@
+allowBuilds:
+  esbuild: true
+  sharp: true
+overrides:
+  # katex comes from markdownlint via markdownlint-cli2, whose micromark-extension-math asks for ^0.16; the fix is 0.18.2.
+  katex: ^0.18.2
+  re2js: ^2.8.7

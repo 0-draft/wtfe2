@@ -1,0 +1,375 @@
+---
+import ComicStage from "../components/ComicStage.astro";
+import type { Comic } from "../data/schema.ts";
+import Base from "../layouts/Base.astro";
+import { comicLabel, comics, licenseOf, siteFor } from "../lib/data.ts";
+import { asset, formatDate, href, type Lang, ui } from "../lib/i18n.ts";
+
+interface Props {
+  lang: Lang;
+  comic: Comic;
+}
+const { lang, comic } = Astro.props;
+const t = ui[lang];
+const ja = lang === "ja";
+const site = siteFor(comic.series);
+const license = licenseOf(comic);
+const title = ja ? comic.titleJa : comic.title;
+const idx = comics.findIndex((c) => c.slug === comic.slug);
+const prev = idx > 0 ? comics[idx - 1] : undefined;
+const next = idx < comics.length - 1 ? comics[idx + 1] : undefined;
+const alt = ja
+  ? `漫画「${comic.titleJa}」(${comicLabel(comic)})。日本語の描き文字に差し替えたもの。書き起こしは下にある。`
+  : `Comic: ${comic.title} (${comicLabel(comic)}). Transcript below.`;
+const path = `comics/${comic.slug}/`;
+const frameStyle = `max-width: min(100%, calc(${comic.image.displayWidth}px + 2 * clamp(6px, 1.4vw, 14px) + 5px))`;
+const description = comic.note[lang].split(/(?<=[.。])\s*/)[0] ?? comic.note[lang];
+---
+
+<Base lang={lang} path={path} title={title} description={description} image={asset(`thumbs/${comic.slug}.webp`)}>
+  <article class="wrap comic">
+    <header class="comic__head">
+      <p class="kicker"><a href={href(lang, `shelf/#${site.id}`)}>{comicLabel(comic)}</a></p>
+      <h1 class="comic__title">{title}</h1>
+      {
+        ja && (
+          <p class="comic__orig">
+            {t.originalTitle}: <span lang="en">{comic.title}</span>
+          </p>
+        )
+      }
+      <p class="comic__meta">
+        <span>
+          {t.by} {comic.author}
+        </span>
+        <span>
+          {t.published}:{" "}
+          {comic.published ? <time datetime={comic.published}>{formatDate(comic.published, lang)}</time> : t.dateUnknown}
+        </span>
+        <span>
+          {t.license}: <a href={license.url}>{license.label}</a>
+        </span>
+      </p>
+    </header>
+
+    <figure class="comic__figure">
+      {
+        ja ? (
+          <div class="swap">
+            <input type="checkbox" id="show-original" class="swap__input" />
+            <label for="show-original" class="swap__label">
+              <span class="swap__track" aria-hidden="true" />
+              {t.showOriginal}
+            </label>
+            <div class="comic__frame panel" style={frameStyle}>
+              <ComicStage comic={comic} lang={lang} withOriginal alt={alt} eager />
+            </div>
+          </div>
+        ) : (
+          <div class="comic__frame panel" style={frameStyle}>
+            <ComicStage comic={comic} lang={lang} alt={alt} eager />
+          </div>
+        )
+      }
+      {
+        comic.titleText && (
+          <figcaption class="hover">
+            <span class="kicker">{t.hoverText}</span>
+            <span class="hover__text">{comic.titleText[lang]}</span>
+            {ja && (
+              <span class="hover__orig" lang="en">
+                {comic.titleText.en}
+              </span>
+            )}
+          </figcaption>
+        )
+      }
+    </figure>
+
+    <div class="comic__body">
+      <section aria-labelledby="why" class="prose">
+        <h2 id="why">{t.whyItLands}</h2>
+        <p>{comic.note[lang]}</p>
+        {
+          comic.related.length > 0 && (
+            <>
+              <h3 class="kicker">{t.related}</h3>
+              <ul class="related">
+                {comic.related.map((r) => (
+                  <li>
+                    <a href={ja && r.urlJa ? r.urlJa : r.url}>{r.label[lang]}</a>
+                  </li>
+                ))}
+              </ul>
+            </>
+          )
+        }
+      </section>
+
+      <section aria-labelledby="transcript" class="transcript">
+        <h2 id="transcript">{t.transcript}</h2>
+        <ol class="transcript__list">
+          {
+            comic.regions.map((r) => (
+              <li>
+                {ja ? (
+                  <>
+                    <span class="transcript__ja">{r.ja.replaceAll("\n", " ")}</span>
+                    <span class="transcript__en" lang="en">
+                      {r.en.replaceAll("\n", " ")}
+                    </span>
+                  </>
+                ) : (
+                  <span>{r.en.replaceAll("\n", " ")}</span>
+                )}
+              </li>
+            ))
+          }
+        </ol>
+      </section>
+
+      <section aria-labelledby="credits" class="credits prose">
+        <h2 id="credits">{t.credits}</h2>
+        <dl>
+          <div>
+            <dt>{t.creditOriginal}</dt>
+            <dd>
+              <a href={comic.url} lang="en">
+                {comic.title}
+              </a>{" "}
+              — {comic.author}, {site.name}
+            </dd>
+          </div>
+          <div>
+            <dt>{t.creditImage}</dt>
+            <dd>
+              <a href={comic.imageSource} class="mono">
+                {comic.imageSource.replace(/^https:\/\//, "")}
+              </a>
+            </dd>
+          </div>
+          <div>
+            <dt>{t.license}</dt>
+            <dd>
+              <a href={license.url}>{license.label}</a>
+            </dd>
+          </div>
+        </dl>
+        <p class="credits__note">{t.creditModified}</p>
+      </section>
+    </div>
+
+    <nav class="pager" aria-label={ja ? "前後の作品" : "More comics"}>
+      {
+        prev ? (
+          <a class="pager__prev" href={href(lang, `comics/${prev.slug}/`)} rel="prev">
+            <span class="kicker">← {t.prev}</span>
+            <span>{ja ? prev.titleJa : prev.title}</span>
+          </a>
+        ) : (
+          <span />
+        )
+      }
+      {
+        next && (
+          <a class="pager__next" href={href(lang, `comics/${next.slug}/`)} rel="next">
+            <span class="kicker">{t.next} →</span>
+            <span>{ja ? next.titleJa : next.title}</span>
+          </a>
+        )
+      }
+    </nav>
+  </article>
+</Base>
+
+<style>
+  .comic__head {
+    margin-bottom: 1.5rem;
+  }
+  .comic__head .kicker {
+    margin: 0;
+  }
+  .comic__head .kicker a {
+    text-decoration: none;
+  }
+  .comic__title {
+    font-size: clamp(1.7rem, 4.5vw, 2.6rem);
+    margin: 0.15rem 0 0.25rem;
+  }
+  .comic__orig {
+    margin: 0;
+    color: var(--ink-2);
+  }
+  .comic__meta {
+    margin: 0.5rem 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.2rem 1.25rem;
+    font-size: 0.88rem;
+    color: var(--ink-2);
+  }
+  .comic__figure {
+    margin: 0 0 2.5rem;
+  }
+  .comic__frame {
+    padding: clamp(6px, 1.4vw, 14px);
+    background: #fff;
+  }
+  .comic__frame :global(.stage) {
+    max-width: 100%;
+  }
+  .swap {
+    display: grid;
+    gap: 0.75rem;
+  }
+  .swap__input {
+    position: absolute;
+    opacity: 0;
+    width: 1px;
+    height: 1px;
+  }
+  .swap__label {
+    justify-self: start;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    cursor: pointer;
+    font-size: 0.92rem;
+    user-select: none;
+  }
+  .swap__track {
+    position: relative;
+    width: 2.6rem;
+    height: 1.4rem;
+    border: 2px solid var(--rule);
+    border-radius: 999px;
+    background: var(--card);
+    flex: none;
+  }
+  .swap__track::after {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: calc(1.4rem - 8px);
+    height: calc(1.4rem - 8px);
+    border-radius: 50%;
+    background: var(--ink);
+    transition: transform 120ms ease;
+  }
+  .swap__input:checked + .swap__label .swap__track {
+    background: var(--hl);
+  }
+  .swap__input:checked + .swap__label .swap__track::after {
+    transform: translateX(1.2rem);
+    background: #17150f;
+  }
+  .swap__input:focus-visible + .swap__label .swap__track {
+    outline: 3px solid var(--focus);
+    outline-offset: 2px;
+  }
+  .swap__input:checked ~ .comic__frame :global(.art--original) {
+    visibility: visible;
+  }
+  .swap__input:checked ~ .comic__frame :global(.art--main),
+  .swap__input:checked ~ .comic__frame :global(.lettering) {
+    visibility: hidden;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .swap__track::after {
+      transition: none;
+    }
+  }
+  .hover {
+    margin-top: 1.25rem;
+    max-width: var(--measure);
+    padding: 0.75rem 1rem;
+    border-left: 6px solid var(--hl);
+    background: var(--paper-2);
+    display: grid;
+    gap: 0.25rem;
+  }
+  .hover__orig {
+    font-size: 0.88rem;
+    color: var(--ink-2);
+  }
+  .comic__body {
+    display: grid;
+    gap: 2.5rem;
+  }
+  .comic__body h2 {
+    font-size: 1.3rem;
+  }
+  .related {
+    margin: 0.25rem 0 0;
+    padding-left: 1.1rem;
+  }
+  .transcript__list {
+    margin: 0;
+    padding-left: 1.6rem;
+    max-width: var(--measure);
+    display: grid;
+    gap: 0.5rem;
+  }
+  .transcript__list li::marker {
+    font-family: var(--font-mono);
+    color: var(--ink-2);
+  }
+  .transcript__ja {
+    display: block;
+  }
+  .transcript__en {
+    display: block;
+    font-size: 0.85rem;
+    color: var(--ink-2);
+  }
+  .credits dl {
+    margin: 0 0 0.75rem;
+    display: grid;
+    gap: 0.35rem;
+  }
+  .credits dl div {
+    display: grid;
+    grid-template-columns: 8em 1fr;
+    gap: 0.75rem;
+  }
+  .credits dt {
+    color: var(--ink-2);
+  }
+  .credits dd {
+    margin: 0;
+    min-width: 0;
+    overflow-wrap: anywhere;
+  }
+  .credits__note {
+    font-size: 0.9rem;
+    color: var(--ink-2);
+  }
+  .pager {
+    margin-top: 3rem;
+    padding-top: 1rem;
+    border-top: 2.5px solid var(--rule);
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+  .pager a {
+    display: grid;
+    text-decoration: none;
+    max-width: 45%;
+  }
+  .pager a:hover span:last-child {
+    text-decoration: underline;
+    text-decoration-color: var(--accent);
+  }
+  .pager__next {
+    text-align: right;
+    margin-left: auto;
+  }
+  @media (max-width: 480px) {
+    .credits dl div {
+      grid-template-columns: 1fr;
+      gap: 0;
+    }
+  }
+</style>

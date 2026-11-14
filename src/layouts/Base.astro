@@ -1,0 +1,197 @@
+---
+import "@fontsource/ibm-plex-sans-jp/400.css";
+import "@fontsource/ibm-plex-sans-jp/700.css";
+import "@fontsource/ibm-plex-mono/400.css";
+import "@fontsource/klee-one/600.css";
+import "../styles/global.css";
+import { href, type Lang, other, ui } from "../lib/i18n.ts";
+
+interface Props {
+  lang: Lang;
+  /** Site-relative path of this page without the language prefix, e.g. "comics/x/". */
+  path: string;
+  title?: string;
+  description?: string;
+  image?: string;
+}
+
+const { lang, path, title, description, image } = Astro.props;
+const t = ui[lang];
+const pageTitle = title ? `${title} — ${t.siteName}` : `${t.siteName} — ${t.tagline}`;
+const desc = description ?? t.description;
+const site = Astro.site!;
+const canonical = new URL(href(lang, path), site).toString();
+const alt = (l: Lang) => new URL(href(l, path), site).toString();
+const ogImage = image ? new URL(image, site).toString() : undefined;
+const repo = "https://github.com/0-draft/wtfe2";
+const nav = [
+  { path: "", label: t.navComics, match: (p: string) => p === "" || p.startsWith("comics/") },
+  { path: "shelf/", label: t.navShelf, match: (p: string) => p.startsWith("shelf/") },
+  { path: "about/", label: t.navAbout, match: (p: string) => p.startsWith("about/") },
+];
+---
+
+<!doctype html>
+<html lang={lang}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{pageTitle}</title>
+    <meta name="description" content={desc} />
+    <link rel="canonical" href={canonical} />
+    <link rel="alternate" hreflang="en" href={alt("en")} />
+    <link rel="alternate" hreflang="ja" href={alt("ja")} />
+    <link rel="alternate" hreflang="x-default" href={alt("en")} />
+    <link rel="icon" href={`${import.meta.env.BASE_URL}favicon.svg`} type="image/svg+xml" />
+    <meta name="theme-color" content="#f4f0e4" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#13120e" media="(prefers-color-scheme: dark)" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content={t.siteName} />
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={desc} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:locale" content={lang === "ja" ? "ja_JP" : "en_US"} />
+    {ogImage && <meta property="og:image" content={ogImage} />}
+    <meta name="twitter:card" content={ogImage ? "summary_large_image" : "summary"} />
+  </head>
+  <body>
+    <a class="skip" href="#main">{t.skip}</a>
+    <header class="masthead">
+      <div class="wrap masthead__row">
+        <a class="wordmark" href={href(lang)} aria-label={`${t.siteName} — ${t.home}`}>
+          <span class="wordmark__name">wtfe2</span>
+        </a>
+        <nav aria-label={lang === "ja" ? "サイト" : "Site"}>
+          <ul class="nav">
+            {
+              nav.map((n) => (
+                <li>
+                  <a href={href(lang, n.path)} aria-current={n.match(path) ? "page" : undefined}>
+                    {n.label}
+                  </a>
+                </li>
+              ))
+            }
+          </ul>
+        </nav>
+        <a class="lang-switch" href={href(other(lang), path)} hreflang={other(lang)} lang={other(lang)}>
+          {t.switchTo}
+        </a>
+      </div>
+    </header>
+    <main id="main" tabindex="-1">
+      <slot />
+    </main>
+    <footer class="colophon">
+      <div class="wrap colophon__row">
+        <p>{t.footerContent} {t.footerCode}</p>
+        <p>
+          <a href={repo}>{t.footerSource}</a> · <a href={`${repo}/issues`}>{t.footerIssue}</a>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
+
+<style>
+  .masthead {
+    border-bottom: 2.5px solid var(--rule);
+    background: var(--paper);
+  }
+  .masthead__row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem 1.5rem;
+    padding-block: 0.75rem;
+  }
+  .wordmark {
+    text-decoration: none;
+    display: inline-flex;
+    align-items: baseline;
+  }
+  .wordmark__name {
+    font-family: var(--font-mono);
+    font-weight: 400;
+    font-size: 1.35rem;
+    letter-spacing: -0.02em;
+    padding: 0 0.35rem;
+    background: var(--ink);
+    color: var(--paper);
+  }
+  .nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem 1.1rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .nav a {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.95rem;
+    padding-block: 0.2rem;
+    border-bottom: 3px solid transparent;
+  }
+  .nav a:hover {
+    border-bottom-color: var(--ink-2);
+  }
+  .nav a[aria-current="page"] {
+    border-bottom-color: var(--accent);
+  }
+  .lang-switch {
+    margin-left: auto;
+    position: relative;
+    font-family: var(--font-hand);
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 0.95rem;
+    padding: 0.2rem 0.85rem;
+    border: 2px solid var(--rule);
+    border-radius: 999px;
+    background: var(--card);
+  }
+  .lang-switch::after {
+    content: "";
+    position: absolute;
+    left: 1.1rem;
+    bottom: -7px;
+    width: 10px;
+    height: 10px;
+    background: var(--card);
+    border-right: 2px solid var(--rule);
+    border-bottom: 2px solid var(--rule);
+    transform: skewX(-30deg) rotate(45deg);
+  }
+  .lang-switch:hover {
+    background: var(--hl);
+    color: #17150f;
+  }
+  .lang-switch:hover::after {
+    background: var(--hl);
+  }
+  main {
+    display: block;
+    padding-block: clamp(1.5rem, 4vw, 3rem) 4rem;
+  }
+  main:focus {
+    outline: none;
+  }
+  .colophon {
+    border-top: 2.5px solid var(--rule);
+    font-size: 0.85rem;
+    color: var(--ink-2);
+  }
+  .colophon__row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 0.25rem 2rem;
+    padding-block: 1.25rem 2rem;
+  }
+  .colophon p {
+    margin: 0;
+    max-width: 70ch;
+  }
+</style>

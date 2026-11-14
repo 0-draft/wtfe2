@@ -1,0 +1,46 @@
+{
+  "name": "wtfe2",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@12.18.0",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "plates": "node scripts/plates.ts",
+    "predev": "node scripts/plates.ts",
+    "dev": "astro dev",
+    "prebuild": "node scripts/plates.ts",
+    "build": "astro build",
+    "preview": "astro preview",
+    "precheck": "node scripts/plates.ts",
+    "check": "astro check",
+    "lint": "biome check .",
+    "lint:fix": "biome check --write .",
+    "lint:md": "markdownlint-cli2",
+    "test": "vitest run",
+    "test:e2e": "playwright test",
+    "validate:data": "node scripts/validate-data.ts",
+    "measure": "node scripts/measure.ts"
+  },
+  "dependencies": {
+    "@astrojs/sitemap": "^3.7.4",
+    "@fontsource/ibm-plex-mono": "5.3.0",
+    "@fontsource/ibm-plex-sans-jp": "5.3.1",
+    "@fontsource/klee-one": "5.3.1",
+    "astro": "^7.4.4",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.12",
+    "@axe-core/playwright": "^4.14.0",
+    "@biomejs/biome": "^2.6.4",
+    "@playwright/test": "^1.64.1",
+    "@types/node": "^26.6.6",
+    "@vitest/coverage-v8": "^5.1.0",
+    "markdownlint-cli2": "^0.24.0",
+    "sharp": "^0.34.5",
+    "typescript": "^6.0.3",
+    "vitest": "^5.0.5"
+  }
+}

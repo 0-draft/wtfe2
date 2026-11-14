@@ -1,0 +1,59 @@
+{
+  "slug": "xkcd-927-standards",
+  "series": "xkcd",
+  "number": 927,
+  "title": "Standards",
+  "titleJa": "規格",
+  "published": "2011-07-20",
+  "url": "https://xkcd.com/927/",
+  "imageSource": "https://imgs.xkcd.com/comics/standards_2x.png",
+  "author": "Randall Munroe",
+  "license": "CC-BY-NC-2.5",
+  "image": { "file": "xkcd-927-standards.png", "width": 1000, "height": 567, "displayWidth": 820 },
+  "titleText": {
+    "en": "Fortunately, the charging one has been solved now that we've all standardized on mini-USB. Or is it micro-USB? Shit.",
+    "ja": "幸い、充電器の件はもう解決した。みんな mini-USB に統一したからね。いや、micro-USB だっけ? くそっ。"
+  },
+  "note": {
+    "en": "The usual fate of the one standard meant to replace all the others: it becomes one more. Worth rereading before proposing a new format, protocol or in-house framework, and a reason to ask first whether one of the existing fourteen can be extended.",
+    "ja": "ほかの全部を置き換えるはずの統一規格が、たいていたどる運命。結局もう一つ増えるだけになる。新しいフォーマットやプロトコル、社内フレームワークを提案する前に読み返したい一枚で、まず既存の 14 個のどれかを拡張できないかを考える理由にもなる。"
+  },
+  "regions": [
+    {
+      "box": [225, 1, 517, 41],
+      "en": "HOW STANDARDS PROLIFERATE:",
+      "ja": "規格が増殖するしくみ:",
+      "size": 29.5,
+      "align": "center"
+    },
+    {
+      "box": [118, 34, 740, 42],
+      "en": "(SEE: A/C CHARGERS, CHARACTER ENCODINGS, INSTANT MESSAGING, ETC.)",
+      "ja": "(例: ACアダプタ、文字コード、メッセンジャーアプリ など)",
+      "size": 23,
+      "align": "center"
+    },
+    {
+      "box": [29, 199, 225, 191],
+      "en": "SITUATION:\nTHERE ARE\n14 COMPETING\nSTANDARDS.",
+      "ja": "現状:\n競合する\n規格が\n14個ある。",
+      "size": 34.5,
+      "align": "center"
+    },
+    {
+      "box": [311, 91, 374, 210],
+      "en": "14?! RIDICULOUS!\nWE NEED TO DEVELOP\nONE UNIVERSAL STANDARD\nTHAT COVERS EVERYONE'S\nUSE CASES.",
+      "ja": "14個?! バカげてる!\nみんなのユースケースを\n全部カバーする\n統一規格を\n作らなきゃ。",
+      "size": 30.5
+    },
+    { "box": [557, 285, 87, 40], "en": "YEAH!", "ja": "だね!", "size": 29, "align": "center" },
+    { "box": [741, 96, 94, 33], "en": "SOON:", "ja": "やがて:", "size": 24, "align": "center" },
+    {
+      "box": [751, 199, 224, 191],
+      "en": "SITUATION:\nTHERE ARE\n15 COMPETING\nSTANDARDS.",
+      "ja": "現状:\n競合する\n規格が\n15個ある。",
+      "size": 34.5,
+      "align": "center"
+    }
+  ]
+}

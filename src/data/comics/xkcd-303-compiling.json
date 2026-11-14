@@ -1,0 +1,48 @@
+{
+  "slug": "xkcd-303-compiling",
+  "series": "xkcd",
+  "number": 303,
+  "title": "Compiling",
+  "titleJa": "コンパイル中",
+  "published": "2007-08-15",
+  "url": "https://xkcd.com/303/",
+  "imageSource": "https://imgs.xkcd.com/comics/compiling.png",
+  "author": "Randall Munroe",
+  "license": "CC-BY-NC-2.5",
+  "image": { "file": "xkcd-303-compiling.png", "width": 413, "height": 360, "displayWidth": 580 },
+  "titleText": {
+    "en": "'Are you stealing those LCDs?' 'Yeah, but I'm doing it while my code compiles.'",
+    "ja": "「その液晶ディスプレイ、盗んでるの?」「うん、でもコードのコンパイル中にやってるから」"
+  },
+  "note": {
+    "en": "From 2007, when a full build of a large C or C++ codebase could take long enough for a sword fight. Builds have got faster since, but the excuse never went away; it moved to CI queues, dependency installs and container image pulls.",
+    "ja": "2007 年の作品。大きな C や C++ のコードベースのフルビルドが、チャンバラできるくらい長くかかった時代のもの。ビルドはその後速くなったが、この言い訳は消えていない。CI の待ち行列、依存パッケージのインストール、コンテナイメージの pull へと居場所を移しただけだ。"
+  },
+  "regions": [
+    {
+      "box": [48, 20, 315, 49],
+      "en": "THE #1 PROGRAMMER EXCUSE\nFOR LEGITIMATELY SLACKING OFF:",
+      "ja": "プログラマーが堂々とサボれる\n言い訳ナンバーワン:",
+      "size": 18.5,
+      "align": "center",
+      "lineHeight": 1.25
+    },
+    {
+      "box": [71, 75, 267, 34],
+      "en": "\"MY CODE'S COMPILING.\"",
+      "ja": "「いまコンパイル中」",
+      "size": 24.5,
+      "align": "center"
+    },
+    {
+      "box": [36, 134, 128, 50],
+      "en": "HEY! GET BACK\nTO WORK!",
+      "ja": "おい!\n仕事に戻れ!",
+      "size": 19,
+      "align": "center",
+      "lineHeight": 1.25
+    },
+    { "box": [131, 221, 103, 33], "en": "COMPILING!", "ja": "コンパイル中!", "size": 15.5, "align": "center" },
+    { "box": [32, 306, 117, 26], "en": "OH. CARRY ON.", "ja": "あ、続けて。", "size": 19, "align": "center" }
+  ]
+}

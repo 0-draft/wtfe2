@@ -1,0 +1,60 @@
+{
+  "slug": "xkcd-974-the-general-problem",
+  "series": "xkcd",
+  "number": 974,
+  "title": "The General Problem",
+  "titleJa": "一般化問題",
+  "published": "2011-11-07",
+  "url": "https://xkcd.com/974/",
+  "imageSource": "https://imgs.xkcd.com/comics/the_general_problem.png",
+  "author": "Randall Munroe",
+  "license": "CC-BY-NC-2.5",
+  "image": { "file": "xkcd-974-the-general-problem.png", "width": 550, "height": 230, "displayWidth": 760 },
+  "titleText": {
+    "en": "I find that when someone's taking time to do something right in the present, they're a perfectionist with no ability to prioritize, whereas when someone took time to do something right in the past, they're a master artisan of great foresight.",
+    "ja": "いま誰かが時間をかけて物事をきちんとやっていると、その人は優先順位をつけられない完璧主義者に見える。ところが過去に誰かが時間をかけてきちんとやっていたなら、その人は先見の明のある名工ということになる。"
+  },
+  "note": {
+    "en": "Asked for the salt, build a condiment-passing framework. Sometimes the general solution really does pay off; the hover text points out that we only call it foresight once it already has. Until then, the person at the table is still waiting.",
+    "ja": "塩をとってと頼まれて、調味料を渡すフレームワークを作り始める。一般化した解が本当に元を取ることもある。ただホバーテキストが言うとおり、それを先見の明と呼べるのは報われたあとだけだ。それまでのあいだ、食卓の相手は待たされ続ける。"
+  },
+  "related": [
+    {
+      "label": { "en": "Hammurabi: YAGNI", "ja": "Hammurabi: YAGNI" },
+      "url": "https://kanywst.github.io/hammurabi/laws/yagni/",
+      "urlJa": "https://kanywst.github.io/hammurabi/ja/laws/yagni/"
+    }
+  ],
+  "regions": [
+    {
+      "box": [43, 13, 96, 40],
+      "en": "CAN YOU PASS\nTHE SALT?",
+      "ja": "塩とって\nくれる?",
+      "size": 15.5,
+      "align": "right",
+      "lineHeight": 1.2
+    },
+    { "box": [327, 3, 53, 22], "en": "I SAID—", "ja": "だから—", "size": 13.5 },
+    {
+      "box": [368, 14, 178, 70],
+      "en": "I KNOW! I'M DEVELOPING\nA SYSTEM TO PASS YOU\nARBITRARY CONDIMENTS.",
+      "ja": "わかってる! いま\n任意の調味料を渡せる\nシステムを開発中なんだ。",
+      "size": 16,
+      "align": "right"
+    },
+    {
+      "box": [383, 86, 90, 38],
+      "en": "IT'S BEEN 20\nMINUTES!",
+      "ja": "もう20分\nたってる!",
+      "size": 15,
+      "lineHeight": 1.2
+    },
+    {
+      "box": [428, 123, 120, 46],
+      "en": "IT'LL SAVE TIME\nIN THE LONG RUN!",
+      "ja": "長い目で見れば\n時間の節約になる!",
+      "size": 14,
+      "align": "right"
+    }
+  ]
+}

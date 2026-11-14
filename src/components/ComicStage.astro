@@ -1,0 +1,128 @@
+---
+// The comic image with Japanese lettering set over the clean plate.
+// Every length is a fraction of the image, so the lettering scales with the
+// picture at any width: positions in %, font sizes in container-query units.
+import type { Comic } from "../data/schema.ts";
+import { asset, type Lang } from "../lib/i18n.ts";
+
+interface Props {
+  comic: Comic;
+  lang: Lang;
+  /** thumb: card-sized, from the downscaled thumbnails. */
+  variant?: "full" | "thumb";
+  /** Render the untouched original next to the plate so a toggle can swap them. */
+  withOriginal?: boolean;
+  alt: string;
+  eager?: boolean;
+}
+
+const { comic, lang, variant = "full", withOriginal = false, alt, eager = false } = Astro.props;
+const { width: W, height: H, file } = comic.image;
+const pct = (v: number, of: number) => `${((v / of) * 100).toFixed(4)}%`;
+const lettered = lang === "ja";
+const loading = eager ? "eager" : "lazy";
+
+const src =
+  variant === "thumb"
+    ? asset(`thumbs/${comic.slug}${lettered ? ".plate" : ""}.webp`)
+    : asset(`${lettered ? "plates" : "comics"}/${file}`);
+---
+
+<div class:list={["stage", `stage--${variant}`]} style={`aspect-ratio: ${W} / ${H}`}>
+  <img class="art art--main" src={src} width={W} height={H} alt={alt} loading={loading} decoding="async" />
+  {
+    withOriginal && lettered && (
+      <img class="art art--original" src={asset(`comics/${file}`)} width={W} height={H} alt="" loading="lazy" decoding="async" />
+    )
+  }
+  {
+    lettered && (
+      <div class="lettering" aria-hidden="true">
+        {comic.regions.map((r) => {
+          const [x, y, w, h] = r.text ?? r.box;
+          const style = [
+            `left:${pct(x, W)}`,
+            `top:${pct(y, H)}`,
+            `width:${pct(w, W)}`,
+            `height:${pct(h, H)}`,
+            `font-size:${((r.size / W) * 100).toFixed(4)}cqi`,
+            `line-height:${r.lineHeight}`,
+          ].join(";");
+          return (
+            <span
+              class:list={["l", `l--${r.align}`, `l--${r.font}`, { "l--bold": r.weight === 700, "l--u": r.underline }]}
+              style={style}
+              data-region
+            >
+              <span class="l__t">{r.ja}</span>
+            </span>
+          );
+        })}
+      </div>
+    )
+  }
+</div>
+
+<style>
+  .stage {
+    position: relative;
+    container-type: inline-size;
+    width: 100%;
+    background: #fff;
+    overflow: hidden;
+  }
+  .art {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+  .art--original {
+    visibility: hidden;
+  }
+  .lettering {
+    position: absolute;
+    inset: 0;
+    color: #111;
+    pointer-events: none;
+  }
+  .l {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: var(--font-hand);
+    font-weight: 600;
+    letter-spacing: 0;
+    font-kerning: normal;
+    font-feature-settings: "palt" 1;
+  }
+  .l--sans {
+    font-family: var(--font-sans);
+    font-weight: 700;
+  }
+  .l--hand.l--bold .l__t {
+    -webkit-text-stroke: 0.035em currentColor;
+  }
+  .l__t {
+    white-space: pre;
+  }
+  .l--left {
+    align-items: flex-start;
+    text-align: left;
+  }
+  .l--center {
+    align-items: center;
+    text-align: center;
+  }
+  .l--right {
+    align-items: flex-end;
+    text-align: right;
+  }
+  .l--u .l__t {
+    text-decoration: underline;
+    text-decoration-thickness: 0.08em;
+    text-underline-offset: 0.12em;
+  }
+</style>

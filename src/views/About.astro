@@ -1,0 +1,97 @@
+---
+import Base from "../layouts/Base.astro";
+import { href, type Lang, ui } from "../lib/i18n.ts";
+
+interface Props {
+  lang: Lang;
+}
+const { lang } = Astro.props;
+const t = ui[lang];
+const repo = "https://github.com/0-draft/wtfe2";
+---
+
+<Base lang={lang} path="about/" title={t.aboutTitle}>
+  <article class="wrap prose about">
+    <h1>{t.aboutTitle}</h1>
+    {
+      lang === "en" ? (
+        <>
+          <p>
+            wtfe2 collects comics about the strange job of building software and introduces them in English and
+            Japanese. The name is short for "What The F*** Engineer", or, on a polite day, "WTF, Engineer?".
+          </p>
+          <h2>Two shelves</h2>
+          <p>
+            Some creators publish under a Creative Commons license that allows adaptation for non-commercial use:
+            xkcd (CC BY-NC 2.5), TurnOff.us (CC BY-NC-SA 4.0) and Abstruse Goose (CC BY-NC 3.0 US). Selected strips
+            from those three are shown here with Japanese lettering.
+          </p>
+          <p>
+            Everyone else reserves their rights or asks to be contacted first, so their comics are not copied here.
+            The <a href={href(lang, "shelf/")}>shelf</a> describes each site, quotes its reuse terms, and links to
+            strips worth starting with.
+          </p>
+          <h2>How the Japanese lettering is made</h2>
+          <p>
+            Every piece of lettering in a strip is recorded with its position in the image. A build script erases that
+            lettering from a copy of the art: an ink stroke that lies entirely inside the lettering's box is erased,
+            and a stroke that leaves the box (a balloon outline, a speech tail, a flowchart diamond) is kept. The
+            Japanese text is then set over the cleaned image as real text, so it stays sharp at any size and can be
+            switched off to compare with the original.
+          </p>
+          <p>
+            The English page of each strip shows the original image, unmodified. The Japanese page is an adaptation,
+            and it carries the same license as the original.
+          </p>
+          <h2>Not commercial</h2>
+          <p>
+            Every comic here is licensed for non-commercial use only, so the site carries no ads, sponsorships or
+            affiliate links.
+          </p>
+          <h2>Corrections and takedowns</h2>
+          <p>
+            If you made one of these comics and want it changed or removed, or you spot a mistranslation, open an
+            issue at <a href={`${repo}/issues`}>{`${repo.replace("https://", "")}/issues`}</a>. Requests from
+            creators are handled first.
+          </p>
+        </>
+      ) : (
+        <>
+          <p>
+            wtfe2 は、ソフトウェアを作るという奇妙な仕事を描いた漫画を集めて、英語と日本語で紹介するサイト。名前は「What The F*** Engineer」の略で、お行儀のいい日は「WTF, Engineer?」と書く。
+          </p>
+          <h2>本棚は二段</h2>
+          <p>
+            非商用での改変を認める Creative Commons ライセンスで作品を公開している作者がいる。xkcd (CC BY-NC 2.5)、TurnOff.us (CC BY-NC-SA 4.0)、Abstruse Goose (CC BY-NC 3.0 US) の三つだ。このサイトでは、この三つから選んだ作品の描き文字を日本語にしている。
+          </p>
+          <p>
+            それ以外の作者は権利を留保しているか、事前の連絡を求めているので、作品はここに複製していない。<a href={href(lang, "shelf/")}>本棚</a>のページで各サイトを紹介し、利用条件を引用し、最初に読むとよい作品へリンクしている。
+          </p>
+          <h2>日本語の描き文字の作り方</h2>
+          <p>
+            作品ごとに、すべての描き文字の画像内の位置を記録している。ビルド時のスクリプトが、原画のコピーからその描き文字を消す。描き文字の枠に完全に収まるインクの線は消し、枠からはみ出す線 (吹き出しの輪郭、しっぽ、フローチャートの菱形など) は残す。その上に日本語を画像ではなく文字として重ねているので、どの大きさでもくっきり表示でき、オフにすれば原文と見比べられる。
+          </p>
+          <p>
+            各作品の英語版のページは原画をそのまま表示する。日本語版のページは翻案で、原作と同じライセンスで公開している。
+          </p>
+          <h2>非商用</h2>
+          <p>ここにある漫画はどれも非商用に限って利用が許されているので、このサイトには広告もスポンサーもアフィリエイトリンクも置かない。</p>
+          <h2>訂正と削除の依頼</h2>
+          <p>
+            ここに載っている漫画の作者で、変更や削除を希望する場合、または誤訳を見つけた場合は、<a href={`${repo}/issues`}>{`${repo.replace("https://", "")}/issues`}</a> に issue を立ててほしい。作者からの依頼を最優先で扱う。
+          </p>
+        </>
+      )
+    }
+  </article>
+</Base>
+
+<style>
+  .about h1 {
+    font-size: clamp(1.9rem, 5vw, 2.8rem);
+  }
+  .about h2 {
+    font-size: 1.25rem;
+    margin-top: 2rem;
+  }
+</style>

@@ -1,0 +1,56 @@
+---
+import SiteCard from "../components/SiteCard.astro";
+import Base from "../layouts/Base.astro";
+import { sites } from "../lib/data.ts";
+import { type Lang, ui } from "../lib/i18n.ts";
+
+interface Props {
+  lang: Lang;
+}
+const { lang } = Astro.props;
+const t = ui[lang];
+const groups = [
+  { id: "translated", label: t.tier.translated, items: sites.filter((s) => s.tier === "translated") },
+  { id: "linked", label: t.tier.linked, items: sites.filter((s) => s.tier === "linked") },
+] as const;
+---
+
+<Base lang={lang} path="shelf/" title={t.shelf} description={t.shelfLede}>
+  <div class="wrap">
+    <h1 class="page-title">{t.shelf}</h1>
+    <p class="prose lede">{t.shelfLede}</p>
+    {
+      groups.map((g) => (
+        <section class="group" aria-labelledby={`g-${g.id}`}>
+          <div class="section-head">
+            <h2 id={`g-${g.id}`}>{g.label}</h2>
+            <span class="badge mono">{g.items.length}</span>
+          </div>
+          <div class="sites">
+            {g.items.map((s) => (
+              <SiteCard site={s} lang={lang} />
+            ))}
+          </div>
+        </section>
+      ))
+    }
+  </div>
+</Base>
+
+<style>
+  .page-title {
+    font-size: clamp(1.9rem, 5vw, 2.8rem);
+  }
+  .lede {
+    color: var(--ink-2);
+    margin: 0 0 2rem;
+  }
+  .group + .group {
+    margin-top: 3rem;
+  }
+  .sites {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 340px), 1fr));
+    gap: clamp(1.25rem, 3vw, 1.75rem);
+  }
+</style>

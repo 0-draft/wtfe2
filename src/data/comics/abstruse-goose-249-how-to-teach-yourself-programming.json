@@ -1,0 +1,131 @@
+{
+  "slug": "abstruse-goose-249-how-to-teach-yourself-programming",
+  "series": "abstruse-goose",
+  "number": 249,
+  "title": "How to Teach Yourself Programming",
+  "titleJa": "プログラミングを独学する方法",
+  "url": "https://github.com/s-macke/Abstruse-Goose-Archive/blob/master/comics/249.md",
+  "imageSource": "https://raw.githubusercontent.com/s-macke/Abstruse-Goose-Archive/master/comics/ars_longa_vita_brevis.png",
+  "author": "Abstruse Goose (anonymous)",
+  "license": "CC-BY-NC-3.0-US",
+  "image": {
+    "file": "abstruse-goose-249-how-to-teach-yourself-programming.png",
+    "width": 744,
+    "height": 638,
+    "displayWidth": 900
+  },
+  "note": {
+    "en": "A parody of the \"Teach Yourself C++ in 21 Days\" kind of book: the only way to fit it into 21 days is a time machine. Peter Norvig's essay \"Teach Yourself Programming in Ten Years\" makes the same argument in prose and links to this comic. The image file is named ars_longa_vita_brevis: the art is long, life is short.",
+    "ja": "「21 日でわかる C++」のたぐいの本のパロディ。21 日に収める唯一の方法はタイムマシンだ、というオチ。Peter Norvig のエッセイ「Teach Yourself Programming in Ten Years」は同じ主張を文章で展開していて、この漫画にもリンクしている。画像のファイル名は ars_longa_vita_brevis (技芸は長く、人生は短し)。"
+  },
+  "related": [
+    {
+      "label": {
+        "en": "Peter Norvig: Teach Yourself Programming in Ten Years",
+        "ja": "Peter Norvig「Teach Yourself Programming in Ten Years」"
+      },
+      "url": "https://norvig.com/21-days.html"
+    }
+  ],
+  "regions": [
+    {
+      "box": [9, 6, 219, 95],
+      "en": "Days 1 - 10\nTeach yourself variables, con-\nstants, arrays, strings, expres-\nsions, statements, functions,...",
+      "ja": "1〜10日目\n変数、定数、配列、文字列、\n式、文、関数…を独学する。",
+      "size": 13.5,
+      "font": "sans",
+      "weight": 700,
+      "lineHeight": 1.35
+    },
+    {
+      "box": [263, 7, 214, 99],
+      "en": "Days 11 - 21\nTeach yourself program flow,\npointers, references, classes,\nobjects, inheritance, polymor-\nphism, ....",
+      "ja": "11〜21日目\n制御フロー、ポインタ、参照、\nクラス、オブジェクト、継承、\nポリモーフィズム…を独学する。",
+      "size": 13.5,
+      "font": "sans",
+      "weight": 700,
+      "lineHeight": 1.35
+    },
+    {
+      "box": [504, 7, 233, 85],
+      "en": "Days 22 - 697\nDo a lot of recreational program-\nming.  Have fun hacking but re-\nmember to learn from your mis-\ntakes.",
+      "ja": "22〜697日目\n趣味のプログラミングを大量にやる。\nハックを楽しみつつ、失敗から\n学ぶことを忘れずに。",
+      "size": 13.5,
+      "font": "sans",
+      "weight": 700,
+      "lineHeight": 1.35
+    },
+    {
+      "box": [3, 198, 235, 71],
+      "en": "Days 698 - 3648\nInteract with other programmers.\nWork on programming projects\ntogether.  Learn from them.",
+      "ja": "698〜3648日目\nほかのプログラマーと交流する。\n一緒にプロジェクトをやり、学ぶ。",
+      "size": 13.5,
+      "font": "sans",
+      "weight": 700,
+      "lineHeight": 1.35
+    },
+    {
+      "box": [253, 198, 237, 88],
+      "en": "Days 3649 - 7781\nTeach yourself advanced theoret-\nical physics and formulate a con-\nsistent theory of quantum grav-\nity.",
+      "ja": "3649〜7781日目\n高度な理論物理学を独学し、\n矛盾のない量子重力理論を\n組み立てる。",
+      "size": 13.5,
+      "font": "sans",
+      "weight": 700,
+      "lineHeight": 1.35
+    },
+    {
+      "box": [513, 198, 214, 55],
+      "en": "Days 7782 - 14611\nTeach yourself biochemistry,\nmolecular biology, genetics,...",
+      "ja": "7782〜14611日目\n生化学、分子生物学、遺伝学…\nを独学する。",
+      "size": 13.5,
+      "font": "sans",
+      "weight": 700,
+      "lineHeight": 1.3
+    },
+    {
+      "box": [13, 389, 215, 55],
+      "en": "Day 14611\nUse knowledge of biology to\nmake an age-reversing potion.",
+      "ja": "14611日目\n生物学の知識で\n若返りの薬を作る。",
+      "size": 13.5,
+      "font": "sans",
+      "weight": 700,
+      "lineHeight": 1.3
+    },
+    {
+      "box": [258, 386, 237, 78],
+      "en": "Day 14611\nUse knowledge of physics to\nbuild flux capacitor and go back\nin time to day 21.",
+      "ja": "14611日目\n物理学の知識で次元転移装置を\n作り、21日目に戻る。",
+      "size": 13.5,
+      "font": "sans",
+      "weight": 700,
+      "lineHeight": 1.35
+    },
+    {
+      "box": [511, 389, 155, 37],
+      "en": "Day 21\nReplace younger self.",
+      "ja": "21日目\n若い自分と入れ替わる。",
+      "size": 13.5,
+      "font": "sans",
+      "weight": 700,
+      "lineHeight": 1.3
+    },
+    {
+      "box": [545, 570, 150, 38],
+      "en": "As far as I know, this\nis the easiest way to",
+      "ja": "私の知るかぎり、これが\nいちばん簡単な",
+      "size": 13.5,
+      "font": "sans",
+      "weight": 700,
+      "lineHeight": 1.3
+    },
+    {
+      "box": [509, 610, 234, 22],
+      "en": "\"Teach Yourself C++ in 21 Days\".",
+      "ja": "「C++を21日で独習する」方法だ。",
+      "size": 13.5,
+      "font": "sans",
+      "weight": 700,
+      "align": "center"
+    }
+  ]
+}

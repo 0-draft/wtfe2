@@ -1,0 +1,80 @@
+---
+import type { Comic } from "../data/schema.ts";
+import { comicLabel } from "../lib/data.ts";
+import { href, type Lang } from "../lib/i18n.ts";
+import ComicStage from "./ComicStage.astro";
+
+interface Props {
+  comic: Comic;
+  lang: Lang;
+  eager?: boolean;
+}
+const { comic, lang, eager = false } = Astro.props;
+const title = lang === "ja" ? comic.titleJa : comic.title;
+// At the narrowest card width (280px) anything taller than 340px gets cropped.
+const tall = comic.image.height / comic.image.width > 340 / 280;
+---
+
+<article class="card panel">
+  <a class="card__link" href={href(lang, `comics/${comic.slug}/`)}>
+    <div class:list={["card__art", { "is-tall": tall }]}>
+      <ComicStage comic={comic} lang={lang} variant="thumb" alt="" eager={eager} />
+    </div>
+    <div class="card__cap">
+      <p class="kicker">{comicLabel(comic)}</p>
+      <h3 class="card__title">{title}</h3>
+    </div>
+  </a>
+</article>
+
+<style>
+  .card {
+    transition: transform 120ms ease, box-shadow 120ms ease;
+    break-inside: avoid;
+  }
+  .card:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 6px 6px 0 var(--rule);
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .card {
+      transition: none;
+    }
+    .card:hover {
+      transform: none;
+    }
+  }
+  .card__link {
+    display: block;
+    text-decoration: none;
+  }
+  .card__art {
+    position: relative;
+    max-height: 340px;
+    overflow: hidden;
+    border-bottom: 2.5px solid var(--rule);
+    background: #fff;
+  }
+  /* Tall strips are cropped to their opening panels; the fade says there is more. */
+  .card__art.is-tall::after {
+    content: "";
+    position: absolute;
+    inset: auto 0 0 0;
+    height: 64px;
+    background: linear-gradient(to bottom, rgb(255 255 255 / 0), #fff);
+  }
+  .card__cap {
+    padding: 0.6rem 0.85rem 0.8rem;
+  }
+  .card__cap .kicker {
+    margin: 0;
+  }
+  .card__title {
+    font-size: 1.05rem;
+    margin: 0.1rem 0 0;
+  }
+  .card__link:hover .card__title {
+    text-decoration: underline;
+    text-decoration-color: var(--accent);
+  }
+</style>

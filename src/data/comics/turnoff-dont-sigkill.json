@@ -1,0 +1,81 @@
+{
+  "slug": "turnoff-dont-sigkill",
+  "series": "turnoff",
+  "title": "the real reason to not use sigkill",
+  "titleJa": "SIGKILL を使ってはいけない本当の理由",
+  "published": "2016-03-18",
+  "url": "https://turnoff.us/geek/dont-sigkill/",
+  "imageSource": "https://turnoff.us/image/en/dont-sigkill.png",
+  "author": "Daniel Stori",
+  "license": "CC-BY-NC-SA-4.0",
+  "image": { "file": "turnoff-dont-sigkill.png", "width": 1200, "height": 2416, "displayWidth": 720 },
+  "note": {
+    "en": "Signal handling as a family drama. A process can catch SIGTERM and use the time to let its threads finish and clean up; SIGKILL cannot be caught or ignored, so nothing gets to say goodbye. The practical rule matches the comic: send SIGTERM, wait, and reach for SIGKILL only when that fails.",
+    "ja": "シグナル処理を家族ドラマとして描いた作品。プロセスは SIGTERM を捕まえて、スレッドに仕事を終えさせ、後片付けをする時間に使える。SIGKILL は捕まえることも無視することもできないので、誰もお別れを言えない。実務のルールもこの漫画のとおりで、まず SIGTERM を送って待ち、それでも止まらないときだけ SIGKILL を使う。"
+  },
+  "regions": [
+    {
+      "box": [233, 50, 229, 144],
+      "en": "This is Bob.\nBob is a\nLinux\nprocess.",
+      "ja": "こちらはボブ。\nボブは\nLinuxの\nプロセスだ。",
+      "size": 27,
+      "lineHeight": 1.25
+    },
+    { "box": [286, 320, 70, 32], "en": "HI!", "ja": "やあ!", "size": 23 },
+    {
+      "box": [725, 56, 433, 138],
+      "en": "Like any process, Bob\nhas his threads, with\nwhom he shares context,\nmemories and love.",
+      "ja": "どのプロセスとも同じく、\nボブにもスレッドたちがいて、\nコンテキストと思い出と愛を\n分かち合っている。",
+      "size": 26,
+      "lineHeight": 1.25
+    },
+    {
+      "box": [639, 598, 438, 249],
+      "en": "And like all processes,\ninevitably sometime he\nwill be killed.\n\nWhen we gracefully kill\na process with a soft\nSIGTERM...",
+      "ja": "そして全プロセスと同じく、\nいつか必ず kill される。\n\nやさしい SIGTERM で\nおだやかに kill すると…",
+      "size": 28
+    },
+    {
+      "box": [45, 1004, 273, 248],
+      "en": "...we give him\nthe chance to\ntalk with his\nkids about it.\nSo, the kids\nfinish their\ntasks...",
+      "ja": "…ボブには\n子どもたちと\n話す時間がある。\nだから子どもたちは\n自分の仕事を\n終えられる…",
+      "size": 28
+    },
+    { "box": [774, 1005, 340, 36], "en": "...and say goodbye", "ja": "…そして、お別れを", "size": 26 },
+    {
+      "box": [767, 1043, 159, 210],
+      "en": "to each\nother.\n\nThat's a\nprocess\nlife!",
+      "ja": "言い合う。\n\nそれが\nプロセスの\n一生さ!",
+      "size": 28
+    },
+    {
+      "box": [56, 1471, 286, 394],
+      "en": "On the other\nhand, when\nwe brutally\nkill a\nprocess with\na SIGKILL,\nwe prevent\nthem from\nfinishing their\njob and say\ngoodbye...",
+      "ja": "いっぽう、\nSIGKILL で\n乱暴に kill\nすると、\n子どもたちは\n仕事を終える\nことも、\nお別れを言う\nこともできない…",
+      "size": 28
+    },
+    {
+      "box": [850, 1478, 269, 67],
+      "en": "...and this is\nso SAD!",
+      "ja": "…これは本当に\n悲しい!",
+      "size": 26.5,
+      "lineHeight": 1.2
+    },
+    { "box": [1059, 1608, 83, 39], "en": "DAD!!", "ja": "パパ!!", "size": 26, "align": "center" },
+    {
+      "box": [352, 2021, 526, 252],
+      "en": "So please, DON'T use\nSIGKILL. Give the kids\nthe chance to leave the\nkernel in peace.\n\nBe nice.",
+      "ja": "だからお願い、SIGKILL は\n使わないで。子どもたちが\n安らかにカーネルを\n去れるように。\n\nやさしくね。",
+      "size": 31.5,
+      "lineHeight": 1.25
+    },
+    { "box": [58, 2143, 194, 109], "en": "Dad, where\nare we\ngoing?", "ja": "パパ、\nどこに\n行くの?", "size": 26.5 },
+    {
+      "box": [956, 2093, 192, 71],
+      "en": "Dad, where\nare you?",
+      "ja": "パパ、\nどこにいるの?",
+      "size": 26.5,
+      "lineHeight": 1.25
+    }
+  ]
+}

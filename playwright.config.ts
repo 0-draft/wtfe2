@@ -1,0 +1,26 @@
+import { defineConfig, devices } from "@playwright/test";
+
+// The site is served under the GitHub Pages project path; tests navigate relative to it.
+// PW_ORIGIN points the tests at an already-running server and skips webServer.
+const external = process.env.PW_ORIGIN;
+const origin = external ?? "http://127.0.0.1:4472";
+
+export default defineConfig({
+  testDir: "tests/e2e",
+  fullyParallel: true,
+  forbidOnly: Boolean(process.env.CI),
+  retries: process.env.CI ? 1 : 0,
+  reporter: process.env.CI ? [["github"], ["html", { open: "never" }]] : "list",
+  use: { baseURL: `${origin}/wtfe2/`, trace: "retain-on-failure" },
+  projects: [
+    { name: "desktop", use: { ...devices["Desktop Chrome"] } },
+    { name: "mobile", use: { ...devices["Pixel 7"] } },
+  ],
+  webServer: external
+    ? []
+    : {
+        command: "pnpm exec astro preview --port 4472 --host 127.0.0.1 --ignore-lock",
+        url: `${origin}/wtfe2/`,
+        reuseExistingServer: !process.env.CI,
+      },
+});

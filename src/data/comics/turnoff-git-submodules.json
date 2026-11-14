@@ -1,0 +1,67 @@
+{
+  "slug": "turnoff-git-submodules",
+  "series": "turnoff",
+  "title": "git submodules adoption flow",
+  "titleJa": "git submodule 導入フロー",
+  "published": "2025-01-30",
+  "url": "https://turnoff.us/geek/git-submodules/",
+  "imageSource": "https://turnoff.us/image/en/gitsubmodule.png",
+  "author": "Daniel Stori",
+  "license": "CC-BY-NC-SA-4.0",
+  "image": { "file": "turnoff-git-submodules.png", "width": 1528, "height": 1703, "displayWidth": 720 },
+  "note": {
+    "en": "A flowchart in which every path ends without submodules: answer yes four times and it still says don't. Submodules pin another repository at an exact commit, which is sometimes what you want, but cloning, pulling and switching branches each gain a step every contributor has to remember. The arrows in the original are marked S and N; the Japanese version spells them out as yes and no.",
+    "ja": "どの道をたどっても submodule を使わずに終わるフローチャート。「はい」を 4 回続けても、最後は「やめとけ」になる。submodule は別のリポジトリを特定のコミットに固定できて、それが必要な場面もある。ただ clone も pull もブランチの切り替えも、関わる全員が覚えておくべき手順が一つずつ増える。原画の矢印には S と N と書かれているが、日本語版では「はい」「いいえ」にした。"
+  },
+  "regions": [
+    {
+      "box": [170, 66, 1166, 94],
+      "en": "git submodules adoption flow",
+      "ja": "git submodule 導入フロー",
+      "size": 68,
+      "align": "center"
+    },
+    {
+      "box": [536, 286, 273, 153],
+      "en": "do you\nneed it?",
+      "ja": "それ、\n必要?",
+      "size": 56.5,
+      "align": "center",
+      "lineHeight": 1.2
+    },
+    { "box": [558, 701, 261, 78], "en": "really?", "ja": "本当に?", "size": 56.5, "align": "center" },
+    { "box": [573, 1078, 296, 106], "en": "really??", "ja": "本当に??", "size": 56.5, "align": "center" },
+    {
+      "box": [561, 1462, 318, 104],
+      "en": "REALLY??",
+      "ja": "本っ当に??",
+      "size": 56.5,
+      "align": "center",
+      "weight": 700,
+      "underline": true
+    },
+    {
+      "box": [1168, 271, 238, 148],
+      "en": "you're\ngood",
+      "ja": "それで\nいい",
+      "size": 58,
+      "align": "center",
+      "lineHeight": 1.2
+    },
+    { "box": [138, 1489, 211, 102], "en": "don't", "ja": "やめとけ", "size": 55.5, "align": "center", "weight": 700 },
+    { "box": [873, 291, 53, 58], "text": [868, 282, 150, 62], "en": "N", "ja": "いいえ", "size": 45 },
+    { "box": [696, 501, 46, 68], "text": [692, 502, 120, 66], "en": "S", "ja": "はい", "size": 45 },
+    { "box": [886, 671, 53, 61], "text": [881, 664, 150, 64], "en": "N", "ja": "いいえ", "size": 45 },
+    { "box": [707, 886, 48, 67], "text": [703, 887, 120, 66], "en": "S", "ja": "はい", "size": 45 },
+    { "box": [903, 1061, 53, 60], "text": [898, 1054, 150, 64], "en": "N", "ja": "いいえ", "size": 45 },
+    { "box": [721, 1271, 51, 71], "text": [717, 1273, 120, 68], "en": "S", "ja": "はい", "size": 45 },
+    {
+      "box": [920, 1440, 52, 60],
+      "text": [911, 1439, 150, 64],
+      "en": "N",
+      "ja": "いいえ",
+      "size": 45
+    },
+    { "box": [436, 1456, 47, 63], "text": [398, 1456, 96, 62], "en": "S", "ja": "はい", "size": 45, "align": "center" }
+  ]
+}

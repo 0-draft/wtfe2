@@ -1,0 +1,37 @@
+{
+  "slug": "turnoff-zombie-processes",
+  "series": "turnoff",
+  "title": "zombie processes",
+  "titleJa": "ゾンビプロセス",
+  "published": "2016-09-07",
+  "url": "https://turnoff.us/geek/zombie-processes/",
+  "imageSource": "https://turnoff.us/image/en/zombies.png",
+  "author": "Daniel Stori",
+  "license": "CC-BY-NC-SA-4.0",
+  "image": { "file": "turnoff-zombie-processes.png", "width": 1200, "height": 700, "displayWidth": 900 },
+  "note": {
+    "en": "A zombie is a process that has already exited but whose parent has not yet collected its exit status with wait(). It holds no memory, only a slot in the process table, and it stays until the parent reaps it, or until the parent itself exits and init adopts and reaps it. The busy parent with the phone is exactly that bug.",
+    "ja": "ゾンビとは、すでに終了しているのに、親プロセスが wait() で終了ステータスを回収していないプロセスのこと。メモリは持たず、プロセステーブルの一枠だけを占める。親が回収するか、親自身が終了して init に引き取られるまで残り続ける。電話に夢中な忙しい親は、まさにそのバグを描いている。"
+  },
+  "regions": [
+    {
+      "box": [42, 44, 782, 39],
+      "en": "Meanwhile, on an ordinary Linux kernel...",
+      "ja": "そのころ、ごく普通の Linux カーネルでは…",
+      "size": 28
+    },
+    {
+      "box": [42, 145, 386, 108],
+      "en": "What's going on with\nthese zombie\nprocesses?",
+      "ja": "このゾンビプロセスたち、\nどうしたの?",
+      "size": 30
+    },
+    {
+      "box": [468, 199, 514, 75],
+      "en": "Their parent is too busy\nto get any notifications...",
+      "ja": "親が忙しすぎて、\n通知をまったく受け取れてないんだ…",
+      "size": 28,
+      "lineHeight": 1.25
+    }
+  ]
+}

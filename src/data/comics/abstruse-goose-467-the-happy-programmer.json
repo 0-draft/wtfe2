@@ -1,0 +1,71 @@
+{
+  "slug": "abstruse-goose-467-the-happy-programmer",
+  "series": "abstruse-goose",
+  "number": 467,
+  "title": "The Happy Programmer",
+  "titleJa": "ハッピーなプログラマー",
+  "url": "https://github.com/s-macke/Abstruse-Goose-Archive/blob/master/comics/467.md",
+  "imageSource": "https://raw.githubusercontent.com/s-macke/Abstruse-Goose-Archive/master/comics/the_art_of_happy_programming.png",
+  "author": "Abstruse Goose (anonymous)",
+  "license": "CC-BY-NC-3.0-US",
+  "image": { "file": "abstruse-goose-467-the-happy-programmer.png", "width": 744, "height": 299, "displayWidth": 980 },
+  "note": {
+    "en": "Bob Ross's painting show, The Joy of Painting, recast as a programming tutorial, happy little binary trees included. The Japanese caption borrows the show's Japanese title, ボブの絵画教室 (Bob's Painting Class).",
+    "ja": "ボブ・ロスの絵画番組「The Joy of Painting」をプログラミング講座に置き換えた作品で、楽しい小さな二分木まで出てくる。日本語版のキャプションは、この番組の邦題「ボブの絵画教室」をもじった。"
+  },
+  "regions": [
+    {
+      "box": [4, 7, 168, 67],
+      "en": "NOW VERY GENTLY PASS\nTHE POINTER TO THE\nFUNCTION AS AN\nARGUMENT.",
+      "ja": "では、ポインタを\nそーっと引数として\n関数に渡しましょう。",
+      "size": 13,
+      "align": "center",
+      "lineHeight": 1.3
+    },
+    { "box": [17, 88, 147, 27], "en": "VEEERRY GENTLY.", "ja": "そーーっとね。", "size": 13, "align": "center" },
+    {
+      "box": [199, 13, 160, 36],
+      "en": "DON'T TRY TO COPY\nMY CODE EXACTLY.",
+      "ja": "私のコードを\nそのまま写さなくていい。",
+      "size": 13,
+      "align": "center",
+      "lineHeight": 1.3
+    },
+    {
+      "box": [209, 58, 131, 44],
+      "en": "JUST LET YOUR\nIMAGINATION GO.",
+      "ja": "想像力の\nおもむくままに。",
+      "size": 13,
+      "align": "center",
+      "lineHeight": 1.3
+    },
+    {
+      "box": [407, 16, 118, 37],
+      "en": "MAKE LOVE TO\nTHE CODE.",
+      "ja": "コードに\n愛をこめて。",
+      "size": 13,
+      "align": "center",
+      "lineHeight": 1.25
+    },
+    { "box": [418, 72, 93, 19], "en": "CARESS IT.", "ja": "なでるように。", "size": 13, "align": "center" },
+    {
+      "box": [567, 7, 173, 53],
+      "en": "NOW LET'S ADD SOME\nHAPPY LITTLE BINARY\nTREES HERE.",
+      "ja": "さあ、ここに\n楽しい小さな二分木を\n足しましょう。",
+      "size": 13,
+      "align": "center",
+      "lineHeight": 1.25
+    },
+    { "box": [596, 84, 123, 19], "en": "JUST FOR FUN.", "ja": "なんとなくね。", "size": 13, "align": "center" },
+    {
+      "box": [562, 251, 179, 38],
+      "en": "The Joy of Programming\nwith Bob Ross",
+      "ja": "ボブの\nプログラミング教室",
+      "size": 13.5,
+      "font": "sans",
+      "weight": 700,
+      "align": "right",
+      "lineHeight": 1.3
+    }
+  ]
+}

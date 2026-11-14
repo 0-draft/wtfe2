@@ -1,0 +1,187 @@
+---
+import type { Site } from "../data/schema.ts";
+import { comics } from "../lib/data.ts";
+import { formatDate, href, type Lang, ui } from "../lib/i18n.ts";
+
+interface Props {
+  site: Site;
+  lang: Lang;
+  headingLevel?: 2 | 3;
+}
+const { site, lang, headingLevel = 3 } = Astro.props;
+const t = ui[lang];
+const H = `h${headingLevel}` as "h2" | "h3";
+const here = comics.filter((c) => c.series === site.id);
+const statusClass = site.status === "active" ? "badge--hot" : site.status === "ended" ? "badge--quiet" : "";
+---
+
+<article class="site panel" id={site.id}>
+  <header class="site__head">
+    <H class="site__name"><a href={site.url}>{site.name}</a></H>
+    <p class="site__meta">
+      <span>{site.creator}</span>
+      {site.since && <span class="mono">{t.since} {site.since}</span>}
+    </p>
+    <p class="site__badges">
+      <span class:list={["badge", statusClass]}>{t.status[site.status]}</span>
+      <span class:list={["badge", { "badge--hot": site.tier === "translated" }]}>{t.tier[site.tier]}</span>
+    </p>
+  </header>
+  <p class="site__about">{site.about[lang]}</p>
+
+  {
+    site.picks.length > 0 && (
+      <div class="site__picks">
+        <p class="kicker">{t.picks}</p>
+        <ul>
+          {site.picks.map((p) => (
+            <li>
+              <a href={p.url} lang="en">
+                {p.title}
+              </a>
+              <span class="site__why">{p.why[lang]}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
+    )
+  }
+
+  {
+    here.length > 0 && (
+      <div class="site__picks">
+        <p class="kicker">{t.comicsHere}</p>
+        <ul class="site__here">
+          {here.map((c) => (
+            <li>
+              <a href={href(lang, `comics/${c.slug}/`)}>{lang === "ja" ? c.titleJa : c.title}</a>
+            </li>
+          ))}
+        </ul>
+      </div>
+    )
+  }
+
+  <dl class="site__facts">
+    <div>
+      <dt>{t.termsLabel}</dt>
+      <dd>
+        <a href={site.terms.url}>{site.terms.label}</a>
+        {site.terms.quote && <q lang="en">{site.terms.quote}</q>}
+      </dd>
+    </div>
+    {
+      site.latest && (
+        <div>
+          <dt>{t.latest}</dt>
+          <dd>
+            <a href={site.latest.url}>{formatDate(site.latest.date, lang)}</a>
+          </dd>
+        </div>
+      )
+    }
+    <div>
+      <dt>{t.checked}</dt>
+      <dd><time datetime={site.checked}>{formatDate(site.checked, lang)}</time></dd>
+    </div>
+    {
+      site.feed && (
+        <div>
+          <dt>{t.feed}</dt>
+          <dd>
+            <a href={site.feed} class="mono">
+              RSS
+            </a>
+          </dd>
+        </div>
+      )
+    }
+  </dl>
+</article>
+
+<style>
+  .site {
+    padding: 1rem 1.15rem 1.1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+  .site__head {
+    display: grid;
+    gap: 0.2rem;
+  }
+  .site__name {
+    font-size: 1.2rem;
+    margin: 0;
+  }
+  .site__name a {
+    text-decoration-color: var(--accent);
+  }
+  .site__meta {
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 0.9rem;
+    font-size: 0.85rem;
+    color: var(--ink-2);
+  }
+  .site__badges {
+    margin: 0.2rem 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+  }
+  .site__about {
+    margin: 0;
+  }
+  .site__picks .kicker {
+    margin: 0 0 0.2rem;
+  }
+  .site__picks ul {
+    margin: 0;
+    padding-left: 1.1rem;
+  }
+  .site__picks li + li {
+    margin-top: 0.3rem;
+  }
+  .site__picks a {
+    font-weight: 700;
+  }
+  .site__why {
+    display: block;
+    font-size: 0.9rem;
+    color: var(--ink-2);
+  }
+  .site__facts {
+    margin: auto 0 0;
+    padding-top: 0.6rem;
+    border-top: 1.5px dashed var(--ink-2);
+    display: grid;
+    gap: 0.25rem;
+    font-size: 0.85rem;
+  }
+  .site__facts div {
+    display: grid;
+    grid-template-columns: 8.5em 1fr;
+    gap: 0.75rem;
+  }
+  .site__facts dt {
+    color: var(--ink-2);
+  }
+  .site__facts dd {
+    margin: 0;
+    min-width: 0;
+    overflow-wrap: anywhere;
+  }
+  .site__facts q {
+    display: block;
+    color: var(--ink-2);
+    font-style: italic;
+  }
+  @media (max-width: 420px) {
+    .site__facts div {
+      grid-template-columns: 1fr;
+      gap: 0;
+    }
+  }
+</style>

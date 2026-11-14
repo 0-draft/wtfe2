@@ -1,0 +1,352 @@
+[
+  {
+    "id": "xkcd",
+    "name": "xkcd",
+    "url": "https://xkcd.com/",
+    "creator": "Randall Munroe",
+    "since": "2006",
+    "status": "active",
+    "latest": { "date": "2026-11-13", "url": "https://xkcd.com/3324/" },
+    "checked": "2026-11-15",
+    "tier": "translated",
+    "terms": {
+      "kind": "cc",
+      "label": "CC BY-NC 2.5",
+      "url": "https://xkcd.com/license.html",
+      "quote": "This work is licensed under a Creative Commons Attribution-NonCommercial 2.5 License."
+    },
+    "feed": "https://xkcd.com/rss.xml",
+    "about": {
+      "en": "Stick figures on romance, sarcasm, math and language, three times a week since 2006. Every strip carries hover text, which often holds a second joke. The standard reference for an argument settled with a comic.",
+      "ja": "恋愛、皮肉、数学、言語をテーマにした棒人間の漫画で、2006 年から週 3 回更新されている。どの作品にもホバーテキストがあり、そこに二つ目のオチが隠れていることが多い。議論を漫画一枚で決着させるときの定番。"
+    },
+    "picks": [
+      {
+        "title": "Is It Worth the Time?",
+        "url": "https://xkcd.com/1205/",
+        "why": {
+          "en": "A table of how long you can spend automating a routine task before it costs more time than it saves.",
+          "ja": "定型作業の自動化に、どれだけ時間をかけたら元が取れなくなるかを示した表。"
+        }
+      },
+      {
+        "title": "Data Pipeline",
+        "url": "https://xkcd.com/2054/",
+        "why": {
+          "en": "The pipeline everyone relies on, and where it actually runs; the hover text finishes the joke.",
+          "ja": "みんなが頼っているパイプラインが、実際にはどこで動いているのか。オチはホバーテキストにある。"
+        }
+      }
+    ]
+  },
+  {
+    "id": "turnoff",
+    "name": "TurnOff.us",
+    "url": "https://turnoff.us/",
+    "creator": "Daniel Stori",
+    "status": "irregular",
+    "latest": { "date": "2025-01-30", "url": "https://turnoff.us/geek/git-submodules/" },
+    "checked": "2026-11-15",
+    "tier": "translated",
+    "terms": {
+      "kind": "cc",
+      "label": "CC BY-NC-SA 4.0",
+      "url": "https://turnoff.us/about/",
+      "quote": "This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License."
+    },
+    "feed": "https://turnoff.us/feed.xml",
+    "about": {
+      "en": "A geek comic by a software developer. Linux processes are penguins with PID badges, and kernels, shells and package managers get personalities. The best strips explain the mechanism while they joke about it.",
+      "ja": "ソフトウェア開発者が描くギーク向け漫画。Linux のプロセスは PID の名札を付けたペンギンで、カーネルもシェルもパッケージマネージャーも性格を持って登場する。出来のいい回は、ネタにしながら仕組みまで説明してしまう。"
+    },
+    "picks": [
+      {
+        "title": "the depressed developer",
+        "url": "https://turnoff.us/geek/the-depressed-developer/",
+        "why": {
+          "en": "The opening of a series in which a developer meets his own code, and it has grown claws.",
+          "ja": "開発者が自分のコードと対面するシリーズの第一話。コードには爪が生えている。"
+        }
+      }
+    ]
+  },
+  {
+    "id": "abstruse-goose",
+    "name": "Abstruse Goose",
+    "url": "https://github.com/s-macke/Abstruse-Goose-Archive",
+    "creator": "Anonymous",
+    "status": "ended",
+    "checked": "2026-11-15",
+    "tier": "translated",
+    "terms": {
+      "kind": "cc",
+      "label": "CC BY-NC 3.0 US",
+      "url": "https://github.com/s-macke/Abstruse-Goose-Archive#license",
+      "quote": "This work is licensed under the Creative Commons Attribution-NonCommercial 3.0 United States License."
+    },
+    "about": {
+      "en": "An anonymous strip about math, science and geek culture. The original site went offline in 2023; a community archive on GitHub keeps the comics and the license they were published under. The author never gave a name.",
+      "ja": "数学、科学、ギーク文化を描いた匿名の漫画。元のサイトは 2023 年に消え、GitHub 上の有志のアーカイブが作品と公開時のライセンスを残している。作者は最後まで名乗らなかった。"
+    },
+    "picks": []
+  },
+  {
+    "id": "smbc",
+    "name": "Saturday Morning Breakfast Cereal (SMBC)",
+    "url": "https://www.smbc-comics.com/",
+    "creator": "Zach Weinersmith",
+    "since": "2002",
+    "status": "active",
+    "latest": { "date": "2026-11-14", "url": "https://www.smbc-comics.com/comic/field" },
+    "checked": "2026-11-15",
+    "tier": "linked",
+    "terms": {
+      "kind": "none-stated",
+      "label": "No reuse terms published",
+      "url": "https://www.smbc-comics.com/"
+    },
+    "feed": "https://www.smbc-comics.com/comic/rss",
+    "about": {
+      "en": "A daily gag strip that keeps returning to physics, math, economics and philosophy, usually with a final panel that undercuts the setup. Each comic also has a hidden bonus panel behind a button.",
+      "ja": "物理、数学、経済学、哲学に何度も戻ってくる日刊のギャグ漫画で、最後のコマが前振りをひっくり返すのが定番。どの回にも、ボタンの裏にボーナスのコマが隠れている。"
+    },
+    "picks": [
+      {
+        "title": "How to Spot a Physicist",
+        "url": "https://www.smbc-comics.com/comic/how-to-spot-a-physicist",
+        "why": {
+          "en": "A museum detects physicists with one sign: \"Today: Interactive Dark Matter Exhibit!\"",
+          "ja": "物理学者を見つける方法は、看板を一枚立てるだけ。「本日: 体験型ダークマター展示!」"
+        }
+      }
+    ]
+  },
+  {
+    "id": "existential-comics",
+    "name": "Existential Comics",
+    "url": "https://existentialcomics.com/",
+    "creator": "Corey Mohler",
+    "status": "active",
+    "latest": { "date": "2026-11-09", "url": "https://existentialcomics.com/comic/680" },
+    "checked": "2026-11-15",
+    "tier": "linked",
+    "terms": {
+      "kind": "none-stated",
+      "label": "No reuse terms published",
+      "url": "https://existentialcomics.com/"
+    },
+    "feed": "https://existentialcomics.com/rss.xml",
+    "about": {
+      "en": "Philosophers argue and misbehave, and many strips come with a short note on the idea behind the joke. Not about programming, but anyone who has argued about whether a model \"understands\" anything will find their arguments here, already drawn.",
+      "ja": "哲学者たちが議論し、やらかす漫画で、多くの回にはネタの元になった考え方を解説する短い文が付いている。プログラミングの話ではないが、モデルが何かを「理解」しているのかを議論したことがあるなら、その論点はもうここに描かれている。"
+    },
+    "picks": [
+      {
+        "title": "Turing Test",
+        "url": "https://existentialcomics.com/comic/15",
+        "why": {
+          "en": "A machine passes a Turing test judged against dogs, and the grant application practically writes itself.",
+          "ja": "犬を相手にしたチューリングテストに機械が合格し、研究費の申請書がほぼ書き上がる。"
+        }
+      },
+      {
+        "title": "Why Learn Math?",
+        "url": "https://existentialcomics.com/comic/449",
+        "why": {
+          "en": "\"I'm never going to use this\" answered by asking which society you would rather live in.",
+          "ja": "「こんなの使わないし」への答えとして、どちらの社会に住みたいかを問い返す。"
+        }
+      }
+    ]
+  },
+  {
+    "id": "monkeyuser",
+    "name": "MonkeyUser",
+    "url": "https://www.monkeyuser.com/",
+    "creator": "Uncredited on the site",
+    "since": "2016",
+    "status": "dormant",
+    "latest": { "date": "2025-04-10", "url": "https://www.monkeyuser.com/2025/button/" },
+    "checked": "2026-11-15",
+    "tier": "linked",
+    "terms": {
+      "kind": "reserved",
+      "label": "All rights reserved",
+      "url": "https://www.monkeyuser.com/",
+      "quote": "Copyright Monkeyuser 2025. All rights reserved."
+    },
+    "feed": "https://www.monkeyuser.com/index.xml",
+    "about": {
+      "en": "Office life of a software team, drawn mostly through a round-headed figure in a blue shirt up against bugs, deadlines, estimates and production. Tight four-panel jokes about the daily work itself.",
+      "ja": "ソフトウェアチームの職場の日常を、おもに青いシャツの丸い頭のキャラクターで描く。相手はバグ、締め切り、見積もり、本番環境。日々の仕事そのものを、引き締まった四コマにしている。"
+    },
+    "picks": [
+      {
+        "title": "// TODO",
+        "url": "https://www.monkeyuser.com/2017/todo/",
+        "why": {
+          "en": "A TODO left in the code, drawn as a weed that nobody pulls until it has roots.",
+          "ja": "コードに残した TODO を、抜かないうちに根を張ってしまう雑草として描く。"
+        }
+      },
+      {
+        "title": "Regex Explained",
+        "url": "https://www.monkeyuser.com/2020/regex-explained/",
+        "why": {
+          "en": "Explaining one part of a regex, with the expected result.",
+          "ja": "正規表現の一部分を説明しようとすると、まあそうなる。"
+        }
+      }
+    ]
+  },
+  {
+    "id": "the-daily-wtf",
+    "name": "The Daily WTF",
+    "url": "https://thedailywtf.com/",
+    "creator": "Alex Papadimoulis (founder); Remy Porter (editor-in-chief)",
+    "since": "2004",
+    "status": "active",
+    "latest": { "date": "2026-11-13", "url": "https://thedailywtf.com/articles/the-artist-formerly-known-as" },
+    "checked": "2026-11-15",
+    "tier": "linked",
+    "terms": {
+      "kind": "reserved",
+      "label": "Copyright Inedo Publishing",
+      "url": "https://thedailywtf.com/",
+      "quote": "Copyright © 2026 Inedo Publishing"
+    },
+    "about": {
+      "en": "Not a comic: daily stories, sent in by readers, of code and IT decisions gone wrong, written up as \"your how-not-to guide for developing software\". The name of this site owes it something.",
+      "ja": "漫画ではなく、読者が投稿したコードや IT 判断の失敗談を毎日記事にしているサイトで、自称は「ソフトウェア開発の how-not-to ガイド」。このサイトの名前も、ここに少し借りがある。"
+    },
+    "feed": "http://syndication.thedailywtf.com/TheDailyWtf",
+    "picks": [
+      {
+        "title": "The Brillant Paula Bean",
+        "url": "https://thedailywtf.com/articles/the_brillant_paula_bean",
+        "why": {
+          "en": "A contractor reports steady progress until the deadline; her entire contribution turns out to be one Java class holding the string \"Brillant\".",
+          "ja": "締め切りまで順調だと報告し続けた契約開発者。成果物の全部は、文字列 \"Brillant\" を持つ Java クラス一つだった。"
+        }
+      },
+      {
+        "title": "The Inner-Platform Effect",
+        "url": "https://thedailywtf.com/articles/the_inner-platform_effect",
+        "why": {
+          "en": "A system so customizable that it becomes \"a poor replica of the platform it was designed with\".",
+          "ja": "カスタマイズ性を追求したあまり、「作るのに使ったプラットフォームの劣化コピー」になってしまうシステム。"
+        }
+      }
+    ]
+  },
+  {
+    "id": "commitstrip",
+    "name": "CommitStrip",
+    "url": "https://www.commitstrip.com/en/",
+    "creator": "Etienne Issartial (art), Thomas Gx (stories); English by Mark Nightingale",
+    "since": "2012",
+    "status": "dormant",
+    "latest": { "date": "2024-08-27", "url": "https://www.commitstrip.com/en/2024/08/27/hello-world/" },
+    "checked": "2026-11-15",
+    "tier": "linked",
+    "terms": {
+      "kind": "noncommercial-use",
+      "label": "Non-commercial use with link and credit",
+      "url": "https://www.commitstrip.com/en/about/",
+      "quote": "You can use our strips for any non-commercial purpose. You can use them to illustrate an article or a blog post, as long as you aren't just duplicating our content for the sake of it. In all cases, a link to the strip and attribution to us is required."
+    },
+    "feed": "https://www.commitstrip.com/en/feed/",
+    "about": {
+      "en": "\"The blog relating the daily life of web agency developers\", written in French and translated into English. Clients, specs, side projects and production incidents, most of them recognisable from any agency or product team. New strips have been rare since 2022.",
+      "ja": "「Web 制作会社の開発者の日常を綴るブログ」で、フランス語で書かれて英語に翻訳されている。客先、仕様書、サイドプロジェクト、本番障害と、どの制作会社やプロダクトチームでも覚えのある話が多い。2022 年以降、新作はまれになっている。"
+    },
+    "picks": [
+      {
+        "title": "A very comprehensive and precise spec",
+        "url": "https://www.commitstrip.com/en/2016/08/25/a-very-comprehensive-and-precise-spec/",
+        "why": {
+          "en": "\"Some day we won't even need coders any more\", and the industry term for a spec precise enough to generate a program.",
+          "ja": "「そのうちプログラマーなんて要らなくなる」。では、プログラムを生成できるほど正確な仕様書を業界では何と呼ぶか。"
+        }
+      },
+      {
+        "title": "West Side-project story",
+        "url": "https://www.commitstrip.com/en/2014/11/25/west-side-project-story/",
+        "why": {
+          "en": "Nearly done, then a new framework to try \"just for fun\", and a field of half-built houses.",
+          "ja": "もうすぐ完成、というところで「ちょっと試しに」新しいフレームワークに手を出し、建てかけの家だらけの野原ができあがる。"
+        }
+      }
+    ]
+  },
+  {
+    "id": "the-oatmeal",
+    "name": "The Oatmeal",
+    "url": "https://theoatmeal.com/",
+    "creator": "Matthew Inman",
+    "since": "2009",
+    "status": "irregular",
+    "checked": "2026-11-15",
+    "tier": "linked",
+    "terms": {
+      "kind": "reserved",
+      "label": "Copyright Matthew Inman",
+      "url": "https://theoatmeal.com/pages/about",
+      "quote": "All content is Copyright © 2025 Matthew Inman."
+    },
+    "feed": "https://theoatmeal.com/feed/rss",
+    "about": {
+      "en": "Long-form comics on cats, running, grammar, science and working on the web. The web-work ones are about clients and design reviews, and still land.",
+      "ja": "長編の漫画で、題材は猫、ランニング、文法、科学、Web の仕事まで幅広い。Web の仕事を扱った回はクライアントやデザインレビューの話で、いまでも刺さる。"
+    },
+    "picks": [
+      {
+        "title": "How a Web Design Goes Straight to Hell",
+        "url": "https://theoatmeal.com/comics/design_hell",
+        "why": {
+          "en": "One round of client feedback at a time, a clean design becomes an abomination \"that POPS!\"",
+          "ja": "クライアントのフィードバックを一つずつ受け入れるうちに、すっきりしたデザインが「映える!」化け物に変わっていく。"
+        }
+      }
+    ]
+  },
+  {
+    "id": "phd-comics",
+    "name": "PHD Comics (Piled Higher and Deeper)",
+    "url": "https://phdcomics.com/",
+    "creator": "Jorge Cham",
+    "since": "1997",
+    "status": "dormant",
+    "checked": "2026-11-15",
+    "tier": "linked",
+    "terms": {
+      "kind": "permission",
+      "label": "Reprints by permission only",
+      "url": "https://phdcomics.com/about.php",
+      "quote": "They may not be copied or duplicated in any form, in whole or in part, without prior written consent"
+    },
+    "feed": "http://phdcomics.com/gradfeed.php",
+    "about": {
+      "en": "Life in graduate school: advisors, procrastination, funding and the thesis that never ends. Not about software, but anyone who has worked on a long project with an unclear finish line will recognise it.",
+      "ja": "大学院生活を描いた漫画で、指導教員、先延ばし、研究費、終わらない博士論文が題材。ソフトウェアの話ではないが、ゴールの見えない長いプロジェクトを経験した人なら身に覚えがあるはず。"
+    },
+    "picks": [
+      {
+        "title": "The Science News Cycle",
+        "url": "https://phdcomics.com/comics/archive.php?comicid=1174",
+        "why": {
+          "en": "A correlation with caveats, passed through a press office, wire services, blogs and cable news, until your grandma wears a tin-foil hat.",
+          "ja": "条件付きの相関が、大学の広報、通信社、ブログ、ケーブルニュースを経由するうちに、おばあちゃんがアルミホイルの帽子をかぶるところまで行き着く。"
+        }
+      },
+      {
+        "title": "How to Write Your Thesis in Ten Minutes a Day",
+        "url": "https://phdcomics.com/comics/archive.php?comicid=1597",
+        "why": {
+          "en": "A two-step plan, and the second step does all the work.",
+          "ja": "二段階の計画。ただし仕事の全部を二段目がやる。"
+        }
+      }
+    ]
+  }
+]
