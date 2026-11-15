@@ -1,0 +1,46 @@
+{
+  "slug": "xkcd-221-random-number",
+  "series": "xkcd",
+  "number": 221,
+  "title": "Random Number",
+  "titleJa": "乱数",
+  "published": "2007-02-09",
+  "url": "https://xkcd.com/221/",
+  "imageSource": "https://imgs.xkcd.com/comics/random_number.png",
+  "author": "Randall Munroe",
+  "license": "CC-BY-NC-2.5",
+  "image": {
+    "file": "xkcd-221-random-number.png",
+    "width": 400,
+    "height": 144,
+    "displayWidth": 600
+  },
+  "titleText": {
+    "en": "RFC 1149.5 specifies 4 as the standard IEEE-vetted random number.",
+    "ja": "RFC 1149.5 は、IEEE 審査済みの標準乱数として 4 を定めている。"
+  },
+  "takeaway": {
+    "en": "One call that returns a plausible value proves nothing about randomness. Test random or non-deterministic code over many runs, and pass the random source in so tests can pin it.",
+    "ja": "それらしい値が一回返ってきても、乱数であることの証明にはならない。乱数や非決定的なコードは多数回の実行で確かめ、乱数源は引数で渡してテストから固定できるようにすること。"
+  },
+  "note": {
+    "en": "The comments are honest, which is the joke: 4 really was picked by a fair dice roll, once. Randomness belongs to the process, not to any single value, so no single return value can tell a real generator from this one.",
+    "ja": "コメントは嘘をついていない。そこが笑いどころだ。4 は確かに公平なサイコロで選ばれた。ただし一回だけ。ランダムかどうかは値ではなく生成の過程の性質なので、返り値を一つ見ただけでは、本物の乱数生成器とこの関数を見分けられない。"
+  },
+  "regions": [
+    {
+      "box": [154, 55, 222, 25],
+      "en": "// chosen by fair dice roll.",
+      "ja": "// 公平なサイコロを振って決めた。",
+      "size": 15,
+      "keep": ["//"]
+    },
+    {
+      "box": [152, 81, 236, 25],
+      "en": "// guaranteed to be random.",
+      "ja": "// ランダムであることは保証済み。",
+      "size": 15,
+      "keep": ["//"]
+    }
+  ]
+}

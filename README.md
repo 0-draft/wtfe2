@@ -4,7 +4,7 @@
 
 [![site](https://img.shields.io/badge/read-the%20comics-c9352a?style=for-the-badge&labelColor=17150f)](https://0-draft.github.io/wtfe2/)
 [![日本語](https://img.shields.io/badge/日本語版-読む-c9352a?style=for-the-badge&labelColor=17150f)](https://0-draft.github.io/wtfe2/ja/)
-[![comics](https://img.shields.io/badge/lettered-38%20strips-ffd94a?style=for-the-badge&labelColor=17150f)](https://0-draft.github.io/wtfe2/#translated)
+[![comics](https://img.shields.io/badge/lettered-39%20strips-ffd94a?style=for-the-badge&labelColor=17150f)](https://0-draft.github.io/wtfe2/#translated)
 [![explained](https://img.shields.io/badge/explained-9%20strips-ffd94a?style=for-the-badge&labelColor=17150f)](https://0-draft.github.io/wtfe2/#explained)
 [![CI](https://img.shields.io/github/actions/workflow/status/0-draft/wtfe2/ci.yml?branch=main&style=for-the-badge&label=CI&labelColor=17150f)](https://github.com/0-draft/wtfe2/actions/workflows/ci.yml)
 [![license](https://img.shields.io/badge/code-MIT-5c5f64?style=for-the-badge&labelColor=17150f)](./LICENSE)
